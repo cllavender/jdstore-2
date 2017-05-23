@@ -15,7 +15,7 @@ class Admin::OrdersController < ApplicationController
   def reserve                                 #预定行程-->  ship
     @order = Order.find(params[:id])
     @order.reserve!
-    OrderMailer.notify_ship(@order).deliver!
+    OrderMailer.notify_reserve(@order).deliver!
     redirect_to :back
   end
 
