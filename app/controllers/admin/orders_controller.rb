@@ -12,29 +12,29 @@ class Admin::OrdersController < ApplicationController
     @product_lists = @order.product_lists
   end
 
-  def ship
+  def reserve                                 #预定行程-->  ship
     @order = Order.find(params[:id])
-    @order.ship!
+    @order.reserve!
     OrderMailer.notify_ship(@order).deliver!
     redirect_to :back
   end
 
-  def shipped
+  def start                                   #开始行程-->  shipped
     @order = Order.find(params[:id])
-    @order.deliver!
+    @order.start!
     redirect_to :back
   end
 
   def cancel
     @order = Order.find(params[:id])
-    @order.cancel_order!
+    @order.cancel_trip!
     OrderMailer.notify_cancel(@order).deliver!
     redirect_to :back
   end
 
-  def return
+  def end
     @order = Order.find(params[:id])
-    @order.return_good!
+    @order.end_trip!
     redirect_to :back
   end
 

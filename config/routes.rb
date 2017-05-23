@@ -6,9 +6,9 @@ Rails.application.routes.draw do
     resources :orders do
       member do
         post :cancel
-        post :ship
-        post :shipped
-        post :return
+        post :reserve     #预定行程-->  ship
+        post :start       #开始行程-->  shipped
+        post :end         #结束行程-->  return
       end
     end
   end

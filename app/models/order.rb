@@ -12,31 +12,31 @@ class Order < ApplicationRecord
   include AASM
 
   aasm do
-    state :order_placed, initial:true
+    state :order_placed, initial:true   
     state :paid
-    state :shipping
-    state :shipped
-    state :order_cancelled
-    state :good_returned
+    state :reserved                    # 行程已预定-->shipping
+    state :started                     # 行程已开始-->shipped
+    state :trip_cancelled              # 行程已取消-->order_cancelled
+    state :trip_ended                  # 行程已结束-->good_returned
 
     event :make_payment, after_commit: :pay! do
       transitions from: :order_placed, to: :paid
     end
 
-    event :ship do
-      transitions from: :paid, to: :shipping
+    event :reserve do              #预定行程-->ship
+      transitions from: :paid, to: :reserved
     end
 
-    event :deliver do
-      transitions from: :shipping, to: :shipped
+    event :start do                #开始行程-->deliver
+      transitions from: :reserved, to: :started
     end
 
-    event :return_good do
-      transitions from: :shipped, to: :good_returned
+    event :end_trip do             #结束行程-->return_good
+      transitions from: :started, to: :trip_ended
     end
 
-    event :cancel_order do
-      transitions from: [:order_placed, :paid], to: :order_cancelled
+    event :cancel_trip do                     #取消行程-->cancel_order
+      transitions from: [:order_placed, :paid, :reserved], to: :trip_cancelled
     end
   end
 
