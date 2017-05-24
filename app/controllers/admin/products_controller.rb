@@ -13,14 +13,20 @@ class Admin::ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    @photo = @product.photos.build                   #在内存新建多图对象，build多用于一对多的情况
   end
 
   def create
     @product = Product.new(product_params)
 
     if @product.save
-      flash[:notice] = "create success!"
-      redirect_to admin_products_path
+      #若有图片，则调用create将图片存入数据库
+      if params[:photos] != nil
+        params[:photos]['avatar'].each do |a|
+          @photo = @product.photos.create(:avatar => a)  #使用params[:photos][avatar]來存多个图片   
+      end
+    end
+    redirect_to admin_products_path,notice:"创建成功！"
     else
       render :new
     end
