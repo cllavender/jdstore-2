@@ -1,17 +1,14 @@
 <div class="row">
     <!-- 图片区 -->
     <div class="col-sm-6">
-      <!-- <p><%= image_tag @product.image_url(:medium) if @product.image.present? %> </p> -->
-      <%= if @photos.present? %>
+      <% if @photos.present? %>
         <!-- 用each_with_index记录，第一张图片(index ==0)显示大图，其余显示小图(thumb) -->
         <% @photos.each_with_index do |p, index| %>
           <% if index == 0 %>
             <%= image_tag(p.avatar.medium.url, class: "thumbnail") %>
-          <div style="letter-spacing: -8px">
           <% else %>
-            <%= image_tag(p.avatar.thumb.url) %>
+            <%= image_tag(p.avatar.small.url) %>
           <% end %>
-          </div>
         <% end %>
       <% else %>
       <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>

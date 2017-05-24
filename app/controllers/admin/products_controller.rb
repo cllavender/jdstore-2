@@ -40,13 +40,21 @@ class Admin::ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
 
+    if params[:photos] != nil
+      @product.photos.destroy_all   #先清除原有的图片
+
+      params[:photos]['avatar'].each do |a|
+        @photo = @product.photos.create(:avatar => a)
+      end
+    end
+
     if @product.update(product_params)
-      flash[:notice] = "Update success!"
-      redirect_to admin_products_path
+      redirect_to admin_products_path,notice: "更新成功！"
     else
       render :edit
-    end
   end
+end
+
 
   def destroy
     @product = Product.find(params[:id])
@@ -58,7 +66,7 @@ class Admin::ProductsController < ApplicationController
   private
 
     def product_params
-      params.require(:product).permit(:title, :description, :price, :quantity, :image)
+      params.require(:product).permit(:title, :description, :price, :quantity)
     end
 
 end
