@@ -9,6 +9,7 @@ class Admin::ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @photos = @product.photos.all
   end
 
   def new
@@ -23,7 +24,7 @@ class Admin::ProductsController < ApplicationController
       #若有图片，则调用create将图片存入数据库
       if params[:photos] != nil
         params[:photos]['avatar'].each do |a|
-          @photo = @product.photos.create(:avatar => a)  #使用params[:photos][avatar]來存多个图片   
+          @photo = @product.photos.create(:avatar => a)  #使用params[:photos][avatar]來存多个图片
       end
     end
     redirect_to admin_products_path,notice:"创建成功！"

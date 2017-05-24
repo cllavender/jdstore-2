@@ -3,9 +3,25 @@
     <%= link_to("Edit", edit_admin_product_path(@product), class: "btn btn-primary pull-right")%>
   </div>
   <br/><br/><br/>
+  <!-- 图片区 -->
   <div class="col-sm-8">
-    <p><%= image_tag @product.image_url(:medium) if @product.image.present? %> </p>
+    <!-- <p><%= image_tag @product.image_url(:medium) if @product.image.present? %> </p> -->
+    <%= if @photos.present? %>
+      <!-- 用each_with_index记录，第一张图片(index ==0)显示大图，其余显示小图(thumb) -->
+      <% @photos.each_with_index do |p, index| %>
+        <% if index == 0 %>
+          <%= image_tag(p.avatar.medium.url, class: "thumbnail") %>
+        <div style="letter-spacing: -8px">
+        <% else %>
+          <%= image_tag(p.avatar.thumb.url) %>
+        <% end %>
+        </div>
+      <% end %>
+    <% else %>
+    <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+   <% end %>
   </div>
+  <!-- 商品描述区 -->
   <div class="col-sm-3">
     <h2><%= @product.title %></h2>
     <p>描述：<%= @product.description %></p>
