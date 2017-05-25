@@ -52,8 +52,8 @@ class Admin::ProductsController < ApplicationController
       redirect_to admin_products_path,notice: "更新成功！"
     else
       render :edit
+    end
   end
-end
 
 
   def destroy
