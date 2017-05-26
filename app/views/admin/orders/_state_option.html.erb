@@ -1,0 +1,38 @@
+<div style="padding:10px; float:right;">
+
+  <% case order.aasm_state %>
+  <% when "order_placed" %>
+    <%= link_to("取消订单",
+                cancel_admin_order_path(order), method: :post,
+                class:"btn btn-default btn-sm") %>
+
+  <% when "paid" %>
+    <%= link_to("取消订单",
+                cancel_admin_order_path(order), method: :post,
+                class:"btn btn-default btn-sm") %>
+    <%= link_to("预定",                 #对应routes.rb中reserve
+                reserve_admin_order_path(order), method: :post,
+                class:"btn btn-default btn-sm") %>
+
+    <% when "reserved" %>
+    <%= link_to("取消订单",
+                cancel_admin_order_path(order), method: :post,
+                class:"btn btn-default btn-sm") %>
+    <%= link_to("开始行程",            #对应routes.rb中start
+                  start_admin_order_path(order), method: :post,
+                  class:"btn btn-default btn-sm") %>
+
+    <% when "started" %>
+      <%= link_to("结束行程",          #对应routes.rb中end
+                  end_admin_order_path(order), method: :post,
+                  class:"btn btn-default btn-sm") %>
+
+    <% when "trip_cancelled" %>
+      <p class="label label-default">行程已取消</p>
+
+    <% when "trip_ended" %>
+      <p class="label label-default">行程已结束</p>
+
+    <% end %>
+
+</div>

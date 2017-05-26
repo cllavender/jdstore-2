@@ -9,18 +9,25 @@ class Admin::ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @photos = @product.photos.all
   end
 
   def new
     @product = Product.new
+    @photo = @product.photos.build                   #在内存新建多图对象，build多用于一对多的情况
   end
 
   def create
     @product = Product.new(product_params)
 
     if @product.save
-      flash[:notice] = "create success!"
-      redirect_to admin_products_path
+      #若有图片，则调用create将图片存入数据库
+      if params[:photos] != nil
+        params[:photos]['avatar'].each do |a|
+          @photo = @product.photos.create(:avatar => a)  #使用params[:photos][avatar]來存多个图片
+      end
+    end
+    redirect_to admin_products_path,notice:"创建成功！"
     else
       render :new
     end
@@ -33,13 +40,21 @@ class Admin::ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
 
+    if params[:photos] != nil
+      @product.photos.destroy_all   #先清除原有的图片
+
+      params[:photos]['avatar'].each do |a|
+        @photo = @product.photos.create(:avatar => a)
+      end
+    end
+
     if @product.update(product_params)
-      flash[:notice] = "Update success!"
-      redirect_to admin_products_path
+      redirect_to admin_products_path,notice: "更新成功！"
     else
       render :edit
     end
   end
+
 
   def destroy
     @product = Product.find(params[:id])
@@ -51,7 +66,7 @@ class Admin::ProductsController < ApplicationController
   private
 
     def product_params
-      params.require(:product).permit(:title, :description, :price, :quantity, :image)
+      params.require(:product).permit(:title, :description, :price, :quantity)
     end
 
 end
