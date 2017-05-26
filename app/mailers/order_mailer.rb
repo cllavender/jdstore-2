@@ -29,7 +29,7 @@ class OrderMailer < ApplicationMailer
     @user  = order.user
     @product_lists = order.product_lists
 
-    mail(to: "admin@test.com", subject: "[JDstore] 您的行程 #{order.token}已取消")
+    mail(to: @user.email, subject: "[JDstore] 您的行程 #{order.token}已取消")
   end
 
 
