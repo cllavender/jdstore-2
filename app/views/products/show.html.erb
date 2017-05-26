@@ -16,7 +16,7 @@
   <% if @photos.present? %>
      <div class="tab-content clear-fix">
        <% @photos.each_with_index do |p,index| %>
-         <% if index <5 %>
+         <% if index <4 %>
           <div class= "tab-pane <%= render_active(index) %>" id="<%= index %>">
             <%= image_tag(p.avatar.medium.url, class: "thumbnail") %>
           </div>
@@ -26,7 +26,7 @@
 
      <ul class="nav nav-tabs">
        <% @photos.each_with_index do |p,index| %>
-         <% if index <5 %>
+         <% if index <4 %>
            <li>
              <a href="#<%= index %>" data-toggle="tab"><%= image_tag(p.avatar.small.url) %></a>
            </li>
