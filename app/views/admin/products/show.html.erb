@@ -10,9 +10,6 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <div class="product">
-      <%= link_to("Edit", edit_admin_product_path(@product), class: "btn btn-primary pull-right")%>
-    </div>
     <br/><br/><br/>
   </head>
   <body>
@@ -44,10 +41,18 @@
     </div>
     <!-- 商品描述区 -->
     <div class="col-md-4">
-      <h2><%= @product.title %></h2>
-      <p>描述：<%= @product.description %></p>
-      <p>价格：<%= @product.price %></p>
-      <p>库存：<%= @product.quantity %></p>
+      <div class="group">
+        <%= link_to("编辑", edit_admin_product_path(@product), class: "btn btn-primary btn-sm pull-right")%>
+      </div>
+      <h2> <%= @product.title %> </h2>
+      <div style="height:100px;">
+        <p>
+          <%= @product.description %>
+        </p>
+      </div>
+      <div> 数量 : <%= @product.quantity %> </div>
+      <div class="product-price"> ￥ <%= @product.price %> </div>
     </div>
+
   </body>
 </html>

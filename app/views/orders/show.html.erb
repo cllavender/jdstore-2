@@ -63,20 +63,32 @@
 
     <hr/>
 
-    <div class="pull-left">
-      <% if @order.order_placed? || @order.paid? || @order.reserved? %>
-        <%= link_to("申请取消订单", apply_to_cancel_order_path(@order.token), method: :post, class: "btn btn-info") %>
+    <div>
+      <% if @order.trip_cancelled? %>
+        <!-- 行程取消之后不能再出现申请取消订单及付款的按钮 -->
+        <p class="text-center">此订单已取消</p>
+      <% elsif @order.trip_ended? %>
+        <!-- 行程结束之后在order_show页面明确显示 -->
+        <p class="text-center">此行程已结束</p>
+      <% else %>
+        <!-- 在已下单、已付款及已预订三种情况下可以申请取消订单 -->
+        <div class="pull-left">
+          <% if @order.order_placed? || @order.paid? || @order.reserved? %>
+            <%= link_to("申请取消订单", apply_to_cancel_order_path(@order.token), method: :post, class: "btn btn-info") %>
+          <% end %>
+        </div>
+        <!-- 未付款则显示两种付款方式按钮，已付款则在order_show页面明确显示 -->
+        <% if !@order.is_paid? %>
+          <div class="pull-right">
+            <%= link_to("以支付宝支付", pay_with_alipay_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+            <%= link_to("以微信支付", pay_with_wechat_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+          </div>
+        <% else %>
+          <p class="text-center">此订单已完成付款</p>
+        <% end %>
       <% end %>
     </div>
 
-    <% if !@order.is_paid? %>
-      <div class="pull-right">
-        <%= link_to("以支付宝支付", pay_with_alipay_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
-        <%= link_to("以微信支付", pay_with_wechat_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
-      </div>
-    <% else %>
-      <p class="text-center">此订单已完成付款</p>
-    <% end %>
 
   </div>
 </div>
