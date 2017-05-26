@@ -36,6 +36,7 @@ gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem "carrierwave"
 gem "mini_magick"
+gem "intercom-rails"
 gem 'letter_opener', group: :development
 gem 'aasm'
 
