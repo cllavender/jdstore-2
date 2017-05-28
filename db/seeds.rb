@@ -42,9 +42,9 @@ p3 = Product.create(title: "普吉岛8日奢华游",
                    price:40000,
                    quantity:5
                     )
-p3.photos.create!(avatar: open("http://www.yueban.cn/upload/2017-01-23/87d344972a0e6c2f96ffd0bec7c8fc5c.jpg"))
-p3.photos.create!(avatar: open("http://www.yueban.cn/ueditor/php/upload/image/20170329/1490768500377173.jpg"))
-p3.photos.create!(avatar: open("http://www.yueban.cn/ueditor/php/upload/image/20170329/1490768515410049.jpg"))
+p3.photos.create!(avatar: open("http://210.51.56.58/fileupload/txtimage/201110111923527075.jpg"))
+p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
+p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
 p3.photos.create!(avatar: open("http://www.yueban.cn/ueditor/php/upload/image/20170329/1490768547227767.jpg"))
 
 p4 = Product.create(title: "马尔代夫4晚6天自由行",
