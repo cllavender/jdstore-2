@@ -16,11 +16,14 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+      put  :favorite
     end
     collection do
       get :search
     end
   end
+
+  resources :favorite
 
   resources :carts do
     collection do

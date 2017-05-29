@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
+  before_filter :authenticate_user! , only: [:add_to_cart, :favorite]
 
   def index
     @products = Product.all
@@ -19,6 +20,18 @@ class ProductsController < ApplicationController
       flash[:warning] = "你的购物车内已有此物品"
     end
     redirect_to :back
+  end
+
+  def favorite
+    @product = Product.find(params[:id])
+    type = params[:type]
+    if type == "favorite"
+      current_user.favorite_products << @product
+      redirect_to :back
+    else
+      current_user.favorite_products.delete(@product)
+      redirect_to :back
+    end
   end
 
 
