@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
-  before_filter :authenticate_user! , only: [:add_to_cart, :favorite]
+  before_filter :authenticate_user! , only: [:favorite]
 
   def index
     if params[:category].blank?
