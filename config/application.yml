@@ -12,21 +12,21 @@
 
 
 production:
-  # AWS_ACCESS_KEY_ID: "xxxx"
-  # AWS_SECRET_ACCESS_KEY: "xxxx"
-  # AWS_REGION: "xxxx"
-  # AWS_BUCKET_NAME: "xxxx"
- SEND_CLOUD_USER_NAME: "kuangmin_test_sBlTny"  # 你的 API_USER
+  AWS_ACCESS_KEY_ID: "HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI"
+  AWS_SECRET_ACCESS_KEY: "7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv"
+  AWS_REGION: "oqjdhoq9e.bkt.clouddn.com"
+  AWS_BUCKET_NAME: "jdstore-demo"
+  SEND_CLOUD_USER_NAME: "kuangmin_test_sBlTny"  # 你的 API_USER
 
- SEND_CLOUD_USER_KEY: "pzrqsxjOdf4rKePw"  # 你的 API_KEY
+  SEND_CLOUD_USER_KEY: "pzrqsxjOdf4rKePw"  # 你的 API_KEY
 
 
 
 development:
-  # AWS_ACCESS_KEY_ID: "xxxx"
-  # AWS_SECRET_ACCESS_KEY: "xxxx"
-  # AWS_REGION: "xxxx"
-  # AWS_BUCKET_NAME: "xxxx"
+  AWS_ACCESS_KEY_ID: "HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI"
+  AWS_SECRET_ACCESS_KEY: "7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv"
+  AWS_REGION: "oqjdhoq9e.bkt.clouddn.com"
+  AWS_BUCKET_NAME: "jdstore-demo"
   SEND_CLOUD_USER_NAME: "kuangmin_test_sBlTny"  # 你的 API_USER
 
   SEND_CLOUD_USER_KEY: "pzrqsxjOdf4rKePw"  # 你的 API_KEY
