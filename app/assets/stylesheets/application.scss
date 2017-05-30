@@ -15,5 +15,179 @@
  */
 
 @import "bootstrap";
+
 @import "bootstrap-sprockets";
+
 @import "font-awesome";
+
+// 导航栏
+
+.navbar-default {
+    background-color: rgba(57, 63, 68, 1);  //背景颜色
+
+     border-color: #212121; //边框色
+
+     margin-bottom: 100px; //底部 margin 不撑开距离
+
+}
+
+@media (min-width: 768px) {
+  .navbar {
+     border-radius: 0; //圆角为0
+   }
+ }
+
+ .navbar-default .navbar-brand {
+    color: #FFFFFF; //JDstore字体颜色
+
+    padding: 10px 15px; //上下10px，左右15px
+    line-height: 30px; //文字行高
+  }
+
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #FFFFFF; //鼠标放置在链接上的文字颜色
+
+    background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+  }
+
+
+  .navbar-default .navbar-nav > li > a{
+    color: #FFFFFF; //购物车和登入登出颜色
+
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+   color: #FFFFFF;  //product颜色
+
+    background-color: rgba(57, 63, 68, 1);
+
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    background-color: rgba(57, 63, 68, 1);
+
+    color: #212121;
+
+  }
+
+
+//首页头图
+
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  top: 12px;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: #212121;
+}
+
+
+
+
+.color_11 {
+      color: #FFFFFF;
+}
+
+.color_15 {
+      color: #333333;
+}
+
+//图片下面信息
+
+.caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.xingshi {
+
+  clear: both;
+  display: block;     //居中的用法
+  margin:auto;
+
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+
+    width: 940px;
+    height: 520px;
+
+}
+
+
+
+
+
+.box {
+     background-image: url("https://ws2.sinaimg.cn/large/006tNbRwgy1fg2lnturgsj31kw0vyqv9.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 50px;
+     margin-top: -100px;
+
+     .box-inner {
+        //  background-color: rgba(250, 250, 250, 0.69);
+         padding-bottom: 5px;
+         margin-top: 150px;
+         margin-bottom: 150px;
+     }
+
+
+
+
+
+     //---------Content---------
+
+  .content-section-a {
+      padding: 1000px 0;
+      background-color: #f8f8f8;
+
+  }
+
+  .content-section-b {
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+  }
+
+  .section-heading-spacer {
+      float: left;
+      width: 200px;
+      border-top: 3px solid #e7e7e7;
+  }
+
+  .section-heading {
+      margin-bottom: 30px;
+  }
+}
+
+
+mark {
+    background: #ffffff;
+    color: rgba(9, 236, 247, 0.98);
+}

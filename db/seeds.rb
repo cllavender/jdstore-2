@@ -146,3 +146,25 @@ p12.photos.create!(avatar: open("http://www.chezidian.com/upload/2011/12/6134354
 p12.photos.create!(avatar: open("http://www.chuqulvyou.com/uploadfile/2015/0623/20150623050235519.jpg"))
 p12.photos.create!(avatar: open("http://proimg.cctcct.com/UploadFile/image/s/2015519104501.jpg"))
 p12.photos.create!(avatar: open("http://www.rzjjly.com/uploads/allimg/161208/1-16120PRP90-L.jpg"))
+
+p13 = Product.create(title: "SPEEDBOAT ADVENTURE",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p13.photos.create!(avatar: open("https://ws1.sinaimg.cn/large/006tNbRwgy1fg32hlb6gjj30zk0hwdnu.jpg"))
+
+
+p14 = Product.create(title: "",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p14.photos.create!(avatar: open("https://ws2.sinaimg.cn/large/006tNbRwgy1fg32kzsrnyj30i40c3jyh.jpg"))
+
+p15 = Product.create(title: "",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p15.photos.create!(avatar: open("https://static.wixstatic.com/media/1f07f07c5c64ce8093bc4513e3d5d641.jpg"))
