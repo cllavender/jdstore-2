@@ -4,7 +4,12 @@ class Admin::ProductsController < ApplicationController
   layout "admin"
 
   def index
-    @products = Product.all
+    if params[:category].blank?
+      @products = Product.all
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @products = Product.where(:category_id => @category_id)
+    end
   end
 
   def show
@@ -15,10 +20,12 @@ class Admin::ProductsController < ApplicationController
   def new
     @product = Product.new
     @photo = @product.photos.build                   #在内存新建多图对象，build多用于一对多的情况
+    @categories = Category.all.map { |c| [c.name, c.id] }
   end
 
   def create
     @product = Product.new(product_params)
+    @product.category_id = params[:category_id]
 
     if @product.save
       #若有图片，则调用create将图片存入数据库
@@ -35,10 +42,12 @@ class Admin::ProductsController < ApplicationController
 
   def edit
     @product = Product.find(params[:id])
+    @categories = Category.all.map { |c| [c.name, c.id] }
   end
 
   def update
     @product = Product.find(params[:id])
+    @product.category_id = params[:category_id]
 
     if params[:photos] != nil
       @product.photos.destroy_all   #先清除原有的图片
@@ -66,7 +75,7 @@ class Admin::ProductsController < ApplicationController
   private
 
     def product_params
-      params.require(:product).permit(:title, :description, :price, :quantity)
+      params.require(:product).permit(:title, :description, :price, :quantity, :category_id)
     end
 
 end

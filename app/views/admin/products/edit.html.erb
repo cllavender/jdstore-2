@@ -18,6 +18,7 @@
           <%= f.label :avatar %><br>
           <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
         </div>
+        <%= select_tag(:category_id, options_for_select(@categories), :prompt => "目的地") %>
       </div>
       <%= f.submit "submit product", class: "btn btn-primary", data: { disable_with: "Submiting..." } %>
     <% end %>
