@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+  before_action :validate_search_key, only: [:search]
+  before_filter :authenticate_user! , only: [:add_to_cart, :favorite]
+
   def index
     @products = Product.all
   end
@@ -17,6 +20,39 @@ class ProductsController < ApplicationController
       flash[:warning] = "你的购物车内已有此物品"
     end
     redirect_to :back
+  end
+
+  def favorite
+    @product = Product.find(params[:id])
+    type = params[:type]
+    if type == "favorite"
+      current_user.favorite_products << @product
+      redirect_to :back
+    else
+      current_user.favorite_products.delete(@product)
+      redirect_to :back
+    end
+  end
+
+
+  # --search 商品搜索--
+  def search
+    if @query_string.present?
+      @products = search_params
+  end
+
+  end
+
+  protected
+
+  def validate_search_key
+    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "") if params[:q].present?
+  end
+
+  private
+
+  def search_params
+    Product.ransack({:title_or_description_cont => @query_string}).result(distinct: true)
   end
 
 end
