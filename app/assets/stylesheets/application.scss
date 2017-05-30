@@ -20,6 +20,8 @@
 
 @import "font-awesome";
 
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 // 导航栏
 
 .navbar-default {
@@ -192,13 +194,15 @@ mark {
     color: rgba(9, 236, 247, 0.98);
 }
 
+
+
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px,100px;
   max-width: 350px;
   width: 100% !important;
   background-color:#fff;
-  opacity:0.75;
+  opacity:0.92;
   margin: 0 auto;
   border:3px solid #01579B;
   border-radius: 20px;
