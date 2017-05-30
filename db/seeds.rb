@@ -19,8 +19,8 @@ p1 = Product.create(title: "青海湖5日深度休闲游",
                    price:12000,
                    quantity:10
                     )
-p1.photos.create!(avatar: open("https://c2-q.mafengwo.net/s7/M00/32/0E/wKgB6lO1VsuAaJy_AAGcKU4vChg47.jpeg?imageView2%2F2%2Fw%2F600%2Fq%2F90"))
 p1.photos.create!(avatar: open("http://c3-q.mafengwo.net/s7/M00/31/FD/wKgB6lO1VqSAOLbpAAJWZzAM_CQ22.jpeg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90"))
+p1.photos.create!(avatar: open("https://c2-q.mafengwo.net/s7/M00/32/0E/wKgB6lO1VsuAaJy_AAGcKU4vChg47.jpeg?imageView2%2F2%2Fw%2F600%2Fq%2F90"))
 p1.photos.create!(avatar: open("http://www.qhhly.cn/u/cms/qhh-cn/201408/07162131gpty.jpg"))
 p1.photos.create!(avatar: open("http://zhonglv.zudong.com/eyjq/UpFiles/Article/2007-11/%E9%9D%92%E6%B5%B7%E6%B9%96.jpg"))
 
@@ -42,15 +42,129 @@ p3 = Product.create(title: "普吉岛8日奢华游",
                    price:40000,
                    quantity:5
                     )
-p3.photos.create!(avatar: open("http://210.51.56.58/fileupload/txtimage/201110111923527075.jpg"))
+p3.photos.create!(avatar: open("http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_nature_68522_1920x1080.jpg"))
 p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
 p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
-p3.photos.create!(avatar: open("http://www.yueban.cn/ueditor/php/upload/image/20170329/1490768547227767.jpg"))
+p3.photos.create!(avatar: open("http://www.mfzdb.com/wp-content/uploads/2015/05/124-120604143417.jpg"))
 
-p4 = Product.create(title: "马尔代夫4晚6天自由行",
-                   description:"马尔代夫",
+
+p4 = Product.create(title: "马尔代夫6日自由行",
+                   description:"马尔代夫位于斯里兰卡南方浩瀚的印度洋上，大大小小千余座珊瑚岛如珍珠散落在赤道两侧，被称为印度洋上人间最后的乐园。",
                    price:40000,
                    quantity:5
                     )
-p4.photos.create!(avatar: open("http://www.yueban.cn/upload/2017-01-23/cb12ae0daa3b0ed0467d6810d28c9540.jpg"))
-p3.photos.create!(avatar: open("http://www.yueban.cn/ueditor/php/upload/image/20170324/1490334044130906.jpg"))
+p4.photos.create!(avatar: open("http://img.jinghua.cn/170327/14905952548ad355.png"))
+p4.photos.create!(avatar: open("http://www.mfzdb.com/wp-content/uploads/2015/04/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB1.jpg"))
+p4.photos.create!(avatar: open("http://www.widoczki.com/widoczki/2/morze-palma-plaza-lezaki.jpeg"))
+p4.photos.create!(avatar: open("http://www.wabuw.com/uploads/image/120213102518_4357.jpg"))
+
+
+p5 = Product.create(title: "茶卡盐湖5日自由行",
+                   description:"茶卡盐湖是柴达木盆地有名的天然结晶盐湖，中国的“天空之镜”，盐产量可供全国人民使用约75年。",
+                   price:20000,
+                   quantity:8
+                    )
+p5.photos.create!(avatar: open("http://g.udn.com.tw/upfiles/B_MO/MoWangMi/PSN_PHOTO/494/f_10666494_1.jpg"))
+p5.photos.create!(avatar: open("http://travel.qunar.com/bbs/data/attachment/forum/201606/14/144303zwmf37pi3r72dj70.jpg"))
+p5.photos.create!(avatar: open("http://www.ctsxian.com/sc/UploadFiles/201721716qXWiL.jpg"))
+p5.photos.create!(avatar: open("http://i0.sinaimg.cn/travel/2015/0511/U7974P704DT20150511134112.jpg"))
+
+
+p6 = Product.create(title: "九寨沟7天休闲游",
+                   description:"九寨的水，是蒙胧神秘的。五彩池，就像一块五彩的宝石，幽绿中透着蓝，蓝中泛着橙、橙中映着赤、赤中蕴着黄，斑斓耀眼，摄人心魄。",
+                   price:30000,
+                   quantity:10
+                    )
+p6.photos.create!(avatar: open("http://goldenteam.travel.net.tw/eweb_goldenteam/html/web_page/web-ctu/image/r1/r1-5.jpg"))
+p6.photos.create!(avatar: open("http://scmlzl.com/uploads/allimg/110727/22-110HF94A5.jpg"))
+p6.photos.create!(avatar: open("http://www.jiuzhai.com/images/2016_1201/a%201.png"))
+p6.photos.create!(avatar: open("http://www.benslx.com/statics/upfile/201611/U642DqYcavhfahhjxx612.jpg"))
+
+
+p7 = Product.create(title: "抚仙湖3日休闲行",
+                   description:"抚仙湖，因湖水清澈见底、晶莹剔透，被古人称为“琉璃万顷”。",
+                   price:25000,
+                   quantity:10
+                    )
+p7.photos.create!(avatar: open("http://en.kangbatv.com/sp_22771/jlp/201704/W020170405582533720512.jpg"))
+p7.photos.create!(avatar: open("http://a0.att.hudong.com/50/62/01300542421930139330629385925.jpg"))
+p7.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/f/fc/Black-headed_Gulls_in_Fuxian_Lake%2C_Yunnan%2C_China.jpg"))
+p7.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/2/2b/Fuxian_Lake_2013-01-23.jpg"))
+
+
+p8 = Product.create(title: "威尼斯7日奢华游",
+                   description:"威尼斯贵为水上之城本身就是一个水上艺术品，在这里任意一个建筑物的美感都离不开水。
+                   身处威尼斯，你就像站在正演出的舞台之上，路边音乐家演奏的古典音乐就像是演出配乐，来回的形形色色的人们就像是演员，而你正好赶上这威尼斯剧目的上演。",
+                   price:50000,
+                   quantity:10
+                    )
+p8.photos.create!(avatar: open("http://3.bp.blogspot.com/-SNwXK4UC1MQ/Vk0A0SxHoyI/AAAAAAAAoPg/usGKtbMy3UE/s1600/onde-ficar-veneza-regioes-san-marco.jpg"))
+p8.photos.create!(avatar: open("https://www.urlaubsguru.at/wp-content/uploads/2016/03/venedig-rialtobr%C3%BCcke.jpg"))
+p8.photos.create!(avatar: open("http://holidayfiesta.net/wp-content/uploads/2016/07/Venice-1.jpg"))
+p8.photos.create!(avatar: open("https://static1.squarespace.com/static/5457f229e4b03152ab73e4a5/54597025e4b09adaa344a275/55dbfce2e4b038dd9b2caeeb/1440514997861/?format=1500w"))
+
+
+p9 = Product.create(title: "阿马尔菲3日深度休闲游",
+                   description:"阿马尔菲位于意大利南部那不勒斯附近，是一座在海边的小城，整座城市沿着海岸边的山崖修建，有陡峭的地形和独具特色的建筑。",
+                   price:18000,
+                   quantity:10
+                    )
+p9.photos.create!(avatar: open("http://www.amalfidrivingdreams.com/assets/img/background/background.jpg"))
+p9.photos.create!(avatar: open("https://cdn.pixabay.com/photo/2017/01/24/01/28/amalfi-2004362_960_720.jpg"))
+p9.photos.create!(avatar: open("https://pic1.qyer.com/lastminute/supplier/726574214924110373863510"))
+p9.photos.create!(avatar: open("https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/rfwo59xr3bkzzbs1ov4v/%E6%B3%A2%E8%A5%BF%E5%A1%94%E8%AB%BE%E8%88%87%E9%98%BF%E9%A6%AC%E7%88%BE%E8%8F%B2%E4%B8%80%E6%97%A5%E9%81%8A.jpg"))
+
+
+p10 = Product.create(title: "外伶仃岛2日深度休闲游",
+                   description:"外伶仃岛是中国唯一能看到香港市区的海岛，气候四季如春，岛内的伶仃湾、塔湾和大东湾三处沙滩质量最高。",
+                   price:10000,
+                   quantity:10
+                    )
+p10.photos.create!(avatar: open("http://n1-q.mafengwo.net/s5/M00/23/AF/wKgB3FIayeGAXM_wAA3nqmAcZB078.jpeg?imageMogr2%2Fthumbnail%2F%21690x450r%2Fgravity%2FCenter%2Fcrop%2F%21690x450%2Fquality%2F90%7Cwatermark%2F1%2Fimage%2FaHR0cDovL24xLXEubWFmZW5nd28ubmV0L3M4L00wMC82Mi83OS93S2dCcFZodUN6Q0FJa3RIQUFBTkc4TDlCUU0xNjAucG5n%2Fgravity%2FNorthWest%2Fdx%2F20%2Fdy%2F21"))
+p10.photos.create!(avatar: open("http://b2-q.mafengwo.net/s8/M00/0E/D7/wKgBpVWnL9KAT0kfAAD9hJfgcOc23.jpeg?imageMogr2%2Fthumbnail%2F%21690x370r%2Fgravity%2FCenter%2Fcrop%2F%21690x370%2Fquality%2F100"))
+p10.photos.create!(avatar: open("https://youimg1.c-ctrip.com/target/fd/tg/g2/M0A/6C/C8/CghzgFTRvfOAfQm8AAEkvcPtT24986.jpg"))
+p10.photos.create!(avatar: open("http://www.zhuhaigo.com/files/2016-5/f20160509142033113221.jpg"))
+
+
+p11 = Product.create(title: "乌镇7日休闲游",
+                   description:"古镇民居临河而建、傍桥而市，镇内民风纯朴，是江南水乡“小桥、流水、人家”的典范。",
+                   price:15000,
+                   quantity:10
+                    )
+p11.photos.create!(avatar: open("http://photocdn.sohu.com/20160103/Img433308487.jpg"))
+p11.photos.create!(avatar: open("http://a3.att.hudong.com/66/75/19300001076631129721759191872.jpg"))
+p11.photos.create!(avatar: open("http://img5.duitang.com/uploads/item/201410/17/20141017222503_v8mYY.jpeg"))
+p11.photos.create!(avatar: open("http://att2.citysbs.com/jiaxing/sns01/forum/2011/05/26-13/20110526_40a6d1b69d1ac5388c08IaGocDYfMKVA.jpg"))
+
+
+p12 = Product.create(title: "鼓浪屿5日休闲游",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p12.photos.create!(avatar: open("http://www.chezidian.com/upload/2011/12/6134354910.jpg"))
+p12.photos.create!(avatar: open("http://www.chuqulvyou.com/uploadfile/2015/0623/20150623050235519.jpg"))
+p12.photos.create!(avatar: open("http://proimg.cctcct.com/UploadFile/image/s/2015519104501.jpg"))
+p12.photos.create!(avatar: open("http://www.rzjjly.com/uploads/allimg/161208/1-16120PRP90-L.jpg"))
+
+p13 = Product.create(title: "SPEEDBOAT ADVENTURE",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p13.photos.create!(avatar: open("https://ws1.sinaimg.cn/large/006tNbRwgy1fg32hlb6gjj30zk0hwdnu.jpg"))
+
+
+p14 = Product.create(title: "",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p14.photos.create!(avatar: open("https://ws2.sinaimg.cn/large/006tNbRwgy1fg32kzsrnyj30i40c3jyh.jpg"))
+
+p15 = Product.create(title: "",
+                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+                   price:10000,
+                   quantity:12
+                    )
+p15.photos.create!(avatar: open("https://static.wixstatic.com/media/1f07f07c5c64ce8093bc4513e3d5d641.jpg"))

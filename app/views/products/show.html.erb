@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>寻踏水的痕迹</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
 <body>
   <!-- 图片区 -->
   <div class='col-xs-12 col-md-6'>
@@ -48,13 +38,21 @@
     </div>
     <div> 数量 ：<%= @product.quantity %></div>
     <div class="product-price"> <i class="fa fa-jpy" aria-hidden="true"> </i><%= @product.price %></div>
-    <div class="pull-right">
+    <br/>
+    <div class="pull-left">
       <% if @product.quantity.present? && @product.quantity >0 %>
         <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-lg btn-danger") %>
       <% else %>
         已销售一空，无法购买
       <% end %>
     </div>
+    <div class="pull-right">
+      <% if current_user && current_user.already_favorite?(@product) %>
+        <%= link_to('取消收藏'.html_safe, favorite_product_path(@product, type:"unfavorite"), method: :put) %>
+      <% else %>
+        <%= link_to('添加收藏'.html_safe, favorite_product_path(@product, type:"favorite"), method: :put) %>
+      <% end %>
+    </div>
   </div>
-</tbody>
+</body>
 </html>

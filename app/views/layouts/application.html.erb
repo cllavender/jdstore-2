@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
+<!-- <br>
+
+<span class="color_15">寻踏水的痕迹</span>
+<div class="pull-right">
+<a href="https://fullstack.xinshengdaxue.com/posts/1119" >
+<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+</a>
+</div>
+<br>
+<br> -->
+
+
   <head>
-    <title>Jdstore</title>
+    <title>| 寻踏水的痕迹</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/favicon.ico">
   </head>
 
   <body>
     <div class="container-fluid">
+      <div class="row">
         <%= render "common/navbar" %>
+      </div>
         <%= render "common/flashes" %>
         <%= yield %>
     </div>
