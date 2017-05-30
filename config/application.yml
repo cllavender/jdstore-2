@@ -11,22 +11,30 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 
-production:
-  AWS_ACCESS_KEY_ID: "HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI"
-  AWS_SECRET_ACCESS_KEY: "7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv"
-  AWS_REGION: "oqjdhoq9e.bkt.clouddn.com"
-  AWS_BUCKET_NAME: "jdstore-demo"
-  SEND_CLOUD_USER_NAME: "kuangmin_test_sBlTny"  # 你的 API_USER
+ production:
+   qiniu_access_key: HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI  # 你的 qiniu AccessKey
 
-  SEND_CLOUD_USER_KEY: "pzrqsxjOdf4rKePw"  # 你的 API_KEY
+   qiniu_secret_key: 7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv  # 你的 qiniu SecretKey
+
+   qiniu_bucket: jdstore-demo  # 你的 qiniu bucket
+
+   qiniu_bucket_domain: oqjdhoq9e.bkt.clouddn.com  # 你的 qiniu bucket domain
+
+   SEND_CLOUD_USER_NAME: "cl_fighting_test_Wds3k0"  # 你的 API_USER
+
+   SEND_CLOUD_USER_KEY: "ws07GiRMwOCjLEge"  # 你的 API_KEY
 
 
 
-development:
-  AWS_ACCESS_KEY_ID: "HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI"
-  AWS_SECRET_ACCESS_KEY: "7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv"
-  AWS_REGION: "oqjdhoq9e.bkt.clouddn.com"
-  AWS_BUCKET_NAME: "jdstore-demo"
-  SEND_CLOUD_USER_NAME: "kuangmin_test_sBlTny"  # 你的 API_USER
+ development:
+   qiniu_access_key: HNihzu2OMgPmWhI6w79juKD82HQ9tHaU7MJjAMwI  # 你的 qiniu AccessKey
 
-  SEND_CLOUD_USER_KEY: "pzrqsxjOdf4rKePw"  # 你的 API_KEY
+   qiniu_secret_key: 7j4Gf357RrV6iXEKGp0Tfr7ph_P5S46C_xjrLGNv  # 你的 qiniu SecretKey
+
+   qiniu_bucket: jdstore-demo  # 你的 qiniu bucket
+
+   qiniu_bucket_domain: oqjdhoq9e.bkt.clouddn.com  # 你的 qiniu bucket domain
+
+   SEND_CLOUD_USER_NAME: "cl_fighting_test_Wds3k0"  # 你的 API_USER
+
+   SEND_CLOUD_USER_KEY: "ws07GiRMwOCjLEge"  # 你的 API_KEY
