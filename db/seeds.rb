@@ -34,32 +34,32 @@ Category.create!(
  name: '山沟谷地'
 )
 
-
-# 新建商品
-#1
-p1 = Product.create(title: "青海湖5日深度休闲游",
-                   description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
-                   price: 12000,
-                   quantity: 10,
-                   category_id: 2
-                    )
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
-
-#2
-p2 = Product.create(title: "洱海3日深度休闲游",
-                   description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
-                                外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
-                   price: 10000,
-                   quantity: 12,
-                   category_id: 2
-                    )
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
+#
+# # 新建商品
+# #1
+# p1 = Product.create(title: "青海湖5日深度休闲游",
+#                    description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
+#                    price: 12000,
+#                    quantity: 10,
+#                    category_id: 2
+#                     )
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
+#
+# #2
+# p2 = Product.create(title: "洱海3日深度休闲游",
+#                    description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
+#                                 外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
+#                    price: 10000,
+#                    quantity: 12,
+#                    category_id: 2
+#                     )
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
 
 #3
 p3 = Product.create(title: "普吉岛8日奢华游",
@@ -71,7 +71,7 @@ p3 = Product.create(title: "普吉岛8日奢华游",
 p3.photos.create!(avatar: open("http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_nature_68522_1920x1080.jpg"))
 p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
 p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
-p3.photos.create!(avatar: open("http://www.mfzdb.com/wp-content/uploads/2015/05/124-120604143417.jpg"))
+p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
 
 #4
 p4 = Product.create(title: "马尔代夫6日自由行",
