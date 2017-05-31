@@ -43,9 +43,9 @@ p1 = Product.create(title: "青海湖5日深度休闲游",
                    quantity: 10,
                    category_id: 2
                     )
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/4/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/5/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/6/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
 p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
 
 #2
@@ -56,10 +56,10 @@ p2 = Product.create(title: "洱海3日深度休闲游",
                    quantity: 12,
                    category_id: 2
                     )
-p2.photos.create!(avatar: open("http://img.mxmop.com/uploads/tu/bj/tp/268/3.jpg"))
-p2.photos.create!(avatar: open("http://img2.utuku.china.com/646x0/news/20170322/a81a35aa-fdde-439e-b9cc-ee03705eaac0.jpg"))
-p2.photos.create!(avatar: open("http://img8.zol.com.cn/bbs/upload/18656/18655980.jpg"))
-p2.photos.create!(avatar: open("http://c4-q.mafengwo.net/s7/M00/96/C0/wKgB6lRpvSmAcOYUAAtXBq-LNkw38.jpeg?imageView2%2F2%2Fw%2F2000%2Fh%2F600%2Fq%2F90%7Cwatermark%2F3%2Fimage%2FaHR0cDovL2IyLXEubWFmZW5nd28ubmV0L3M5L00wMC82My84RS93S2dCczFaTmVzV0FZb29JQUFBU2JNMElpRjQyNDEucG5n%2Fgravity%2FSouthEast%2Fdx%2F20%2Fdy%2F20%2Fimage%2FaHR0cDovL2IyLXEubWFmZW5nd28ubmV0L3M5L00wMC82My84RS93S2dCczFaTmVzV0FZb29JQUFBU2JNMElpRjQyNDEucG5n%2Fgravity%2FSouthEast%2Fdx%2F20%2Fdy%2F20"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpg"))
 
 #3
 p3 = Product.create(title: "普吉岛8日奢华游",
