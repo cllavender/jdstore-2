@@ -12,9 +12,9 @@
 
 
  production:
-   qiniu_access_key: eK29EY0_TiwNJkNiMnGtQj_BXfpKzgeXG1WQ_JFL  # 你的 qiniu AccessKey
+   qiniu_access_key: pMn5KuAJ3-FoOebOHjC2V0ejKSqPsUOeEr3sfDbb  # 你的 qiniu AccessKey
 
-   qiniu_secret_key: lpo-XPkyci4ZVmAil3MwNoAk8sphcj9cu8T5A3P9  # 你的 qiniu SecretKey
+   qiniu_secret_key: VzIgFxx2_va0U8cU0unXwEQqNtA8QD23T16TgcSh  # 你的 qiniu SecretKey
 
    qiniu_bucket: jdstore-demo  # 你的 qiniu bucket
 
@@ -27,9 +27,9 @@
 
 
  development:
-   qiniu_access_key: eK29EY0_TiwNJkNiMnGtQj_BXfpKzgeXG1WQ_JFL  # 你的 qiniu AccessKey
+   qiniu_access_key: pMn5KuAJ3-FoOebOHjC2V0ejKSqPsUOeEr3sfDbb  # 你的 qiniu AccessKey
 
-   qiniu_secret_key: lpo-XPkyci4ZVmAil3MwNoAk8sphcj9cu8T5A3P9  # 你的 qiniu SecretKey
+   qiniu_secret_key: VzIgFxx2_va0U8cU0unXwEQqNtA8QD23T16TgcSh  # 你的 qiniu SecretKey
 
    qiniu_bucket: jdstore-demo  # 你的 qiniu bucket
 
