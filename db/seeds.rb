@@ -34,44 +34,44 @@ Category.create!(
  name: '山沟谷地'
 )
 
-#
-# # 新建商品
-# #1
-# p1 = Product.create(title: "青海湖5日深度休闲游",
-#                    description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
-#                    price: 12000,
-#                    quantity: 10,
-#                    category_id: 2
-#                     )
-# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
-# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
-# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
-# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
-#
-# #2
-# p2 = Product.create(title: "洱海3日深度休闲游",
-#                    description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
-#                                 外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
-#                    price: 10000,
-#                    quantity: 12,
-#                    category_id: 2
-#                     )
-# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
-# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
-# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
-# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
 
-# #3
-# p3 = Product.create(title: "普吉岛8日奢华游",
-#                    description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
-#                    price: 40000,
-#                    quantity: 5,
-#                    category_id: 1
-#                     )
-# p3.photos.create!(avatar: open("http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_nature_68522_1920x1080.jpg"))
-# p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
-# p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
-# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
+# 新建商品
+#1
+p1 = Product.create(title: "青海湖5日深度休闲游",
+                   description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
+                   price: 12000,
+                   quantity: 10,
+                   category_id: 2
+                    )
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
+
+#2
+p2 = Product.create(title: "洱海3日深度休闲游",
+                   description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
+                                外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
+                   price: 10000,
+                   quantity: 12,
+                   category_id: 2
+                    )
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
+p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
+
+#3
+p3 = Product.create(title: "普吉岛8日奢华游",
+                   description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
+                   price: 40000,
+                   quantity: 5,
+                   category_id: 1
+                    )
+p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B1.jpg"))
+p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B2.jpg"))
+p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B3.jpg"))
+p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
 
 #4
 p4 = Product.create(title: "马尔代夫6日自由行",
@@ -92,10 +92,10 @@ p5 = Product.create(title: "茶卡盐湖5日自由行",
                    quantity: 8,
                    category_id: 2
                     )
-p5.photos.create!(avatar: open("http://g.udn.com.tw/upfiles/B_MO/MoWangMi/PSN_PHOTO/494/f_10666494_1.jpg"))
-p5.photos.create!(avatar: open("http://travel.qunar.com/bbs/data/attachment/forum/201606/14/144303zwmf37pi3r72dj70.jpg"))
-p5.photos.create!(avatar: open("http://www.ctsxian.com/sc/UploadFiles/201721716qXWiL.jpg"))
-p5.photos.create!(avatar: open("http://i0.sinaimg.cn/travel/2015/0511/U7974P704DT20150511134112.jpg"))
+p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%962.jpg"))
+p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%961.jpg"))
+p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%963.jpg"))
+p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%964.jpg"))
 
 #6
 p6 = Product.create(title: "九寨沟7天休闲游",
@@ -104,10 +104,10 @@ p6 = Product.create(title: "九寨沟7天休闲游",
                    quantity: 10,
                    category_id: 4
                     )
-p6.photos.create!(avatar: open("http://goldenteam.travel.net.tw/eweb_goldenteam/html/web_page/web-ctu/image/r1/r1-5.jpg"))
-p6.photos.create!(avatar: open("http://scmlzl.com/uploads/allimg/110727/22-110HF94A5.jpg"))
-p6.photos.create!(avatar: open("http://www.jiuzhai.com/images/2016_1201/a%201.png"))
-p6.photos.create!(avatar: open("http://www.benslx.com/statics/upfile/201611/U642DqYcavhfahhjxx612.jpg"))
+p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F1.jpg"))
+p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F2.jpg"))
+p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F3.png"))
+p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F4.jpg"))
 
 #7
 p7 = Product.create(title: "抚仙湖3日休闲行",
@@ -116,10 +116,10 @@ p7 = Product.create(title: "抚仙湖3日休闲行",
                    quantity: 10,
                    category_id: 2
                     )
-p7.photos.create!(avatar: open("http://en.kangbatv.com/sp_22771/jlp/201704/W020170405582533720512.jpg"))
-p7.photos.create!(avatar: open("http://a0.att.hudong.com/50/62/01300542421930139330629385925.jpg"))
-p7.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/f/fc/Black-headed_Gulls_in_Fuxian_Lake%2C_Yunnan%2C_China.jpg"))
-p7.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/2/2b/Fuxian_Lake_2013-01-23.jpg"))
+p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%961.jpg"))
+p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%962.jpg"))
+p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%963.jpg"))
+p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%964.jpg"))
 
 #8
 p8 = Product.create(title: "威尼斯7日奢华游",
@@ -129,22 +129,22 @@ p8 = Product.create(title: "威尼斯7日奢华游",
                    quantity: 10,
                    category_id: 3
                     )
-p8.photos.create!(avatar: open("http://3.bp.blogspot.com/-SNwXK4UC1MQ/Vk0A0SxHoyI/AAAAAAAAoPg/usGKtbMy3UE/s1600/onde-ficar-veneza-regioes-san-marco.jpg"))
-p8.photos.create!(avatar: open("https://www.urlaubsguru.at/wp-content/uploads/2016/03/venedig-rialtobr%C3%BCcke.jpg"))
-p8.photos.create!(avatar: open("http://holidayfiesta.net/wp-content/uploads/2016/07/Venice-1.jpg"))
-p8.photos.create!(avatar: open("https://static1.squarespace.com/static/5457f229e4b03152ab73e4a5/54597025e4b09adaa344a275/55dbfce2e4b038dd9b2caeeb/1440514997861/?format=1500w"))
+p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF1.jpg"))
+p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF2.jpg"))
+p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF3.jpg"))
+p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF4.jpeg"))
 
 #9
-p9 = Product.create(title: "阿马尔菲3日深度休闲游",
+p9 = Product.create(title: "阿马尔菲3日休闲游",
                    description: "阿马尔菲位于意大利南部那不勒斯附近，是一座在海边的小城，整座城市沿着海岸边的山崖修建，有陡峭的地形和独具特色的建筑。",
                    price: 18000,
                    quantity: 10,
                    category_id: 3
                     )
-p9.photos.create!(avatar: open("http://www.amalfidrivingdreams.com/assets/img/background/background.jpg"))
-p9.photos.create!(avatar: open("https://cdn.pixabay.com/photo/2017/01/24/01/28/amalfi-2004362_960_720.jpg"))
-p9.photos.create!(avatar: open("https://pic1.qyer.com/lastminute/supplier/726574214924110373863510"))
-p9.photos.create!(avatar: open("https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/rfwo59xr3bkzzbs1ov4v/%E6%B3%A2%E8%A5%BF%E5%A1%94%E8%AB%BE%E8%88%87%E9%98%BF%E9%A6%AC%E7%88%BE%E8%8F%B2%E4%B8%80%E6%97%A5%E9%81%8A.jpg"))
+p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B24.jpg"))
+p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B21.jpg"))
+p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B22.jpg"))
+p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B23.jpg"))
 
 #10
 p10 = Product.create(title: "外伶仃岛2日深度休闲游",
@@ -153,10 +153,10 @@ p10 = Product.create(title: "外伶仃岛2日深度休闲游",
                    quantity: 10,
                    category_id: 1
                     )
-p10.photos.create!(avatar: open("http://n1-q.mafengwo.net/s5/M00/23/AF/wKgB3FIayeGAXM_wAA3nqmAcZB078.jpeg?imageMogr2%2Fthumbnail%2F%21690x450r%2Fgravity%2FCenter%2Fcrop%2F%21690x450%2Fquality%2F90%7Cwatermark%2F1%2Fimage%2FaHR0cDovL24xLXEubWFmZW5nd28ubmV0L3M4L00wMC82Mi83OS93S2dCcFZodUN6Q0FJa3RIQUFBTkc4TDlCUU0xNjAucG5n%2Fgravity%2FNorthWest%2Fdx%2F20%2Fdy%2F21"))
-p10.photos.create!(avatar: open("http://b2-q.mafengwo.net/s8/M00/0E/D7/wKgBpVWnL9KAT0kfAAD9hJfgcOc23.jpeg?imageMogr2%2Fthumbnail%2F%21690x370r%2Fgravity%2FCenter%2Fcrop%2F%21690x370%2Fquality%2F100"))
-p10.photos.create!(avatar: open("https://youimg1.c-ctrip.com/target/fd/tg/g2/M0A/6C/C8/CghzgFTRvfOAfQm8AAEkvcPtT24986.jpg"))
-p10.photos.create!(avatar: open("http://www.zhuhaigo.com/files/2016-5/f20160509142033113221.jpg"))
+p10.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B1.jpeg"))
+p10.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B2.jpeg"))
+p10.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B3.jpg"))
+p10.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B4.jpg"))
 
 #11
 p11 = Product.create(title: "乌镇7日休闲游",
@@ -165,10 +165,10 @@ p11 = Product.create(title: "乌镇7日休闲游",
                    quantity: 10,
                    category_id: 3
                     )
-p11.photos.create!(avatar: open("http://photocdn.sohu.com/20160103/Img433308487.jpg"))
-p11.photos.create!(avatar: open("http://a3.att.hudong.com/66/75/19300001076631129721759191872.jpg"))
-p11.photos.create!(avatar: open("http://img5.duitang.com/uploads/item/201410/17/20141017222503_v8mYY.jpeg"))
-p11.photos.create!(avatar: open("http://att2.citysbs.com/jiaxing/sns01/forum/2011/05/26-13/20110526_40a6d1b69d1ac5388c08IaGocDYfMKVA.jpg"))
+p11.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%8C%E9%95%871.jpg"))
+p11.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%8C%E9%95%872.jpg"))
+p11.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%8C%E9%95%873.jpeg"))
+p11.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%8C%E9%95%874.jpg"))
 
 #12
 p12 = Product.create(title: "鼓浪屿5日休闲游",
@@ -177,29 +177,29 @@ p12 = Product.create(title: "鼓浪屿5日休闲游",
                    quantity: 12,
                    category_id: 1
                     )
-p12.photos.create!(avatar: open("http://www.chezidian.com/upload/2011/12/6134354910.jpg"))
-p12.photos.create!(avatar: open("http://www.chuqulvyou.com/uploadfile/2015/0623/20150623050235519.jpg"))
-p12.photos.create!(avatar: open("http://proimg.cctcct.com/UploadFile/image/s/2015519104501.jpg"))
-p12.photos.create!(avatar: open("http://www.rzjjly.com/uploads/allimg/161208/1-16120PRP90-L.jpg"))
+p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF1.jpg"))
+p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF2.jpg"))
+p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF3.jpg"))
+p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF4.jpg"))
 
-p13 = Product.create(title: "SPEEDBOAT ADVENTURE",
-                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
-                   price:10000,
-                   quantity:12
-                    )
-p13.photos.create!(avatar: open("https://ws1.sinaimg.cn/large/006tNbRwgy1fg32hlb6gjj30zk0hwdnu.jpg"))
-
-
-p14 = Product.create(title: "",
-                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
-                   price:10000,
-                   quantity:12
-                    )
-p14.photos.create!(avatar: open("https://ws2.sinaimg.cn/large/006tNbRwgy1fg32kzsrnyj30i40c3jyh.jpg"))
-
-p15 = Product.create(title: "",
-                   description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
-                   price:10000,
-                   quantity:12
-                    )
-p15.photos.create!(avatar: open("https://static.wixstatic.com/media/1f07f07c5c64ce8093bc4513e3d5d641.jpg"))
+# p13 = Product.create(title: "SPEEDBOAT ADVENTURE",
+#                    description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+#                    price:10000,
+#                    quantity:12
+#                     )
+# p13.photos.create!(avatar: open("https://ws1.sinaimg.cn/large/006tNbRwgy1fg32hlb6gjj30zk0hwdnu.jpg"))
+#
+#
+# p14 = Product.create(title: "",
+#                    description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+#                    price:10000,
+#                    quantity:12
+#                     )
+# p14.photos.create!(avatar: open("https://ws2.sinaimg.cn/large/006tNbRwgy1fg32kzsrnyj30i40c3jyh.jpg"))
+#
+# p15 = Product.create(title: "",
+#                    description:"鼓浪屿上冈峦起伏，碧波、白云、绿树交相辉映，处处给人以整洁幽静的感觉。",
+#                    price:10000,
+#                    quantity:12
+#                     )
+# p15.photos.create!(avatar: open("https://static.wixstatic.com/media/1f07f07c5c64ce8093bc4513e3d5d641.jpg"))
