@@ -6,33 +6,33 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u = User.new
-u.email = "admin@test.com"           # 可以改成自己的 email
-u.password = "123456"                # 最少要六码
-u.password_confirmation = "123456"   # 最少要六码
-u.is_admin = true
-u.save
-
-# 新建分类
-#1
-Category.create!(
- name: '海岛'
-)
-
-#2
-Category.create!(
- name: '湖泊'
-)
-
-#3
-Category.create!(
- name: '水上城'
-)
-
-# 4
-Category.create!(
- name: '山沟谷地'
-)
+# u = User.new
+# u.email = "admin@test.com"           # 可以改成自己的 email
+# u.password = "123456"                # 最少要六码
+# u.password_confirmation = "123456"   # 最少要六码
+# u.is_admin = true
+# u.save
+#
+# # 新建分类
+# #1
+# Category.create!(
+#  name: '海岛'
+# )
+#
+# #2
+# Category.create!(
+#  name: '湖泊'
+# )
+#
+# #3
+# Category.create!(
+#  name: '水上城'
+# )
+#
+# # 4
+# Category.create!(
+#  name: '山沟谷地'
+# )
 
 
 # 新建商品
@@ -44,7 +44,7 @@ p1 = Product.create(title: "青海湖5日深度休闲游",
                    category_id: 2
                     )
 p1.photos.create!(avatar: open("http://c3-q.mafengwo.net/s7/M00/31/FD/wKgB6lO1VqSAOLbpAAJWZzAM_CQ22.jpeg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90"))
-#p1.photos.create!(avatar: open("https://c2-q.mafengwo.net/s7/M00/32/0E/wKgB6lO1VsuAaJy_AAGcKU4vChg47.jpeg?imageView2%2F2%2Fw%2F600%2Fq%2F90"))
+p1.photos.create!(avatar: open("https://c2-q.mafengwo.net/s7/M00/32/0E/wKgB6lO1VsuAaJy_AAGcKU4vChg47.jpeg?imageView2%2F2%2Fw%2F600%2Fq%2F90"))
 p1.photos.create!(avatar: open("http://www.qhhly.cn/u/cms/qhh-cn/201408/07162131gpty.jpg"))
 p1.photos.create!(avatar: open("http://zhonglv.zudong.com/eyjq/UpFiles/Article/2007-11/%E9%9D%92%E6%B5%B7%E6%B9%96.jpg"))
 
