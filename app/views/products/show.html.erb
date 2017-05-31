@@ -14,7 +14,7 @@
        <% end %>
      </div>
 
-     <ul class="nav nav-tabs">
+     <ul class="nav nav-tabs pull-left">
        <% @photos.each_with_index do |p,index| %>
          <% if index <4 %>
            <li>
@@ -24,7 +24,7 @@
        <% end %>
      </ul>
     <% else %>
-      <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"thumbnail") %>
+      <%= image_tag("http://placehold.it/400x400&text=No Pic") %>
     <% end %>
   </div>
 
