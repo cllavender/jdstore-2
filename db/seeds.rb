@@ -43,10 +43,10 @@ p1 = Product.create(title: "青海湖5日深度休闲游",
                    quantity: 10,
                    category_id: 2
                     )
-p1.photos.create!(avatar: open("http://c3-q.mafengwo.net/s7/M00/31/FD/wKgB6lO1VqSAOLbpAAJWZzAM_CQ22.jpeg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90"))
-p1.photos.create!(avatar: open("https://c2-q.mafengwo.net/s7/M00/32/0E/wKgB6lO1VsuAaJy_AAGcKU4vChg47.jpeg?imageView2%2F2%2Fw%2F600%2Fq%2F90"))
-p1.photos.create!(avatar: open("http://www.qhhly.cn/u/cms/qhh-cn/201408/07162131gpty.jpg"))
-p1.photos.create!(avatar: open("http://zhonglv.zudong.com/eyjq/UpFiles/Article/2007-11/%E9%9D%92%E6%B5%B7%E6%B9%96.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/4/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/5/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/uploads/photo/avatar/6/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
+p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
 
 #2
 p2 = Product.create(title: "洱海3日深度休闲游",
