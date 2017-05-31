@@ -61,17 +61,17 @@ Category.create!(
 # p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
 # p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
 
-#3
-p3 = Product.create(title: "普吉岛8日奢华游",
-                   description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
-                   price: 40000,
-                   quantity: 5,
-                   category_id: 1
-                    )
-p3.photos.create!(avatar: open("http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_nature_68522_1920x1080.jpg"))
-p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
-p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
-p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
+# #3
+# p3 = Product.create(title: "普吉岛8日奢华游",
+#                    description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
+#                    price: 40000,
+#                    quantity: 5,
+#                    category_id: 1
+#                     )
+# p3.photos.create!(avatar: open("http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_nature_68522_1920x1080.jpg"))
+# p3.photos.create!(avatar: open("http://otyposnews.gr/wp-content/uploads/2016/12/christmas-island-crabs-images.jpg"))
+# p3.photos.create!(avatar: open("http://1.bp.blogspot.com/-1Vba8Li8Kr4/TykX93vBvfI/AAAAAAAAAx8/cxB5pITzCC4/s1600/1256901265_beach-life-widescreen-wallpapers-09.jpg"))
+# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
 
 #4
 p4 = Product.create(title: "马尔代夫6日自由行",
@@ -80,10 +80,10 @@ p4 = Product.create(title: "马尔代夫6日自由行",
                    quantity: 5,
                    category_id: 1
                     )
-p4.photos.create!(avatar: open("http://img.jinghua.cn/170327/14905952548ad355.png"))
-p4.photos.create!(avatar: open("http://www.mfzdb.com/wp-content/uploads/2015/04/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB1.jpg"))
-p4.photos.create!(avatar: open("http://www.widoczki.com/widoczki/2/morze-palma-plaza-lezaki.jpeg"))
-p4.photos.create!(avatar: open("http://www.wabuw.com/uploads/image/120213102518_4357.jpg"))
+p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB1.png"))
+p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB2.jpg"))
+p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB3.jpeg"))
+p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB4.jpg"))
 
 #5
 p5 = Product.create(title: "茶卡盐湖5日自由行",
