@@ -18,7 +18,7 @@
 
    qiniu_bucket: jdstore-demo  # 你的 qiniu bucket
 
-   qiniu_bucket_domain: oqjdhoq9e.bkt.clouddn.com  # 你的 qiniu bucket domain
+   qiniu_bucket_domain: oqjdhoq9e.bkt.clouddn.com # 你的 qiniu bucket domain
 
    SEND_CLOUD_USER_NAME: "cl_fighting_test_Wds3k0"  # 你的 API_USER
 
