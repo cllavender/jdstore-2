@@ -16,22 +16,22 @@ u.save
 # 新建分类
 #1
 Category.create!(
- name: '海岛'
+ name: '听海'
 )
 
 #2
 Category.create!(
- name: '湖泊'
+ name: '寻湖'
 )
 
 #3
 Category.create!(
- name: '水上城'
+ name: '游城'
 )
 
 # 4
 Category.create!(
- name: '山沟谷地'
+ name: '踏浪'
 )
 
 
