@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :admin do
@@ -16,8 +17,14 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+      put  :favorite
+    end
+    collection do
+      get :search
     end
   end
+
+  resources :favorite
 
   resources :carts do
     collection do
