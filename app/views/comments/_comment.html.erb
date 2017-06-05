@@ -1,0 +1,20 @@
+<div class="comments_wrapper clearfix">
+	<div class="ufeed-content">
+		<%= comment.content %>
+		<dd>
+			<% if comment.user == current_user -%>
+				<%= link_to '删除评论', product_comment_path(@product, comment), method: :delete, :class => "btn btn-xs btn-orange pull-right",data: { confirm: '确定删除?' }%>
+			<% end %>
+		</dd>
+	</div>
+	<div class="com-userinfo">
+		<p>
+			<a href="#" rel="nofollow" hidefocus="false"><%= comment.user.email %></a>
+			对 “
+			<a class="com-proTit" href="#" rel="nofollow" hidefocus="false"><%= comment.product.title %></a>
+			” 发表点评于
+			<em><%= time_ago_in_words(comment.created_at) %> 前</em>
+		</p>
+	</div>
+	<hr/>
+</div>

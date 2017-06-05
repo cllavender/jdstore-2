@@ -137,8 +137,8 @@
     <div class="detail_content">
       <ul class="nav nav-tabs">
           <li data-flag="product-detail" class="active"><a href="#details" data-toggle="tab" hidefocus="false">产品详情</a></li>
-          <li data-flag="product-customer-review" ><a href="#comments" data-toggle="tab" hidefocus="false">旅星人点评<span class="float_nav_num">(11)</span></a></li>
-          <li data-flag="product-customer-trip"><a href="#notes" data-toggle="tab" hidefocus="false">听旅星人说<span class="float_nav_num" id="travelCount">(435)</span></a></li>
+          <li data-flag="product-customer-review" ><a href="#comments" data-toggle="tab" hidefocus="false">旅星人点评<span class="float_nav_num">(<%= @product.comments.count %>)</span></a></li>
+          <li data-flag="product-customer-trip"><a href="#notes" data-toggle="tab" hidefocus="false">听旅星人说<span class="float_nav_num" id="travelCount">(0)</span></a></li>
       </ul>
 
       <div class="tab-content">
@@ -196,12 +196,31 @@
       </div>
 
       <div id="comments" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Some content in menu 1.</p>
+        <div class="product-detail-instance xl_position_r" id="product-customer-review">
+          <div class="comwrap">
+            <!-- 点评 -->
+            <div class="comment-list com-all" style="display:block" id="allCmtComment">
+              <div class="detail_content_tit">
+                  <span>
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    旅星人点评
+                  </span>
+              </div>
+              <div class="comment-li" id="comments">
+                <%= render @product.comments%>
+                <%= render "comments/form"%>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="notes" class="tab-pane fade">
-        <h3>Menu 2</h3>
-        <p>Some content in menu 2.</p>
+        <div class="detail_content_tit">
+            <span>
+              <i class="fa fa-camera" aria-hidden="true"></i>
+              听旅星人说
+            </span>
+        </div>
       </div>
     </div>
     </div><!-- 产品详细介绍页面   结束-->

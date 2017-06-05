@@ -896,3 +896,49 @@ ins, a {
 .detail-instance-body {
     padding: 20px 0 0 0;
 }
+
+//点评模块
+.product-detail-instance {
+    margin: 0px 59px 0;
+}
+
+.comwrap {
+    padding: 0;
+}
+
+.comwrap {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.comment-list {
+    padding: 0 10px;
+    display: none;
+}
+
+.comment-li {
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.ufeed-content {
+    position: relative;
+    margin-top: 10px;
+    _height: 65px;
+    max-height: 65px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft Yahei";
+}
+
+.com-userinfo {
+    padding-bottom: 5px;
+    height: 36px;
+    line-height: 36px;
+    color: #999;
+}
+
+.com-userinfo a {
+    color: #999;
+}
