@@ -23,4 +23,21 @@ class Cart < ApplicationRecord
     cart_items.destroy_all
   end
 
+  def add(product, quantity)
+    # 判断商品是否已经在购物车中，在则修改数量，不再则新建cart_item
+    if products.include?(product)
+      cart_item = cart_items.find_by_product_id(product.id)
+    else
+      cart_item = cart_items.build
+    end
+    cart_item.product = product
+
+    if quantity > 0
+      cart_item.quantity = quantity
+    else
+      cart_item.quantity = 1
+    end
+    cart_item.save
+  end
+
 end

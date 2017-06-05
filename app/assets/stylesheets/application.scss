@@ -679,7 +679,7 @@ dt,dd,dl,div,ul {
 // 预定模块格式
 .product_top_booking {
     border: #ffc859 solid 2px;
-    margin-top: 42px;
+    margin-top: 20px;
     padding: 22px 0;
 }
 
@@ -761,8 +761,18 @@ dt,dd,dl,div,ul {
 
 .c_999 {
     color: #999 !important;
+    margin-right: 25px;
 }
 
+// 数量输入框
+.product-page .quantity-input {
+  color: #333;
+  text-align: center;
+  width: 60px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+}
 //购物车按钮
 .btn-orange {
     color: #FFF;
@@ -941,4 +951,20 @@ ins, a {
 
 .com-userinfo a {
     color: #999;
+}
+
+.product_info input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
+}
+
+.buy-quantity {
+  margin-bottom: 10px;
+}
+
+.count-input input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
 }
