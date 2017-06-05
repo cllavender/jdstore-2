@@ -53,7 +53,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   process resize_to_fill: [800,800]                      # 默认上传的图片被减成800*800
 
   version :medium do                                     # 自己重新定义图片大小
-    process resize_to_fill: [600,300]
+    process resize_to_fill: [600,400]
   end
   version :thumb do
     process resize_to_fill: [200,200]
