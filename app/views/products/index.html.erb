@@ -1,5 +1,10 @@
-<div class="container all-product-box">
-  <div class="row">
+<div class="showbackground">
+  <img src="http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%B4%E5%9B%BE%E9%80%89%E5%AE%9A.jpg" style="height:250px;width:100%;">
+</div>
+<br>
+
+<div class="body_bg">
+  <div class="wrap">
     <% @products.each do |product| %>
       <div class="col-xs-6 col-md-3 product-list-style">
         <%= link_to product_path(product) do %>
