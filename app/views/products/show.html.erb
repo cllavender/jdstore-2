@@ -1,3 +1,8 @@
+
+<div class="showbackground">
+  <img src="http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%B4%E5%9B%BE%E9%80%89%E5%AE%9A.jpg" style="height:250px;width:100%;">
+</div>
+
 <!--页面最外层背景  开始-->
 <div class="body_bg">
   <!--页面主体内容  开始-->
@@ -5,7 +10,7 @@
     <!--首屏产品介绍模块  开始-->
     <div class="detail_top_all clearfix">
     <h1 class="detail_product_tit">
-    	<b>【遇见古城柔软时光】<%= @product.title %></b>&nbsp;&nbsp;住4晚丽江老房子客栈，近古城四方街，享受纳西风格生活
+    	<b>【<%= @product.category.name %>】  <%= @product.title %></b>
       <span class="tags-lv-boon js_tip" tip-content="酒店经济又实惠，省力省钱"><i></i></span>
     </h1>
 

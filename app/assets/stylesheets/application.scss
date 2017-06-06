@@ -29,7 +29,7 @@
 
      border-color: #212121; //边框色
 
-     margin-bottom: 100px; //底部 margin 不撑开距离
+     margin-bottom: -1px; //底部 margin 不撑开距离
 
 }
 
@@ -456,6 +456,7 @@ mark {
     background-color: #f9f9f9;
     position: relative;
     z-index: 0;
+    height: auto;
     /* margin-top: 40px; */
 }
 
@@ -464,12 +465,9 @@ mark {
     margin-left: auto !important;
     margin-right: auto !important;
     margin-top: 10px;
+    width: 1200px;
 }
 
-.wrap {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .clearfix, .wrap {
     zoom: 1;
@@ -480,6 +478,7 @@ mark {
     padding: 20px;
     box-shadow: 0 0 3px #eee;
     position: relative;
+    margin-top: 10px;
 }
 
 //左屏格式
@@ -967,4 +966,9 @@ ins, a {
   text-align: center;
   width: 40px;
   height: 33px;
+}
+
+.showbackground  {
+
+    margin-bottom: 20px;
 }
