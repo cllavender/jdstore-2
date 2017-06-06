@@ -8,6 +8,7 @@
         <tr>
           <th width="80%">商品明细</th>
           <th>单价</th>
+          <th>数量</th>
         </tr>
       </thead>
       <tbody>
@@ -18,7 +19,14 @@
               <%= product_list.product_name %>
             </td>
             <td>
-              <%= product_list.product_price %>
+              成人：<%= product_list.product_price %>
+              <br>
+              儿童：<%= product_list.child_price %>
+            </td>
+            <td>
+              成人：<%= product_list.quantity %>
+              <br>
+              儿童：<%= product_list.child_quantity %>
             </td>
           </tr>
         <% end %>

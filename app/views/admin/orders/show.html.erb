@@ -21,10 +21,14 @@
               <%= product_list.product_name %>
             </td>
             <td>
-              <%= product_list.product_price %>
+              成人：<%= product_list.product_price %>
+              <br>
+              儿童：<%= product_list.child_price %>
             </td>
             <td>
-              <%= product_list.quantity %>
+              成人：<%= product_list.quantity %>
+              <br>
+              儿童：<%= product_list.child_quantity %>
             </td>
           </tr>
         <% end %>

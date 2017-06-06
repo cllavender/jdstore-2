@@ -48,8 +48,10 @@ Rails.application.routes.draw do
 
   resources :cart_items do
     member do
-      post :add_quantity
-      post :remove_quantity
+      post :add_child_quantity
+      post :remove_child_quantity
+      post :add_adult_quantity
+      post :remove_adult_quantity
     end
   end
 
