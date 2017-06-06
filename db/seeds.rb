@@ -6,121 +6,121 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u = User.new
-u.email = "admin@test.com"           # 可以改成自己的 email
-u.password = "123456"                # 最少要六码
-u.password_confirmation = "123456"   # 最少要六码
-u.is_admin = true
-u.save
-
-# 新建分类
-#1
-Category.create!(
- name: '听海'
-)
-
-#2
-Category.create!(
- name: '寻湖'
-)
-
-#3
-Category.create!(
- name: '游城'
-)
-
-# 4
-Category.create!(
- name: '踏浪'
-)
-
-
-# 新建商品
-#1
-p1 = Product.create(title: "青海湖5日深度休闲游",
-                   description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
-                   price: 12000,
-                   quantity: 10,
-                   child_price: 6000,
-                   child_quantity: 4,
-                   destination: "青海湖",
-                   day: 5,
-                   night: 4,
-                   category_id: 2
-                    )
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
-p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
-
-#2
-p2 = Product.create(title: "洱海3日深度休闲游",
-                   description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
-                                外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
-                   price: 10000,
-                   quantity: 12,
-                   child_price: 5000,
-                   child_quantity: 6,
-                   destination: "洱海",
-                   day: 3,
-                   night: 2,
-                   category_id: 2
-                    )
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
-p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
-
-#3
-p3 = Product.create(title: "普吉岛8日奢华游",
-                   description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
-                   price: 40000,
-                   quantity: 5,
-                   child_price: 20000,
-                   child_quantity: 2,
-                   destination: "普吉岛",
-                   day: 8,
-                   night: 7,
-                   category_id: 1
-                    )
-p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B1.jpg"))
-p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B2.jpg"))
-p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B3.jpg"))
-p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
-
-#4
-p4 = Product.create(title: "马尔代夫6日自由行",
-                   description: "马尔代夫位于斯里兰卡南方浩瀚的印度洋上，大大小小千余座珊瑚岛如珍珠散落在赤道两侧，被称为印度洋上人间最后的乐园。",
-                   price: 40000,
-                   quantity: 5,
-                   child_price: 20000,
-                   child_quantity: 2,
-                   destination: "马尔代夫",
-                   day: 6,
-                   night: 5,
-                   category_id: 1
-                    )
-p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB1.png"))
-p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB2.jpg"))
-p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB3.jpeg"))
-p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB4.jpg"))
-
-#5
-p5 = Product.create(title: "茶卡盐湖5日自由行",
-                   description: "茶卡盐湖是柴达木盆地有名的天然结晶盐湖，中国的“天空之镜”，盐产量可供全国人民使用约75年。",
-                   price: 20000,
-                   quantity: 8,
-                   child_price: 10000,
-                   child_quantity: 4,
-                   destination: "茶卡盐湖",
-                   day: 5,
-                   night: 4,
-                   category_id: 2
-                    )
-p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%962.jpg"))
-p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%961.jpg"))
-p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%963.jpg"))
-p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%964.jpg"))
+# u = User.new
+# u.email = "admin@test.com"           # 可以改成自己的 email
+# u.password = "123456"                # 最少要六码
+# u.password_confirmation = "123456"   # 最少要六码
+# u.is_admin = true
+# u.save
+#
+# # 新建分类
+# #1
+# Category.create!(
+#  name: '听海'
+# )
+#
+# #2
+# Category.create!(
+#  name: '寻湖'
+# )
+#
+# #3
+# Category.create!(
+#  name: '游城'
+# )
+#
+# # 4
+# Category.create!(
+#  name: '踏浪'
+# )
+#
+#
+# # 新建商品
+# #1
+# p1 = Product.create(title: "青海湖5日深度休闲游",
+#                    description: "青海湖又名“库库淖尔”，即蒙语“青色的海”之意。由祁连山的大通山、日月山与青海南山之间的断层陷落形成。",
+#                    price: 12000,
+#                    quantity: 10,
+#                    child_price: 6000,
+#                    child_quantity: 4,
+#                    destination: "青海湖",
+#                    day: 5,
+#                    night: 4,
+#                    category_id: 2
+#                     )
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%961.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%962.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%963.jpg"))
+# p1.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%9D%92%E6%B5%B7%E6%B9%964.jpg"))
+#
+# #2
+# p2 = Product.create(title: "洱海3日深度休闲游",
+#                    description: "洱海古称“叶榆水”，也叫“西洱河”、“昆弥川”，是由西洱河塌陷形成的高原湖泊，
+#                                 外形如同耳朵，空中俯瞰，洱海宛如一轮新月，静静地依卧在苍山和大理坝子之间。",
+#                    price: 10000,
+#                    quantity: 12,
+#                    child_price: 5000,
+#                    child_quantity: 6,
+#                    destination: "洱海",
+#                    day: 3,
+#                    night: 2,
+#                    category_id: 2
+#                     )
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B71.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B72.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B73.jpg"))
+# p2.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%B4%B1%E6%B5%B74.jpeg"))
+#
+# #3
+# p3 = Product.create(title: "普吉岛8日奢华游",
+#                    description: "普吉岛是泰国最大的海岛，以迷人的风光和丰富的旅游资源 被称为“安达曼海上的一颗明珠”。有“珍宝岛”、“金银岛”的美称。",
+#                    price: 40000,
+#                    quantity: 5,
+#                    child_price: 20000,
+#                    child_quantity: 2,
+#                    destination: "普吉岛",
+#                    day: 8,
+#                    night: 7,
+#                    category_id: 1
+#                     )
+# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B1.jpg"))
+# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B2.jpg"))
+# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B3.jpg"))
+# p3.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B4.jpg"))
+#
+# #4
+# p4 = Product.create(title: "马尔代夫6日自由行",
+#                    description: "马尔代夫位于斯里兰卡南方浩瀚的印度洋上，大大小小千余座珊瑚岛如珍珠散落在赤道两侧，被称为印度洋上人间最后的乐园。",
+#                    price: 40000,
+#                    quantity: 5,
+#                    child_price: 20000,
+#                    child_quantity: 2,
+#                    destination: "马尔代夫",
+#                    day: 6,
+#                    night: 5,
+#                    category_id: 1
+#                     )
+# p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB1.png"))
+# p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB2.jpg"))
+# p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB3.jpeg"))
+# p4.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB4.jpg"))
+#
+# #5
+# p5 = Product.create(title: "茶卡盐湖5日自由行",
+#                    description: "茶卡盐湖是柴达木盆地有名的天然结晶盐湖，中国的“天空之镜”，盐产量可供全国人民使用约75年。",
+#                    price: 20000,
+#                    quantity: 8,
+#                    child_price: 10000,
+#                    child_quantity: 4,
+#                    destination: "茶卡盐湖",
+#                    day: 5,
+#                    night: 4,
+#                    category_id: 2
+#                     )
+# p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%962.jpg"))
+# p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%961.jpg"))
+# p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%963.jpg"))
+# p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%964.jpg"))
 
 #6
 p6 = Product.create(title: "九寨沟7天休闲游",
