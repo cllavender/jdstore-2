@@ -121,40 +121,40 @@
 # p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%961.jpg"))
 # p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%963.jpg"))
 # p5.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%964.jpg"))
-
-#6
-p6 = Product.create(title: "九寨沟7天休闲游",
-                   description: "九寨的水，是蒙胧神秘的。五彩池，就像一块五彩的宝石，幽绿中透着蓝，蓝中泛着橙、橙中映着赤、赤中蕴着黄，斑斓耀眼，摄人心魄。",
-                   price: 30000,
-                   quantity: 10,
-                   child_price: 15000,
-                   child_quantity: 4,
-                   destination: "九寨沟",
-                   day: 7,
-                   night: 6,
-                   category_id: 4
-                    )
-p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F1.jpg"))
-p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F2.jpg"))
-p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F3.png"))
-p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F4.jpg"))
-
-#7
-p7 = Product.create(title: "抚仙湖3日休闲行",
-                   description: "抚仙湖，因湖水清澈见底、晶莹剔透，被古人称为“琉璃万顷”。",
-                   price: 25000,
-                   quantity: 10,
-                   child_price: 15000,
-                   child_quantity: 6,
-                   destination: "抚仙湖",
-                   day: 3,
-                   night: 2,
-                   category_id: 2
-                    )
-p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%961.jpg"))
-p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%962.jpg"))
-p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%963.jpg"))
-p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%964.jpg"))
+#
+# #6
+# p6 = Product.create(title: "九寨沟7天休闲游",
+#                    description: "九寨的水，是蒙胧神秘的。五彩池，就像一块五彩的宝石，幽绿中透着蓝，蓝中泛着橙、橙中映着赤、赤中蕴着黄，斑斓耀眼，摄人心魄。",
+#                    price: 30000,
+#                    quantity: 10,
+#                    child_price: 15000,
+#                    child_quantity: 4,
+#                    destination: "九寨沟",
+#                    day: 7,
+#                    night: 6,
+#                    category_id: 4
+#                     )
+# p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F1.jpg"))
+# p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F2.jpg"))
+# p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F3.png"))
+# p6.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E4%B9%9D%E5%AF%A8%E6%B2%9F4.jpg"))
+#
+# #7
+# p7 = Product.create(title: "抚仙湖3日休闲行",
+#                    description: "抚仙湖，因湖水清澈见底、晶莹剔透，被古人称为“琉璃万顷”。",
+#                    price: 25000,
+#                    quantity: 10,
+#                    child_price: 15000,
+#                    child_quantity: 6,
+#                    destination: "抚仙湖",
+#                    day: 3,
+#                    night: 2,
+#                    category_id: 2
+#                     )
+# p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%961.jpg"))
+# p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%962.jpg"))
+# p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%963.jpg"))
+# p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%964.jpg"))
 
 #8
 p8 = Product.create(title: "威尼斯7日奢华游",
