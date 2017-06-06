@@ -156,40 +156,40 @@
 # p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%963.jpg"))
 # p7.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%8A%9A%E4%BB%99%E6%B9%964.jpg"))
 
-#8
-p8 = Product.create(title: "威尼斯7日奢华游",
-                   description: "威尼斯贵为水上之城本身就是一个水上艺术品，在这里任意一个建筑物的美感都离不开水。
-                   身处威尼斯，你就像站在正演出的舞台之上，路边音乐家演奏的古典音乐就像是演出配乐，来回的形形色色的人们就像是演员，而你正好赶上这威尼斯剧目的上演。",
-                   price: 50000,
-                   quantity: 10,
-                   child_price: 25000,
-                   child_quantity: 4,
-                   destination: "威尼斯",
-                   day: 7,
-                   night: 6,
-                   category_id: 3
-                    )
-p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF1.jpg"))
-p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF2.jpg"))
-p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF3.jpg"))
-p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF4.jpeg"))
-
-#9
-p9 = Product.create(title: "阿马尔菲3日休闲游",
-                   description: "阿马尔菲位于意大利南部那不勒斯附近，是一座在海边的小城，整座城市沿着海岸边的山崖修建，有陡峭的地形和独具特色的建筑。",
-                   price: 18000,
-                   quantity: 10,
-                   child_price: 9000,
-                   child_quantity: 6,
-                   destination: "阿马尔菲",
-                   day: 3,
-                   night: 2,
-                   category_id: 3
-                    )
-p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B24.jpg"))
-p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B21.jpg"))
-p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B22.jpg"))
-p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B23.jpg"))
+# #8
+# p8 = Product.create(title: "威尼斯7日奢华游",
+#                    description: "威尼斯贵为水上之城本身就是一个水上艺术品，在这里任意一个建筑物的美感都离不开水。
+#                    身处威尼斯，你就像站在正演出的舞台之上，路边音乐家演奏的古典音乐就像是演出配乐，来回的形形色色的人们就像是演员，而你正好赶上这威尼斯剧目的上演。",
+#                    price: 50000,
+#                    quantity: 10,
+#                    child_price: 25000,
+#                    child_quantity: 4,
+#                    destination: "威尼斯",
+#                    day: 7,
+#                    night: 6,
+#                    category_id: 3
+#                     )
+# p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF1.jpg"))
+# p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF2.jpg"))
+# p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF3.jpg"))
+# p8.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E5%A8%81%E5%B0%BC%E6%96%AF4.jpeg"))
+#
+# #9
+# p9 = Product.create(title: "阿马尔菲3日休闲游",
+#                    description: "阿马尔菲位于意大利南部那不勒斯附近，是一座在海边的小城，整座城市沿着海岸边的山崖修建，有陡峭的地形和独具特色的建筑。",
+#                    price: 18000,
+#                    quantity: 10,
+#                    child_price: 9000,
+#                    child_quantity: 6,
+#                    destination: "阿马尔菲",
+#                    day: 3,
+#                    night: 2,
+#                    category_id: 3
+#                     )
+# p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B24.jpg"))
+# p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B21.jpg"))
+# p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B22.jpg"))
+# p9.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B23.jpg"))
 
 #10
 p10 = Product.create(title: "外伶仃岛2日深度休闲游",
