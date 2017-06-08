@@ -13,60 +13,45 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
 }
 
-/* line 17, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 16, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 23, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
-a {
-  color: #000;
-}
-/* line 26, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
-a:visited {
-  color: #666;
-}
-/* line 30, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
-a:hover {
-  color: #fff;
-  background-color: #000;
-}
-
-/* line 36, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 35, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 th {
   padding-bottom: 5px;
 }
 
-/* line 40, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 39, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 td {
   padding-bottom: 7px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 47, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 46, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 52, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 51, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 #notice {
   color: green;
 }
 
-/* line 56, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 55, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 62, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 61, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -75,7 +60,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 70, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 69, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -86,13 +71,13 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 81, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 80, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
 }
 
-/* line 87, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
+/* line 86, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/scaffolds.scss */
 label {
   display: block;
 }
@@ -12663,7 +12648,7 @@ button.close {
 .navbar-default {
   background-color: #393f44;
   border-color: #212121;
-  margin-bottom: 100px;
+  margin-bottom: -1px;
 }
 
 @media (min-width: 768px) {
@@ -12711,7 +12696,6 @@ button.close {
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
   background-color: #393f44;
-  color: #212121;
 }
 
 /* line 90, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
@@ -13030,4 +13014,576 @@ mark {
 /* line 447, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .login-help {
   font-size: 12px;
+}
+
+/****** product show ******/
+/* line 456, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.body_bg {
+  background-color: #f9f9f9;
+  position: relative;
+  z-index: 0;
+  height: auto;
+  /* margin-top: 40px; */
+}
+
+/* line 465, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.wrap {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 10px;
+  width: 1200px;
+}
+
+/* line 473, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix, .wrap {
+  zoom: 1;
+}
+
+/* line 477, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_top_all {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 3px #eee;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* line 486, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_l {
+  position: relative;
+  float: left;
+  width: 600px;
+}
+
+/* line 493, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_r {
+  width: 680px;
+  margin-left: 5px;
+  padding: 10px 0;
+}
+
+/* line 499, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_r {
+  float: left;
+  width: 540px;
+  margin-left: 15px;
+}
+
+/* line 509, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_product_tit {
+  font-size: 22px;
+  color: #333;
+  line-height: 30px;
+  margin-right: 70px;
+}
+
+/* line 516, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_product_tit b {
+  margin-right: 8px;
+}
+
+/* line 521, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_type_zyx {
+  background-color: #f80;
+}
+
+/* line 525, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_type {
+  background-color: #6c3;
+  color: #fff;
+  padding: 0 8px;
+  position: absolute;
+  left: 1;
+  top: 0;
+  z-index: 5;
+}
+
+/* line 536, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_price_box .product_top_price {
+  padding-top: 0;
+  line-height: 30px;
+  height: 30px;
+}
+
+/* line 542, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_price_box {
+  width: 574px;
+  margin-left: -5px;
+  padding: 20px 18px;
+  background-color: #fff3dd;
+  height: 70px;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+/* line 552, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_price_box .product_top_price {
+  padding-top: 0;
+  line-height: 30px;
+  height: 30px;
+}
+
+/* line 558, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.price_num {
+  color: #f60;
+  font-size: 20px;
+}
+
+/* line 563, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.price_num dfn {
+  font-size: 36px;
+  margin-right: 3px;
+}
+
+/* line 568, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+dfn {
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 573, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_price_box p {
+  float: left;
+  padding-top: 10px;
+  height: 20px;
+  line-height: 20px;
+  color: #999;
+  font-size: 14px;
+  margin-right: 22px;
+  margin-left: 20px;
+}
+
+/* line 585, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_price_box .product_top_dp {
+  float: right;
+  margin-right: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* line 592, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_dp span {
+  font-size: 20px;
+}
+
+/* line 597, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_dp span, .product_top_dp small {
+  color: #f90;
+}
+
+/* line 602, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info {
+  position: relative;
+  font-size: 14px;
+  padding: 5px 0 5px 100px;
+  overflow: hidden;
+}
+
+/* line 609, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info dt {
+  margin-left: -90px;
+  float: left;
+  color: #999;
+  width: 80px;
+  line-height: 24px;
+  text-align: right;
+  position: relative;
+}
+
+/* line 619, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+dl {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 628, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info dd {
+  color: #666;
+  zoom: 1;
+  line-height: 24px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 636, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+dt, dd, dl, div, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 642, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info dd .tags101 {
+  position: relative;
+  top: -2px;
+}
+
+/* line 647, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.tags101 {
+  vertical-align: middle;
+  font-family: "Arial","PingFang SC","SimSun",serif;
+}
+
+/* line 652, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.tags101 {
+  background: #f80;
+}
+
+/* line 656, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.tags101 {
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal !important;
+  text-indent: 0;
+  cursor: default;
+  padding: 0 4px;
+  background: #ff9614;
+  color: #fff;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 3px;
+}
+
+/* line 672, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info_hr {
+  margin: 10px 0;
+  border-top: #ccc dotted 1px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 680, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_booking {
+  border: #ffc859 solid 2px;
+  margin-top: 20px;
+  padding: 22px 0;
+}
+
+/* line 686, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_booking .product_info dd {
+  line-height: 30px;
+}
+
+/* line 690, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info dd {
+  color: #666;
+  zoom: 1;
+  line-height: 24px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 698, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.start_city_box {
+  width: 288px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  border: #ccc solid 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 709, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info_number {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* line 714, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_top_booking .product_info dt {
+  margin-left: -92px;
+  line-height: 30px;
+}
+
+/* line 720, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info_number .nova-number-box {
+  float: left;
+  margin-right: 5px;
+}
+
+/* line 725, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.nova-number-box {
+  background-color: #fff;
+}
+
+/* line 729, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.nova-number-box {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0;
+}
+
+/* line 735, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.nova-number-box-subtract, .nova-number-box-add {
+  cursor: pointer;
+  float: left;
+  border: 1px solid #ccc;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 743, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.nova-number-box-add {
+  margin-left: -1px;
+}
+
+/* line 747, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.nova-number-box input {
+  font-size: 13px;
+  text-align: center;
+  float: left;
+  border: 1px solid #ccc;
+  width: 39px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: -1px;
+}
+
+/* line 758, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info_number span {
+  float: left;
+}
+
+/* line 762, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.c_999 {
+  color: #999 !important;
+  margin-right: 25px;
+}
+
+/* line 768, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product-page .quantity-input {
+  color: #333;
+  text-align: center;
+  width: 60px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+}
+
+/* line 777, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.btn-orange {
+  color: #FFF;
+  background: #F80;
+  border-color: #F80;
+}
+
+/* line 784, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.favorites {
+  display: inline-block;
+  margin: 6px 0 0 20px;
+  cursor: pointer;
+}
+
+/* line 791, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_content {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+/* line 796, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_all {
+  width: 100%;
+  height: 46px;
+  position: relative;
+  z-index: 9;
+}
+
+/* line 803, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav {
+  position: relative;
+  top: 0;
+  z-index: 99;
+  height: 46px;
+  width: 1200px;
+  box-shadow: 0 1px 5px #ccc;
+  background-color: #fff;
+}
+
+/* line 813, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list {
+  overflow: hidden;
+}
+
+/* line 817, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 821, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list li.active {
+  background-color: #e38;
+  color: #fff;
+  z-index: 2;
+}
+
+/* line 827, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list li {
+  float: left;
+  height: 46px;
+  margin-left: -1px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-right: 18px;
+  position: relative;
+}
+
+/* line 837, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list li.active a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 842, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list li.active span {
+  color: #fff;
+}
+
+/* line 846, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_list li a {
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  margin-top: 11px;
+  border-left: #ddd solid 1px;
+  padding: 0 0 0 18px;
+  color: #333;
+}
+
+/* line 856, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ins, a {
+  text-decoration: none;
+}
+
+/* line 860, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.float_nav_num {
+  color: #e38;
+  margin-left: 5px;
+}
+
+/* line 867, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_content_tit {
+  border-top: #ddd solid 1px;
+  position: relative;
+  text-align: center;
+  color: #666;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 50px 20px 0;
+  height: 22px;
+}
+
+/* line 878, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail_content_tit span {
+  top: -22px;
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+/* line 889, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product-detail-instance {
+  margin: 0px 59px 0;
+}
+
+/* line 893, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product-summary table {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  float: left;
+  border: 1px solid #ccc;
+  width: 1050px;
+  height: 100px;
+  line-height: 28px;
+  margin-left: 20px;
+}
+
+/* line 906, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.detail-instance-body {
+  padding: 20px 0 0 0;
+}
+
+/* line 911, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product-detail-instance {
+  margin: 0px 59px 0;
+}
+
+/* line 915, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.comwrap {
+  padding: 0;
+}
+
+/* line 919, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.comwrap {
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* line 924, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.comment-list {
+  padding: 0 10px;
+  display: none;
+}
+
+/* line 929, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.comment-li {
+  margin-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 934, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.ufeed-content {
+  position: relative;
+  margin-top: 10px;
+  _height: 65px;
+  max-height: 65px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  font-family: "Microsoft Yahei";
+}
+
+/* line 945, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.com-userinfo {
+  padding-bottom: 5px;
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+}
+
+/* line 952, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.com-userinfo a {
+  color: #999;
+}
+
+/* line 956, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.product_info input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
+}
+
+/* line 962, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.buy-quantity {
+  margin-bottom: 10px;
+}
+
+/* line 966, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.count-input input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
+}
+
+/* line 972, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.showbackground {
+  margin-bottom: 20px;
 }

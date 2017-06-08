@@ -31,7 +31,7 @@
 
      border-color: rgba(57, 63, 68, 0.3); //边框色
 
-     margin-bottom: 100px; //底部 margin 不撑开距离
+     margin-bottom: -1px; //底部 margin 不撑开距离
 
      &.show_bgcolor {
        background-color: rgba(57, 63, 68, 1);
@@ -88,7 +88,7 @@
   .navbar-default .navbar-nav > .open > a:hover {
     background-color: rgba(57, 63, 68, 1);
 
-    color: #212121;
+    // color: #212121;
 
   }
 
@@ -631,6 +631,7 @@ mark {
 
 
 
+
 /*===== 首页-footer=====*/
 // .brand-box {
 //   /* 区块 */
@@ -747,3 +748,527 @@ li {
 //     padding: 0;
 //     outline: none;
 // }
+
+/****** product show ******/
+
+//show页面背景
+.body_bg {
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 0;
+    height: auto;
+    margin-top: -20px;
+}
+
+//页面主题内容格式
+.wrap {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 10px;
+    width: 1200px;
+}
+
+
+.clearfix, .wrap {
+    zoom: 1;
+}
+
+.detail_top_all {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 3px #eee;
+    position: relative;
+    margin-top: 10px;
+}
+
+//左屏格式
+.product_top_l {
+    position: relative;
+    float: left;
+    width: 600px;
+}
+
+//右屏格式
+.product_top_r {
+    width: 680px;
+    margin-left: 5px;
+    padding: 10px 0;
+}
+
+.product_top_r {
+    float: left;
+    width: 540px;
+    margin-left: 15px;
+}
+
+
+
+
+//标题格式
+.detail_product_tit {
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+    margin-right: 70px;
+}
+
+.detail_product_tit b {
+    margin-right: 8px;
+}
+
+// 自由行标记格式
+.product_type_zyx {
+    background-color: #f80;
+}
+
+.product_top_type {
+    background-color: #6c3;
+    color: #fff;
+    padding: 0 8px;
+    position: absolute;
+    left: 1;
+    top: 0;
+    z-index: 5;
+}
+
+// product price格式
+.product_top_price_box .product_top_price {
+    padding-top: 0;
+    line-height: 30px;
+    height: 30px;
+}
+
+ .product_top_price_box {   //整个背景框格式
+    width: 574px;
+    margin-left: -5px;
+    padding: 20px 18px;
+    background-color: #fff3dd;
+    height: 70px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.product_top_price_box .product_top_price {  //价格的格式-居中
+    padding-top: 0;
+    line-height: 30px;
+    height: 30px;
+}
+
+.price_num {   //价格大小颜色
+    color: #f60;
+    font-size: 20px;
+}
+
+.price_num dfn {  //价格大小
+    font-size: 36px;
+    margin-right: 3px;
+}
+
+dfn{  //价格格式
+    font-style: normal;
+    font-weight: 400;
+}
+
+.product_top_price_box p {   //起价说明格式
+    float: left;
+    padding-top: 10px;
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    font-size: 14px;
+    margin-right: 22px;
+    margin-left: 20px;
+}
+
+
+.product_top_price_box .product_top_dp {  //100%好评率格式
+    float: right;
+    margin-right: 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.product_top_dp span {  //100%大小
+    font-size: 20px;
+}
+
+
+.product_top_dp span, .product_top_dp small {  //100%颜色
+    color: #f90;
+}
+
+//优惠格式、大小、颜色
+.product_info {
+    position: relative;
+    font-size: 14px;
+    padding: 5px 0 5px 100px;
+    overflow: hidden;
+}
+
+.product_info dt {
+    margin-left: -90px;
+    float: left;
+    color: #999;
+    width: 80px;
+    line-height: 24px;
+    text-align: right;
+    position: relative;
+}
+
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+//游记返现格式、大小、颜色
+.product_info dd {
+    color: #666;
+    zoom: 1;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+}
+
+dt,dd,dl,div,ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.product_info dd .tags101 {
+    position: relative;
+    top: -2px;
+}
+
+.tags101 {
+    vertical-align: middle;
+    font-family: "Arial","PingFang SC","SimSun",serif;
+}
+
+.tags101 {
+    background: #f80;
+}
+
+.tags101 {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal !important;
+    text-indent: 0;
+    cursor: default;
+    padding: 0 4px;
+    background: #ff9614;
+    color: #fff;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+}
+
+.product_info_hr {
+    margin: 10px 0;
+    border-top: #ccc dotted 1px;
+    height: 0;
+    overflow: hidden;
+}
+
+// 预定模块格式
+.product_top_booking {
+    border: #ffc859 solid 2px;
+    margin-top: 20px;
+    padding: 22px 0;
+}
+
+.product_top_booking .product_info dd {
+    line-height: 30px;
+}
+
+.product_info dd {
+    color: #666;
+    zoom: 1;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+}
+
+.start_city_box {
+    width: 288px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border: #ccc solid 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.product_info_number {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product_top_booking .product_info dt {
+    margin-left: -92px;
+    line-height: 30px;
+}
+
+
+.product_info_number .nova-number-box {
+    float: left;
+    margin-right: 5px;
+}
+
+.nova-number-box {
+    background-color: #fff;
+}
+
+.nova-number-box {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 0;
+}
+
+.nova-number-box-subtract,.nova-number-box-add {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #ccc;
+    width: 28px;
+    height: 28px;
+}
+
+.nova-number-box-add {
+    margin-left: -1px;
+}
+
+.nova-number-box input {
+    font-size: 13px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ccc;
+    width: 39px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: -1px;
+}
+
+.product_info_number span {
+    float: left;
+}
+
+.c_999 {
+    color: #999 !important;
+    margin-right: 25px;
+}
+
+// 数量输入框
+.product-page .quantity-input {
+  color: #333;
+  text-align: center;
+  width: 60px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+}
+//购物车按钮
+.btn-orange {
+    color: #FFF;
+    background: #F80;
+    border-color: #F80;
+}
+
+//收藏
+.favorites {
+    display: inline-block;
+    margin: 6px 0 0 20px;
+    cursor: pointer;
+}
+
+//产品详细介绍
+.detail_content {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.float_nav_all {
+    width: 100%;
+    height: 46px;
+    position: relative;
+    z-index: 9;
+}
+
+.float_nav {
+    position: relative;
+    top: 0;
+    z-index: 99;
+    height: 46px;
+    width: 1200px;
+    box-shadow: 0 1px 5px #ccc;
+    background-color: #fff;
+}
+
+.float_nav_list {
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.float_nav_list li.active {
+    background-color: #e38;
+    color: #fff;
+    z-index: 2;
+}
+
+.float_nav_list li {
+    float: left;
+    height: 46px;
+    margin-left: -1px;
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 18px;
+    position: relative;
+}
+
+.float_nav_list li.active a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.float_nav_list li.active span {
+    color: #fff;
+}
+
+.float_nav_list li a {
+    display: inline-block;
+    line-height: 24px;
+    height: 24px;
+    margin-top: 11px;
+    border-left: #ddd solid 1px;
+    padding: 0 0 0 18px;
+    color: #333;
+}
+
+ins, a {
+    text-decoration: none;
+}
+
+.float_nav_num {
+    color: #e38;
+    margin-left: 5px;
+}
+
+//产品详情模块
+
+.detail_content_tit {
+    border-top: #ddd solid 1px;
+    position: relative;
+    text-align: center;
+    color: #666;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 50px 20px 0;
+    height: 22px;
+}
+
+.detail_content_tit span {
+    top: -22px;
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+//产品概要
+.product-detail-instance {
+    margin: 0px 59px 0;
+}
+
+.product-summary table {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    float: left;
+    border: 1px solid #ccc;
+    width: 1050px;
+    height: 100px;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+
+.detail-instance-body {
+    padding: 20px 0 0 0;
+}
+
+//点评模块
+.product-detail-instance {
+    margin: 0px 59px 0;
+}
+
+.comwrap {
+    padding: 0;
+}
+
+.comwrap {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.comment-list {
+    padding: 0 10px;
+    display: none;
+}
+
+.comment-li {
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.ufeed-content {
+    position: relative;
+    margin-top: 10px;
+    _height: 65px;
+    max-height: 65px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft Yahei";
+}
+
+.com-userinfo {
+    padding-bottom: 5px;
+    height: 36px;
+    line-height: 36px;
+    color: #999;
+}
+
+.com-userinfo a {
+    color: #999;
+}
+
+.product_info input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
+}
+
+.buy-quantity {
+  margin-bottom: 10px;
+}
+
+.count-input input {
+  text-align: center;
+  width: 40px;
+  height: 33px;
+}
+
+.showbackground  {
+
+    margin-bottom: 20px;
+}

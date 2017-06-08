@@ -27,8 +27,16 @@
           <% end %>
         </td>
         <td><%= link_to(product.title, admin_product_path(product)) %></td>
-        <td><%= product.price %></td>
-        <td><%= product.quantity %></td>
+        <td>
+          成人：<%= product.price %>
+          <br>
+          儿童：<%= product.child_price %>
+        </td>
+        <td>
+          成人：<%= product.quantity %>
+          <br>
+          儿童：<%= product.child_quantity %>
+        </td>
         <td>
           <%= link_to('Edit',edit_admin_product_path(product), class: "btn btn-sm btn-default") %>
           <%= link_to('Delete',admin_product_path(product), class: "btn btn-sm btn-default",

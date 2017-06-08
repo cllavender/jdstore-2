@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   end
 
   resources :products do
+    resources :comments
     member do
       post :add_to_cart
       put  :favorite
@@ -45,7 +46,14 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :cart_items
+  resources :cart_items do
+    member do
+      post :add_child_quantity
+      post :remove_child_quantity
+      post :add_adult_quantity
+      post :remove_adult_quantity
+    end
+  end
 
   root 'welcome#index'
 end

@@ -5,8 +5,13 @@
       <div class="form-group">
         <%= f.input :title, input_html: { class: "form-control"}, :label => "品名" %>
         <%= f.input :description, input_html: { class: "form-control"}, :label => "描述" %>
-        <%= f.input :price, input_html: { class: "form-control"}, :label => "价格" %>
-        <%= f.input :quantity, input_html: { class: "form-control"}, :label => "库存" %>
+        <%= f.input :destination, input_html: { class: "form-control"}, :label => "目的地" %>
+        <%= f.input :day, input_html: { class: "form-control"}, :label => "游玩天数-早" %>
+        <%= f.input :night, input_html: { class: "form-control"}, :label => "游玩天数-晚" %>
+        <%= f.input :price, input_html: { class: "form-control"}, :label => "成人价格" %>
+        <%= f.input :quantity, input_html: { class: "form-control"}, :label => "成人库存" %>
+        <%= f.input :child_price, input_html: { class: "form-control"}, :label => "儿童价格" %>
+        <%= f.input :child_quantity, input_html: { class: "form-control"}, :label => "儿童库存" %>
 
         <% if @product.photos.present? %>
           <span>目前商品图</span><br>

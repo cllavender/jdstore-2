@@ -2,14 +2,31 @@
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">首页</a>
+            <a class="navbar-brand" href="/">寻踏水的痕迹</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
+
+          <!-- 搜索框 -->
+          <div class="navbar-form navbar-left">
+             <div id="custom-search-input">
+               <%= form_tag search_products_path, :method => :get, :class => "products-search-form"  do %>
+                 <div class="input-group col-md-12">
+                     <input type="text" class="form-control" name="q" value="<%= params[:q] %>">
+                     <span class="input-group-btn">
+                         <button class="btn btn-default" type="submit">
+                             <i class="fa fa-search" aria-hidden="true"></i>
+                         </button>
+                     </span>
+                 </div>
+               <% end %>
+             </div>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
             <!-- 行程分类 -->
             <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">目的地<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">约游<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <% Category.all.each do |category| %>
                     <li>
@@ -37,20 +54,46 @@
                 <%= link_to("旅星人", '#') %>
               </li>
             </ul>
+            <!-- 旅行社区 -->
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    旅行社区
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <%= link_to("结伴" , products_path) %> </li>
+                  <li> <%= link_to("积分兑换", '#') %> </li>
+                  <li> <%= link_to("问答", '#') %> </li>
+                </ul>
+              </li>
           </ul>
-          <!-- 旅行社区 -->
-          <ul class="nav navbar-nav">
+          <!-- 购物车 -->
+          <li>
+            <%= link_to carts_path do %>
+              购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %>)
+            <% end %>
+          </li>
+          <!-- 登陆、注册 -->
+          <% if !current_user %>
+            <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li
+          <% else %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  旅行社区
+                  Hi!, <%= current_user.email %>
                   <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li> <%= link_to("结伴" , products_path) %> </li>
-                <li> <%= link_to("积分兑换", '#') %> </li>
-                <li> <%= link_to("问答", '#') %> </li>
+                <% if current_user.admin? %>
+                  <li> <%= link_to(content_tag(:i, 'Admin 选单', class: 'fa fa-id-badge'), admin_products_path) %> </li>
+                <% end %>
+                <li> <%= link_to(content_tag(:i, '我的收藏', class: 'fa fa-star'), favorite_index_path) %> </li>
+                <li> <%= link_to(content_tag(:i, '个人订单列表', class: 'fa fa-list-alt'), account_orders_path) %> </li>
+                <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
               </ul>
             </li>
+
         </ul>
           <!-- 搜索框 -->
           <div class="navbar-form navbar-left">
@@ -96,6 +139,9 @@
                 </ul>
               </li>
            <% end %>
+
+         <% end %>
+
           </ul>
         </div>
     </div>

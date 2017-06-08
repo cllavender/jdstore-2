@@ -18,9 +18,16 @@ class ProductsController < ApplicationController
 
   def add_to_cart
     @product = Product.find(params[:id])
+    @quantity = params[:quantity].to_i
+    @child_quantity = params[:child_quantity].to_i
+
     if !current_cart.products.include?(@product)
-      current_cart.add_product_to_cart(@product)
-      flash[:notice] = "你已成功将 #{@product.title} 加入购物车"
+      if @quantity <= @product.quantity && @child_quantity <= @product.child_quantity
+        current_cart.add_product_to_cart(@product, @quantity, @child_quantity)
+        flash[:notice] = "你已成功将 #{@product.title} 加入购物车"
+      else
+        flash[:warning] = "你选择的商品数量超过库存，请重新选择！"
+      end
     else
       flash[:warning] = "你的购物车内已有此物品"
     end
