@@ -1,0 +1,51 @@
+<h2> 撰写游记 </h2>
+
+<%= simple_form_for @note do |f| %>
+
+  <div class="group">
+    <%= f.input :foreword %>
+  </div>
+
+  <div class="group">
+    <%= f.input :introduction %>
+  </div>
+
+  <div class="group">
+    <%= f.input :destination1 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :destination2 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :destination3 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :title1 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :description1 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :title2 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :description2 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :title3 %>
+  </div>
+
+  <div class="group">
+    <%= f.input :description3 %>
+  </div>
+
+  <%= f.submit "发布我的游记", data: { disable_with: "Submitting..." } %>
+
+<% end %>

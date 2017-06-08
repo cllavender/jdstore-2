@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  foreword: MyString
+  introduction: MyText
+  destination1: MyString
+  destination2: MyString
+  destination3: MyString
+  title1: MyString
+  description1: MyText
+  title2: MyString
+  description2: MyText
+  title3: MyString
+  description3: MyText
+
+two:
+  user_id: 1
+  foreword: MyString
+  introduction: MyText
+  destination1: MyString
+  destination2: MyString
+  destination3: MyString
+  title1: MyString
+  description1: MyText
+  title2: MyString
+  description2: MyText
+  title3: MyString
+  description3: MyText

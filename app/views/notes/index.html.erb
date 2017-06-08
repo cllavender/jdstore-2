@@ -1,0 +1,41 @@
+<div class="product-detail-instance xl_position_r" id="product-customer-review">
+
+  <div class="comwrap">
+    <!-- 点评 -->
+    <div class="comment-list com-all" style="display:block" id="allCmtComment">
+      <div class="detail_content_tit">
+          <span>
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            听旅星人说
+          </span>
+      </div>
+
+      <div class="group">
+        <%= link_to("分享路上的点滴", new_note_path, class: "btn btn-orange pull-right") %>
+      </div>
+
+      <% @notes.each do |note| %>
+        <div class="comments_wrapper clearfix">
+          <div class="ufeed-content">
+            <td><%= link_to(note.foreword, note_path(note)) %></td>
+            <br>
+            <%= note.introduction %>
+            <dd>
+              <% if note.user == current_user -%>
+                <%= link_to("编辑游记", edit_note_path(note), class: "btn btn-xs btn-orange pull-right")%>
+                <%= link_to '删除游记', note_path(note), method: :delete, :class => "btn btn-xs btn-orange pull-right",data: { confirm: '确定删除?' }%>
+              <% end %>
+            </dd>
+          </div>
+          <div class="com-userinfo">
+            <p>
+              来自<a href="#" rel="nofollow" hidefocus="false"><%= note.user.email %></a> &nbsp;&nbsp;    <em><%= time_ago_in_words(note.created_at) %>前</em>
+            </p>
+          </div>
+          <hr/>
+        </div>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
