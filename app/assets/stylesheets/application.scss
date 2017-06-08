@@ -25,13 +25,22 @@
 // 导航栏
 
 .navbar-default {
-    background-color: rgba(57, 63, 68, 1);  //背景颜色
+    background-color: rgba(0,0,0,0.3);
 
-     border-color: #212121; //边框色
+  //背景颜色
+
+     border-color: rgba(57, 63, 68, 0.3); //边框色
 
      margin-bottom: 100px; //底部 margin 不撑开距离
 
+     &.show_bgcolor {
+       background-color: rgba(57, 63, 68, 1);
+     }
+
 }
+
+
+
 
 @media (min-width: 768px) {
   .navbar {
@@ -70,7 +79,7 @@
   .navbar-default .navbar-nav > .active > a:focus {
    color: #FFFFFF;  //product颜色
 
-    background-color: rgba(57, 63, 68, 1);
+    background-color: rgba(57, 63, 68, 0);
 
   }
 
@@ -84,12 +93,441 @@
   }
 
 
+
+
+  /*===== Intro 首页-广告轮播 =====*/
+
+  .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    margin: 0;
+   padding: 0;
+}
+
+
+.carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: 650px;
+    line-height: 1;
+  }
+
+.intro-box {
+  /*===== 轮播内容 =====*/
+  .item {
+    /* 标题 */
+    h3 {
+      margin-top: -40%; //标题高度
+      font-size: 50px; //文字大小
+      letter-spacing: 5px; //文字间距
+    }
+
+    /* 内文 */
+    p {
+      font-size: 20px;
+    }
+
+    /* 图片 */
+    img {
+      width: 100%;
+    }
+  }
+
+  /*===== 换页按钮 =====*/
+  .carousel-control {
+    span {
+      margin-top: 145%; //按钮高度
+      font-size: 50px; //按钮大小
+    }
+  }
+}
+
+a:hover {
+    color: #fff;
+    background-color: transparent;
+
+}
+
+
+
+
+
+/*===== 首页通用设置 =====*/
+.welcome-box {
+  /* 副标题 */
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* 短分隔线 */
+  .short-line {
+    background: #0070DE;
+    margin: 15px auto 30px auto;
+    width: 150px;
+    height: 1.5px;
+  }
+
+  /* 按钮 */
+  .btn-push {
+    background-color: transparent;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); //半透明背景
+    padding: 10px 20px;
+    font-size: 20px;
+
+    /* 显示特效 */
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* 按钮-鼠标滑动效果 */
+  .btn-push:hover {
+    background-color: #0070DE;
+    border-color: #0070DE;
+  }
+}
+
+// 双线
+
+.titlebox {
+    text-align: center;
+    width: 100%;
+    display: table;
+    height: 157px;
+}
+
+.titlebox .text {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.titlebox>div {
+    width: 33.333333333%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.titlebox .line {
+    background-color: #9a9999;
+    height: 1px;
+    position: relative;
+}
+
+
+//第二条线
+
+
+.titlebox-sigin {
+    height: 120px;
+}
+
+
+.borderbox {
+
+    -webkit-box-sizing: border-box;
+}
+
+.titlebox .line .more {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    font-size: 14px;
+    background-color: #fff;
+    padding-left: 23px;
+}
+
+
+.titlebox .line .more a {
+    color: #9a9999;
+
+}
+
+
+//商品展示图
+
+.all_image_css:hover {
+
+    opacity: 0.7;
+    transition: 0.8s;
+}
+
+
+
+
+.img-area {
+    padding-bottom: 40px;
+}
+
+.borderbox {
+
+    -webkit-box-sizing: border-box;
+}
+
+.img-area .top {
+    margin-bottom: 27px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+}
+
+
+.img-area .top .left {
+    float: left;
+    width: 545px;
+    height: 430px;
+}
+
+
+.projustlink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: opacity .5s ease;
+
+}
+
+a {
+    background-color: transparent;
+
+
+}
+
+a:-webkit-any-link {
+    color: #9a9999;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.img-area .projustlink:after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    height: 40px;
+    width: 40px;
+    background-image: url(http://jne.qyer.com/assets/web/pages/index/images/icons.png);
+    background-position: 0 -31px;
+    background-repeat: no-repeat;
+}
+
+.img-area .projustlink img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+// 上面第二张图
+
+.img-area .top .right {
+    float: right;
+    width: 571px;
+    height: 430px;
+}
+
+
+.img-area .top .right>div {
+    height: 201px;
+    margin-bottom: 28px;
+}
+
+
+// 最下面最右边一张图
+
+.img-area .bottom {
+    height: 255px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.img-area .bottom>div {
+    height: 100%;
+    float: left;
+    margin-right: 28px;
+    width: 355px;
+}
+
+//下面中间那张
+
+.img-area .bottom .centen {
+    width: 377px;
+}
+
+.img-area .bottom>div {
+    height: 100%;
+    float: left;
+    margin-right: 28px;
+    width: 355px;
+}
+
+//最后一张图
+.img-area .bottom>div.last {
+    float: right;
+    margin: 0;
+}
+
+.img-area .bottom>div {
+    height: 100%;
+
+    width: 355px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+div {
+    display: block;
+}
+
+
+
+.bodycontent {
+    padding: 0 33px 95px 24px;
+
+}
+
+.wrap1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.borderbox {
+    box-sizing: border-box;
+
+}
+
+.UniviaProFont, .simditor-body, .website_footer, .website_header {
+    font-family: UniviaPro!important;
+}
+
+
+//旅行人说
+
+
+.projust-list {
+    padding: 0 48px;
+    margin-left: -39px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+}
+
+
+
+.projust-list .projustlink {
+    float: left;
+    margin-left: 39px;
+    width: 323px;
+    text-decoration: none;
+}
+
+.projustlink {
+    display: block;
+
+    height: 100%;
+    position: relative;
+
+    -webkit-transition: opacity .5s ease;
+
+}
+
+a {
+    background-color: transparent;
+
+}
+
+a:-webkit-any-link {
+
+    cursor: auto;
+
+}
+
+.projust-list .projustlink img {
+    width: 355px;
+    height: 280px;
+}
+
+.projust-list .projustlink * {
+    padding: 0;
+    margin: 0;
+
+}
+
+img {
+    border-style: none;
+}
+
+
+
+.projust-list .projustlink h5 {
+    padding-top: 18px;
+}
+
+.projust-list .projustlink h5, .single-product-slider .list>div h5 {
+    text-align: center;
+    font-size: 16px;
+    color: #313131;
+}
+
+.projust-list .projustlink * {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+h5 {
+    display: block;
+
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
+
+
+
 //首页头图
 
 .title {
   color: #ffffff;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 10px;
   margin-bottom: 80px;
 }
 
@@ -302,7 +740,7 @@ h4 {
      background-repeat: no-repeat;
      background-size: cover;
      margin-bottom: 50px;
-     margin-top: -100px;
+     margin-top: 0px;
 
      .box-inner {
         //  background-color: rgba(250, 250, 250, 0.69);
@@ -445,4 +883,241 @@ mark {
 
 .login-help{
   font-size: 12px;
+}
+
+
+
+
+
+/*===== 首页-footer=====*/
+// .brand-box {
+//   /* 区块 */
+//   background-color: #f8f8f8;
+//   text-align: center;
+//   padding: 50px 0 50px 0;
+//
+//   /* 图片 */
+//   img {
+//     margin: 10px 15px 10px 15px;
+//     width: 150px;
+//   }
+// }
+
+ul>li {
+
+    text-align: center;
+      line-height: 35px;
+
+      font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+
+    color: #333;
+
+
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+
+
+}
+
+
+ul>li>a:hover {
+    cursor: pointer;
+    color: #ffac00;
+}
+
+ul>li>a {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+a:focus, a:hover {
+    color: #ffac00;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+a {
+    color: #333;
+}
+
+a {
+    background-color: transparent;
+}
+
+* {
+
+    padding: 0;
+}
+
+*, :after, :before {
+    /* box-sizing: border-box; */
+}
+
+
+
+.partner>.container>.row ul>li>span {
+    margin: 0 20px;
+    font-weight: lighter;
+}
+
+
+.partner>.container>.row ul>li {
+    text-align: center;
+
+}
+
+li {
+    display: list-item;
+
+}
+
+.partner>.container>.row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+//图片上文字
+// .swiper-wrapper {
+//
+//     transform: translateZ(0);
+// }
+//
+//
+//
+// .swiper-wrapper {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//
+//     display: flex;
+//
+//     transition-property: transform, -webkit-transform;
+//     box-sizing: content-box;
+// }
+//
+//
+//
+// .swiper-slide {
+//
+//     flex-shrink: 0;
+//
+//     height: 100%;
+//     position: relative;
+// }
+//
+// .item .image img {
+//     width: 100%;
+// }
+//
+// img {
+//     vertical-align: middle;
+// }
+//
+// img {
+//     border: 0;
+// }
+//
+// .item {
+//     display: block;
+//     border: 1px solid #e6e6e6;
+//     border-radius: 4px;
+//     background: #fff;
+// }
+//
+// .item .image {
+//     position: relative;
+//     border-top-left-radius: 4px;
+//     border-top-right-radius: 4px;
+//     overflow: hidden;
+//     text-align: center;
+// }
+//
+//
+// .item .image>div {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     padding-bottom: 68px;
+//     transition: all .4s;
+// }
+//
+// .item .image>div>div {
+//     height: 100%;
+//     padding: 30px 20px 0;
+//     overflow: hidden;
+//     font-size: 16px;
+//     color: #fff;
+//     font-weight: lighter;
+//     display: none;
+//     text-align: left;
+// }
+//
+//
+// .item .image>div>p {
+//     display: none;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     margin: 0;
+//     width: 100%;
+//     color: #fff;
+//     text-align: right;
+//     padding: 10px 20px 30px;
+//     font-size: 16px;
+//     font-weight: lighter;
+//
+//
+//     -webkit-margin-before: 1em;
+//     -webkit-margin-after: 1em;
+//     -webkit-margin-start: 0px;
+//     -webkit-margin-end: 0px;
+//
+// }
+//
+// .item h3 {
+//     padding: 20px;
+//     font-size: 16px;
+//     // font-weight: lighter;
+//     color: #333;
+//     margin: 0;
+// }
+//
+// .item h3>span {
+//     color: #999;
+//     float: right;
+// }
+//
+//
+//
+
+
+
+.foot_img {
+    clear: both;
+    height: 300px;
+    background: url(//common1.qyerstatic.com/zworld/web/project/explore/images/foot_img.jpg) no-repeat 50%;
+}
+
+
+.footer{
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
