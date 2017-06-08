@@ -46,6 +46,9 @@
     <%= f.input :description3 %>
   </div>
 
+  <%= f.label :img %><br/>
+  <%= f.file_field :img, :multiple => true, name: "notephotos[img][]" %>
+
   <%= f.submit "发布我的游记", data: { disable_with: "Submitting..." } %>
 
 <% end %>

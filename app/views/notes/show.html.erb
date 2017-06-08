@@ -2,12 +2,22 @@
   <h2><%= @note.foreword %></h2>
   <p><%= @note.introduction %></p>
   <hr>
+
   <h3><%= @note.title1 %></h3>
   <p><%= @note.description1 %></p>
-  img
+  <div style="font-size: 0;  margin-bottom: 20px;">
+    <span style="width: 530px;height: 353px;margin-right:0;display: inline-block;"><%= image_tag(@note.notephotos[0].img.detail.url) %></span>
+  </div>
+
   <h3><%= @note.title2 %></h3>
   <p><%= @note.description2 %></p>
-  img
+  <div style="font-size: 0;  margin-bottom: 20px;">
+    <span style="width: 530px;height: 353px;margin-right:0;display: inline-block;"><%= image_tag(@note.notephotos[1].img.detail.url) %></span>
+  </div>
+
   <h3><%= @note.title3 %></h3>
   <p><%= @note.description3 %></p>
+  <div style="font-size: 0;  margin-bottom: 20px;">
+    <span style="width: 530px;height: 353px;margin-right:0;display: inline-block;"><%= image_tag(@note.notephotos[2].img.detail.url) %></span>
+  </div>
 </div>

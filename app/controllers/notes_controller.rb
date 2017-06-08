@@ -5,10 +5,12 @@ class NotesController < ApplicationController
 
   def new
     @note = Note.new
+    @notephoto = @note.notephotos.build
   end
 
   def show
     @note = Note.find(params[:id])
+    @notephotos = @note.notephotos.all
   end
 
   def create
@@ -16,7 +18,12 @@ class NotesController < ApplicationController
     @note.user = current_user
 
     if @note.save
-      redirect_to notes_path
+      if params[:notephotos] != nil
+        params[:notephotos]['img'].each do |a|
+          @notephotos = @note.notephotos.create(:img => a)
+        end
+      end
+      redirect_to notes_path,notice:"游记已发布！"
     else
       render :new
     end
