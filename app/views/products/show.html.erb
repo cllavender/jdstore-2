@@ -1,6 +1,9 @@
 
-<div class="showbackground">
+<!-- <div class="showbackground">
   <img src="http://oqjdhoq9e.bkt.clouddn.com/%E5%A4%B4%E5%9B%BE%E9%80%89%E5%AE%9A.jpg" style="height:250px;width:100%;">
+</div> -->
+
+<div class="foot_img">
 </div>
 
 <!--页面最外层背景  开始-->
@@ -162,12 +165,12 @@
             <h5>产品概要</h5>
               <table border="1">
                 <tr >
-                  <td>含<%= @product.night %>晚住宿</td>
+                  <td>含 <%= @product.night %>晚住宿</td>
                   <td>景点介绍</td>
                   <td>含 巴士、飞机</td>
                 </tr>
                 <tr>
-                  <td>含 <%= @product.day %>早餐</td>
+                  <td>含 <%= @product.day %>日早餐</td>
                   <td>项目介绍</td>
                   <td>含 自由活动5次</td>
                 </tr>
@@ -185,7 +188,7 @@
                       <span style="display: inline-block;height: 20px;width: 200px;"></span>
                     </div>
                   </div>
-                  <div style="font-size: 16px;color: #333;line-height: 24px;margin-bottom: 6px;"><%= @product.title %> ：
+                  <div style="font-size: 16px;color: #333;line-height: 24px;margin-bottom: 6px;"><%= @product.destination %> ：
                   </div>
                   <div style="font-size: 14px;line-height: 22px;color: #666;margin-bottom: 10px;"><%= @product.description %>
                     <br>
