@@ -17,7 +17,7 @@ window.Env = {"gid":7315,"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengw
 
 <link href="https://css.mafengwo.net/css/cv/guide+css+preview:css+local+list_v3^YFA^1493719815.css" rel="stylesheet" type="text/css">
 
-<div class="wrap clearfix">
+<div class="wrap1 clearfix">
   <div class="crumb">
     <a href="/">首页</a> &gt; <a href=<%= notes_path %>>旅星人</a>  &gt; <em><%= @note.destination1%> <%= @note.destination2%> <%= @note.destination3%>游记</em>
   </div>
@@ -35,7 +35,7 @@ window.Env = {"gid":7315,"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengw
       <!-- 概括 -->
       <div class="_j_content">
         <div class="f-block">
-            <%= image_tag(@note.notephotos[0].img.medium.url, style: "width:100%; height:450px;"  ) %>
+            <%= image_tag(@note.notephotos[0].img.url, style: "width:100%; height:450px;"  ) %>
         </div>
         <div class="f-block">
           <div class="p-section">
@@ -49,7 +49,7 @@ window.Env = {"gid":7315,"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengw
             </h2>
         </div>
           <div class="f-block">
-            <%= image_tag(@note.notephotos[1].img.medium.url, style: "width:100%; height:450px;" ) %>
+            <%= image_tag(@note.notephotos[1].img.url, style: "width:100%; height:450px;" ) %>
             <span class="img-an"><%= @note.title1 %>（图片来源网络）</span>
           </div>
           <div class="f-block">
@@ -64,7 +64,7 @@ window.Env = {"gid":7315,"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengw
             </h2>
           </div>
             <div class="f-block">
-              <%= image_tag(@note.notephotos[2].img.medium.url, style: "width:100%; height:450px;" ) %>
+              <%= image_tag(@note.notephotos[2].img.url, style: "width:100%; height:450px;" ) %>
               <span class="img-an"><%= @note.title2 %> （图片来源网络）</span>
             </div>
             <div class="f-block">
@@ -79,7 +79,7 @@ window.Env = {"gid":7315,"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengw
               </h2>
             </div>
               <div class="f-block">
-                <%= image_tag(@note.notephotos[3].img.medium.url, style: "width:100%; height:450px;" ) %>
+                <%= image_tag(@note.notephotos[3].img.url, style: "width:100%; height:450px;" ) %>
                 <span class="img-an"><%= @note.title3 %>（图片来源网络）</span>
               </div>
               <div class="f-block">
