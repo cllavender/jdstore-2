@@ -14,26 +14,26 @@
 # u1.password_confirmation = "123456"   # 最少要六码
 # u1.is_admin = true
 # u1.save
-# 2
-u2 = User.new
-u2.email = "test1@163.com"           # 可以改成自己的 email
-u2.password = "123456"                # 最少要六码
-u2.password_confirmation = "123456"   # 最少要六码
-u2.save
-# 3
-u3 = User.new
-u3.email = "test2@163.com"           # 可以改成自己的 email
-u3.password = "123456"                # 最少要六码
-u3.password_confirmation = "123456"   # 最少要六码
-u3.save
-# 4
-u4 = User.new
-u4.email = "test3@163.com"           # 可以改成自己的 email
-u4.password = "123456"                # 最少要六码
-u4.password_confirmation = "123456"   # 最少要六码
-u4.save
-#
-#
+# # 2
+# u2 = User.new
+# u2.email = "test1@163.com"           # 可以改成自己的 email
+# u2.password = "123456"                # 最少要六码
+# u2.password_confirmation = "123456"   # 最少要六码
+# u2.save
+# # 3
+# u3 = User.new
+# u3.email = "test2@163.com"           # 可以改成自己的 email
+# u3.password = "123456"                # 最少要六码
+# u3.password_confirmation = "123456"   # 最少要六码
+# u3.save
+# # 4
+# u4 = User.new
+# u4.email = "test3@163.com"           # 可以改成自己的 email
+# u4.password = "123456"                # 最少要六码
+# u4.password_confirmation = "123456"   # 最少要六码
+# u4.save
+
+
 # # 新建分类
 # #1
 # Category.create!(
@@ -258,9 +258,60 @@ u4.save
 # p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF3.jpg"))
 # p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF4.jpg"))
 #
+#13
+p13 = Product.create(title: "【刺激“海上飞”】滑翔伞体验",
+                   description: "习惯了平视这个世界，这一次，我们带您俯瞰这一切，一起乘坐滑翔伞体验飞行的快感。",
+                   price: 817,
+                   quantity: 12,
+                   child_price: 600,
+                   child_quantity: 5,
+                   destination: "冲绳",
+                   day: 1,
+                   night: 0,
+                   category_id: 4
+                    )
+p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/785754614625196418708678/w1080"))
+p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570763186911851/w1080"))
+p13.photos.create!(avatar: open("http://pic3.qyer.com/lastminute/supplier/785754614625197763598608/w1080"))
+p13.photos.create!(avatar: open("http://pic1.qyer.com/lastminute/supplier/785754614625197984677919/w1080"))
+
+#14
+p14 = Product.create(title: "【水上玩乐项目】香蕉船",
+                   description: "多人共同体验，亲子间尽情享受",
+                   price: 800,
+                   quantity: 12,
+                   child_price: 600,
+                   child_quantity: 5,
+                   destination: "亚龙湾海底世界",
+                   day: 1,
+                   night: 0,
+                   category_id: 4
+                    )
+p14.photos.create!(avatar: open("http://visitokinawa.cn/assets/legacy/todo/18/marine_activities-banana_boat.jpg"))
+p14.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/3/31/BananaBoat.JPG"))
+p14.photos.create!(avatar: open("http://www.thaiwaterball.com/wp-content/uploads/2017/04/%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3-%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B9%8A%E0%B8%97-1.jpg"))
+p14.photos.create!(avatar: open("http://n4-q.mafengwo.net/s9/M00/3D/29/wKgBs1hQwaSAQBPOAAGotF9x88472.jpeg?imageView2%2F2%2Fw%2F580%2Fh%2F9999%2Fq%2F100"))
+
+#15
+p15 = Product.create(title: "海底漫步、水下摩托",
+                   description: "与海洋的肌肤之亲。",
+                   price: 2000,
+                   quantity: 12,
+                   child_price: 1600,
+                   child_quantity: 5,
+                   destination: "毛里求斯大湾",
+                   day: 1,
+                   night: 0,
+                   category_id: 4
+                    )
+p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570768680697634/w1080"))
+p15.photos.create!(avatar: open("http://pic4.qyer.com/lastminute/supplier/741700814570768847858122/w1080"))
+p15.photos.create!(avatar: open("http://pic.qyer.com/lastminute/supplier/741700814570770161391867/w1080"))
+p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570794465681959/w1080"))
+
 
 #新建游记
-# 1
+#1
 # n1 = Note.create(foreword: "梦里水乡，诗里江南",
 #                  introduction: "江南好，风景旧曾谙；
 #                                 日出江花红胜火，春来江水绿如蓝。
@@ -302,23 +353,83 @@ u4.save
 # n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo2.png"))
 # n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo3.png"))
 # n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo4.jpeg"))
-# 3
-n3 = Note.create(foreword: "毛里求斯：天堂原乡，慢热钟情",
-                 introduction: "“毛里求斯是天堂的原乡，因为天堂是仿照毛里求斯这个小岛而打造出来的”",
-                 destination1: "毛里求斯",
-                 destination2: "",
-                 destination3: "",
-                 description:  "毛里求斯，位于非洲东部，印度洋西南方，距离马达加斯加约800公里，四周珊瑚环绕，色彩斑斓的热带海洋生物也是这里的成员，在陆地上，沿海是狭窄的平原，中部是高原山地，景色壮观。岛上可以见到上百种鸟类，有30种非常稀有，16种在全球范围内重在面临灭绝的危险。",
-                 title1:       "感受平静海面，领会北方三岛",
-                 description1: "经典的北三岛分别是米尔考恩岛（法语称为Coin du Mire，英语则称为Gunner's Quoin）、普拉特岛（法语称为Île Plate，英语称Flat Island平岛）和加布里埃尔小岛（Îlot 在北部大多地方能够看到的形似炮台或鲸鱼的岛便是被称为炮手角的米尔考恩岛。",
-                 title2:       "悠闲自在，鹿岛潜伏",
-                 description2: "鹿岛海水会呈现出不同层次的蓝绿色，令人目不暇接的水上项目还是很吸引人的。鹿岛上可以潜水，海钓，冲浪，玩滑翔伞，帆船，划块头。",
-                 title3:       "鬼斧神工，红顶教堂",
-                 description3: "这座由法国人建成的红色屋顶的教堂，其木工非常精致，与一望无际的碧海蓝天相映成辉，是沿海旅行的好去处。",
-               end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
-                 user_id: 4
-                    )
-n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%201.jpg"))
-n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%202.jpg"))
-n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%203.jpeg"))
-n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%204.jpeg"))
+# # 3
+# n3 = Note.create(foreword: "毛里求斯：天堂原乡，慢热钟情",
+#                  introduction: "毛里求斯是天堂的原乡，因为天堂是仿照毛里求斯这个小岛而打造出来的",
+#                  destination1: "毛里求斯",
+#                  destination2: "",
+#                  destination3: "",
+#                  description:  "毛里求斯，位于非洲东部，印度洋西南方，距离马达加斯加约800公里，四周珊瑚环绕，色彩斑斓的热带海洋生物也是这里的成员，在陆地上，沿海是狭窄的平原，中部是高原山地，景色壮观。岛上可以见到上百种鸟类，有30种非常稀有，16种在全球范围内重在面临灭绝的危险。",
+#                  title1:       "感受平静海面，领会北方三岛",
+#                  description1: "经典的北三岛分别是米尔考恩岛（法语称为Coin du Mire，英语则称为Gunner's Quoin）、普拉特岛（法语称为Île Plate，英语称Flat Island平岛）和加布里埃尔小岛（Îlot 在北部大多地方能够看到的形似炮台或鲸鱼的岛便是被称为炮手角的米尔考恩岛。",
+#                  title2:       "悠闲自在，鹿岛潜伏",
+#                  description2: "鹿岛海水会呈现出不同层次的蓝绿色，令人目不暇接的水上项目还是很吸引人的。鹿岛上可以潜水，海钓，冲浪，玩滑翔伞，帆船，划块头。",
+#                  title3:       "鬼斧神工，红顶教堂",
+#                  description3: "这座由法国人建成的红色屋顶的教堂，其木工非常精致，与一望无际的碧海蓝天相映成辉，是沿海旅行的好去处。",
+#                end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
+#                  user_id: 4
+#                     )
+# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%201.jpg"))
+# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%202.jpg"))
+# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%203.jpeg"))
+# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%204.jpeg"))
+# #4
+# n4 = Note.create(foreword: "【刺激“海上飞”】滑翔伞体验",
+#                  introduction: "习惯了平视这个世界，这一次，我们带您俯瞰这一切，一起乘坐滑翔伞体验飞行的快感。",
+#                  destination1: "",
+#                  destination2: "",
+#                  destination3: "",
+#                  description:  "",
+#                  title1:       "感受平静海面",
+#                  description1: "在大海中上升到空中，换个角度，看不一样的海上风景",
+#                  title2:       "换种体验方式，旅行大不同",
+#                  description2: "采用最高级别的安全保护，让你看得开心，玩得放心！持续时间长，整整15分钟的时间，让你在天空中，与朋友/伴侣分享极致景色！以不同的视角体验大海的魅力",
+#                  title3:       "行程",
+#                  description3: "导游会带大家乘坐快艇到海中央的平台，穿上救生衣，坐上滑翔伞，依照指示扣上安全扣,接着利用快艇快速前进，顺着风势用绳子将飞伞和游人慢慢升向高空,在空中享受10-15分钟的美丽的海岸线鸟瞰",
+#                end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
+#                  user_id: 2
+#                     )
+# n4.notephotos.create!(img: open("http://pic2.qyer.com/lastminute/supplier/785754614625196418708678/w1080"))
+# n4.notephotos.create!(img: open("http://pic2.qyer.com/lastminute/supplier/741700814570763186911851/w1080"))
+# n4.notephotos.create!(img: open("http://pic3.qyer.com/lastminute/supplier/785754614625197763598608/w1080"))
+# n4.notephotos.create!(img: open("http://pic1.qyer.com/lastminute/supplier/785754614625197984677919/w1080"))
+# #5
+# n5 = Note.create(foreword: "【水上玩乐项目介绍】香蕉船",
+#                  introduction: "香蕉船最近才成为海上运动的一部分",
+#                  destination1: "香蕉船的秘密",
+#                  destination2: "",
+#                  destination3: "",
+#                  description:  "那些香蕉船本身没有动力，它们由摩托艇推拽，以每小时50至60公里的速度行进。",
+#                  title1:       "培养默契",
+#                  description1: "对于家庭或是朋友，5、6个人坐在香蕉船上，非常有趣。",
+#                  title2:       "安全可靠",
+#                  description2: "此项目是最安全的水上运动，多为孩子和年轻人喜爱。因为船体本身像香蕉，故此得名，其实就是形似香蕉型的气垫船。比漂流还刺激好像坐火箭一样，坐在上面要抓紧软管把手。",
+#                  title3:       "放松身心",
+#                  description3: "这种类型的水上运动，可以让你享受到在海上运动的快感与豪迈。让你在快乐中逐渐的放松自我，让你能够瞬间忘记在 ...",
+#                end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
+#                  user_id: 3
+#                     )
+# n5.notephotos.create!(img: open("http://visitokinawa.cn/assets/legacy/todo/18/marine_activities-banana_boat.jpg"))
+# n5.notephotos.create!(img: open("https://upload.wikimedia.org/wikipedia/commons/3/31/BananaBoat.JPG"))
+# n5.notephotos.create!(img: open("http://www.thaiwaterball.com/wp-content/uploads/2017/04/%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3-%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B9%8A%E0%B8%97-1.jpg"))
+# n5.notephotos.create!(img: open("http://n4-q.mafengwo.net/s9/M00/3D/29/wKgBs1hQwaSAQBPOAAGotF9x88472.jpeg?imageView2%2F2%2Fw%2F580%2Fh%2F9999%2Fq%2F100"))
+# #6
+# n6 = Note.create(foreword: "海底漫步、水下摩托",
+#                  introduction: "与海洋的肌肤之亲",
+#                  destination1: "海底漫步",
+#                  destination2: "",
+#                  destination3: "",
+#                  description:  "海底漫步是一项安全而且有趣的活动，游客们可以切身体验那些专业潜水运动员在海底的感受",
+#                  title1:       "与鱼群亲密接触",
+#                  description1: "一边在海底漫步，一边欣赏五彩斑斓的海底世界，在3米深的海底，各种各样的热带鱼类环绕在你的周围。头戴白色大头盔，在海底5米左右体验与热带鱼类亲密接触。",
+#                  title2:       "水下摩托",
+#                  description2: "一定没有在海底骑过摩托吧，是不是很酷炫，水下摩托是去海岛度假游玩的人所熟悉的一项活动，它极度地满足了人们追求速度与刺激的喜好，",
+#                  title3:       "是不是很好奇",
+#                  description3: "作为一款较新型的水下娱乐设备，主要构造是由一个球形头罩、座骑、油箱和驱动器所组成。坐在摩托上，下到海底5米左右与形形色色的热带鱼亲密接触。",
+#                end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
+#                  user_id: 4
+#                     )
+# n6.notephotos.create!(img: open("http://pic2.qyer.com/lastminute/supplier/741700814570768680697634/w1080"))
+# n6.notephotos.create!(img: open("http://pic4.qyer.com/lastminute/supplier/741700814570768847858122/w1080"))
+# n6.notephotos.create!(img: open("http://pic.qyer.com/lastminute/supplier/741700814570770161391867/w1080"))
+# n6.notephotos.create!(img: open("http://pic2.qyer.com/lastminute/supplier/741700814570794465681959/w1080"))
