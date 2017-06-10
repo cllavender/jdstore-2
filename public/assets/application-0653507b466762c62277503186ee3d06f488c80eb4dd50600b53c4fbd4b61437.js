@@ -14601,6 +14601,10 @@ if (typeof jQuery === 'undefined') {
 
 
 }).call(this);
+(function() {
+
+
+}).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14614,6 +14618,20 @@ if (typeof jQuery === 'undefined') {
 // about supported directives.
 //
 
+
+
+
+
+
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 125){
+    $('#navbar').addClass('show_bgcolor')
+
+  }else {
+    $('#navbar').removeClass('show_bgcolor')
+  }
+})
 
 
 

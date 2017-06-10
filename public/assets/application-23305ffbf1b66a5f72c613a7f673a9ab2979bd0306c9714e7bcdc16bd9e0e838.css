@@ -12646,272 +12646,487 @@ button.close {
 
 /* line 28, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default {
-  background-color: #393f44;
-  border-color: #212121;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(57, 63, 68, 0.3);
   margin-bottom: -1px;
+}
+/* line 37, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.navbar-default.show_bgcolor {
+  background-color: #393f44;
 }
 
 @media (min-width: 768px) {
-  /* line 38, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+  /* line 47, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
   .navbar {
     border-radius: 0;
   }
 }
-/* line 43, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 52, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand {
   color: #FFFFFF;
   padding: 10px 15px;
   line-height: 30px;
 }
 
-/* line 50, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 59, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #FFFFFF;
   background-color: transparent;
 }
 
-/* line 58, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 67, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
 }
 
-/* line 63, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 72, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #FFFFFF;
   background-color: transparent;
 }
 
-/* line 69, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 78, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #FFFFFF;
-  background-color: #393f44;
+  background-color: rgba(57, 63, 68, 0);
 }
 
-/* line 78, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 87, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
   background-color: #393f44;
 }
 
-/* line 90, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.title {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 80px;
-}
-
-/* line 100, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-Style Attribute {
-  text-align: center;
-  line-height: 1.25em;
-}
-
-/* line 105, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.s_SmHkWRichTextNewSkin h1 {
+/*===== Intro 首页-广告轮播 =====*/
+/* line 101, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.col-md-12 {
+  position: relative;
+  min-height: 1px;
   margin: 0;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  letter-spacing: normal;
+  padding: 0;
 }
 
-/* line 115, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.font_0 {
-  font: normal normal normal 32px/1.25em brandon-grot-w01-light,sans-serif;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 32px;
-  font-family: brandon-grot-w01-light, sans-serif;
-}
-
-/* line 129, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-h1 {
+/* line 109, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.carousel-inner > .item > a > img {
   display: block;
-  -webkit-margin-before: 0.67em;
-  -webkit-margin-after: 0.67em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  max-width: 100%;
+  height: 650px;
+  line-height: 1;
 }
 
-/* line 138, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-I
-.s_SmHkWRichTextNewSkin {
-  word-wrap: break-word;
+/* line 116, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box {
+  /*===== 轮播内容 =====*/
+  /*===== 换页按钮 =====*/
+}
+/* line 118, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box .item {
+  /* 标题 */
+  /* 内文 */
+  /* 图片 */
+}
+/* line 120, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box .item h3 {
+  margin-top: -40%;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+/* line 127, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box .item p {
+  font-size: 20px;
+}
+/* line 132, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box .item img {
+  width: 100%;
+}
+/* line 139, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.intro-box .carousel-control span {
+  margin-top: 145%;
+  font-size: 50px;
 }
 
-/* line 153, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: #ffffff;
-  top: 12px;
+/* line 146, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a:hover {
+  color: #fff;
+  background-color: transparent;
 }
 
-/* line 163, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-element.style {
-  text-transform: uppercase;
+/*===== 首页通用设置 =====*/
+/* line 157, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.welcome-box {
+  /* 副标题 */
+  /* 短分隔线 */
+  /* 按钮 */
+  /* 按钮-鼠标滑动效果 */
 }
-
-/* line 168, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-Style Attribute {
-  text-align: center;
-  line-height: 1.18em;
+/* line 159, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.welcome-box h2 {
+  font-size: 24px;
+  font-weight: 600;
 }
-
+/* line 165, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.welcome-box .short-line {
+  background: #0070DE;
+  margin: 15px auto 30px auto;
+  width: 150px;
+  height: 1.5px;
+}
 /* line 173, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.s_SmHkWRichTextNewSkin h4 {
-  margin: 0;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  letter-spacing: normal;
+.welcome-box .btn-push {
+  background-color: transparent;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 20px;
+  /* 显示特效 */
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-
-/* line 183, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.font_4 {
-  font: normal normal normal 72px/1.18em brandon-grot-w01-light,sans-serif;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 72px;
-  font-family: brandon-grot-w01-light, sans-serif;
+/* line 189, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.welcome-box .btn-push:hover {
+  background-color: #0070DE;
+  border-color: #0070DE;
 }
 
 /* line 197, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-h4 {
-  display: block;
-  -webkit-margin-before: 1.33em;
-  -webkit-margin-after: 1.33em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
-/* line 206, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.s_SmHkWRichTextNewSkin {
-  word-wrap: break-word;
-}
-
-/* line 224, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.lead {
-  margin-bottom: 60px;
+.titlebox {
   text-align: center;
-  color: #212121;
+  width: 100%;
+  display: table;
+  height: 157px;
+}
+
+/* line 204, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox .text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* line 209, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox > div {
+  width: 33.333333333%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* line 216, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox .line {
+  background-color: #9a9999;
+  height: 1px;
+  position: relative;
+}
+
+/* line 226, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox-sigin {
+  height: 120px;
 }
 
 /* line 231, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.btn- {
-  color: #212121;
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0.6);
-  border: solid rgba(255, 255, 255, 0.6) 0px;
+.borderbox {
+  -webkit-box-sizing: border-box;
+}
+
+/* line 236, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox .line .more {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-  transition-property: border-color, background-color;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
+  bottom: -6px;
+  font-size: 14px;
+  background-color: #fff;
+  padding-left: 23px;
 }
 
-/* line 250, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.btn-:hover {
-  color: #212121;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.6);
+/* line 246, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.titlebox .line .more a {
+  color: #9a9999;
 }
 
-/* line 266, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.color_11 {
-  color: #FFFFFF;
+/* line 254, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.all_image_css:hover {
+  opacity: 0.7;
+  transition: 0.8s;
 }
 
-/* line 270, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.color_15 {
-  color: #333333;
+/* line 263, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area {
+  padding-bottom: 40px;
+}
+
+/* line 267, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.borderbox {
+  -webkit-box-sizing: border-box;
+}
+
+/* line 272, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .top {
+  margin-bottom: 27px;
 }
 
 /* line 276, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
+.clearfix {
+  zoom: 1;
 }
 
-/* line 282, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.xingshi {
-  clear: both;
+/* line 281, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  visibility: hidden;
   display: block;
-  margin: auto;
-  border: 0 none;
-  box-shadow: none;
-  margin-top: 60px;
-  width: 940px;
-  height: 520px;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
 }
 
-/* line 301, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box {
-  background-image: url("https://static.wixstatic.com/media/11062b_cda73a0a7bfa4145a3834e48feb4e84af000.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
-  margin-top: -100px;
-}
-/* line 308, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box .box-inner {
-  padding-bottom: 5px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-/* line 321, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box .content-section-a {
-  padding: 1000px 0;
-  background-color: #f8f8f8;
-}
-/* line 327, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box .content-section-b {
-  padding: 50px 0;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-}
-/* line 333, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box .section-heading-spacer {
+/* line 291, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .top .left {
   float: left;
-  width: 200px;
-  border-top: 3px solid #e7e7e7;
-}
-/* line 339, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
-.box .section-heading {
-  margin-bottom: 30px;
+  width: 545px;
+  height: 430px;
 }
 
-/* line 345, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 298, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projustlink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: opacity .5s ease;
+}
+
+/* line 307, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 313, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a:-webkit-any-link {
+  color: #9a9999;
+  cursor: auto;
+  text-decoration: none;
+}
+
+/* line 319, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .projustlink:after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  height: 40px;
+  width: 40px;
+  background-image: url(http://jne.qyer.com/assets/web/pages/index/images/icons.png);
+  background-position: 0 -31px;
+  background-repeat: no-repeat;
+}
+
+/* line 331, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .projustlink img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 336, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+img {
+  border-style: none;
+}
+
+/* line 342, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .top .right {
+  float: right;
+  width: 571px;
+  height: 430px;
+}
+
+/* line 349, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .top .right > div {
+  height: 201px;
+  margin-bottom: 28px;
+}
+
+/* line 357, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom {
+  height: 255px;
+}
+
+/* line 361, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 365, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom > div {
+  height: 100%;
+  float: left;
+  margin-right: 28px;
+  width: 355px;
+}
+
+/* line 374, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom .centen {
+  width: 377px;
+}
+
+/* line 378, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom > div {
+  height: 100%;
+  float: left;
+  margin-right: 28px;
+  width: 355px;
+}
+
+/* line 386, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom > div.last {
+  float: right;
+  margin: 0;
+}
+
+/* line 391, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.img-area .bottom > div {
+  height: 100%;
+  width: 355px;
+}
+
+/* line 397, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 402, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+div {
+  display: block;
+}
+
+/* line 408, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.bodycontent {
+  padding: 0 33px 95px 24px;
+}
+
+/* line 413, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.wrap1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 418, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.borderbox {
+  box-sizing: border-box;
+}
+
+/* line 423, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.UniviaProFont, .simditor-body, .website_footer, .website_header {
+  font-family: UniviaPro !important;
+}
+
+/* line 431, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list {
+  padding: 0 48px;
+  margin-left: -39px;
+}
+
+/* line 436, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 440, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+/* line 451, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink {
+  float: left;
+  margin-left: 39px;
+  width: 323px;
+  text-decoration: none;
+}
+
+/* line 458, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projustlink {
+  display: block;
+  height: 100%;
+  position: relative;
+  -webkit-transition: opacity .5s ease;
+}
+
+/* line 468, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 473, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a:-webkit-any-link {
+  cursor: auto;
+}
+
+/* line 479, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink img {
+  width: 355px;
+  height: 280px;
+}
+
+/* line 484, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink * {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 490, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+img {
+  border-style: none;
+}
+
+/* line 496, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink h5 {
+  padding-top: 18px;
+}
+
+/* line 500, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink h5, .single-product-slider .list > div h5 {
+  text-align: center;
+  font-size: 16px;
+  color: #313131;
+}
+
+/* line 506, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.projust-list .projustlink * {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 512, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+h5 {
+  display: block;
+  -webkit-margin-before: 1.67em;
+  -webkit-margin-after: 1.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+/* line 525, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 mark {
   background: #ffffff;
   color: rgba(9, 236, 247, 0.98);
 }
 
 /****** LOGIN MODAL ******/
-/* line 356, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 536, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container {
   padding: 30px,100px;
   max-width: 350px;
@@ -12926,21 +13141,21 @@ mark {
   font-family: roboto;
 }
 
-/* line 370, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 550, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container h1 {
   text-align: center;
   font-size: 1.8em;
   font-family: roboto;
 }
 
-/* line 376, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 556, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=submit] {
   width: 40%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 382, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 562, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text], input[type=password] {
   height: 35px;
   font-size: 14px;
@@ -12956,7 +13171,7 @@ mark {
   -moz-box-sizing: border-box;
 }
 
-/* line 397, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 577, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
@@ -12965,7 +13180,7 @@ mark {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 405, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 585, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal {
   text-align: center;
   font-size: 14px;
@@ -12978,7 +13193,7 @@ mark {
     user-select: none; */
 }
 
-/* line 417, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 597, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-submit {
   /* border: 1px solid #3079ed; */
   border: 0px;
@@ -12991,7 +13206,7 @@ mark {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
-/* line 429, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 609, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-submit:hover {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
@@ -13000,7 +13215,7 @@ mark {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
-/* line 437, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 617, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .loginmodal-container a {
   text-decoration: none;
   color: #666;
@@ -13011,13 +13226,100 @@ mark {
   transition: opacity ease 0.5s;
 }
 
-/* line 447, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 627, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .login-help {
   font-size: 12px;
 }
 
+/*===== 首页-footer=====*/
+/* line 650, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ul > li {
+  text-align: center;
+  line-height: 35px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* line 664, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 672, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ul > li > a:hover {
+  cursor: pointer;
+  color: #ffac00;
+}
+
+/* line 677, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+ul > li > a {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/* line 683, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a:focus, a:hover {
+  color: #ffac00;
+}
+
+/* line 687, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* line 691, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 695, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a {
+  color: #333;
+}
+
+/* line 699, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 703, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+* {
+  padding: 0;
+}
+
+/* line 708, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+*, :after, :before {
+  /* box-sizing: border-box; */
+}
+
+/* line 714, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.partner > .container > .row ul > li > span {
+  margin: 0 20px;
+  font-weight: lighter;
+}
+
+/* line 720, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.partner > .container > .row ul > li {
+  text-align: center;
+}
+
+/* line 725, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+li {
+  display: list-item;
+}
+
+/* line 730, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.partner > .container > .row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /****** product show ******/
-/* line 456, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 756, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .body_bg {
   background-color: #f9f9f9;
   position: relative;
@@ -13026,7 +13328,7 @@ mark {
   margin-top: -20px;
 }
 
-/* line 465, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 765, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .wrap {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -13034,12 +13336,12 @@ mark {
   width: 1200px;
 }
 
-/* line 473, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 773, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .clearfix, .wrap {
   zoom: 1;
 }
 
-/* line 477, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 777, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_top_all {
   background-color: #fff;
   padding: 20px;
@@ -13048,28 +13350,28 @@ mark {
   margin-top: 10px;
 }
 
-/* line 486, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 786, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_l {
   position: relative;
   float: left;
   width: 600px;
 }
 
-/* line 493, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 793, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_r {
   width: 680px;
   margin-left: 5px;
   padding: 10px 0;
 }
 
-/* line 499, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 799, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_r {
   float: left;
   width: 540px;
   margin-left: 15px;
 }
 
-/* line 509, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 809, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_product_tit {
   font-size: 22px;
   color: #333;
@@ -13077,17 +13379,17 @@ mark {
   margin-right: 70px;
 }
 
-/* line 516, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 816, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_product_tit b {
   margin-right: 8px;
 }
 
-/* line 521, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 821, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_type_zyx {
   background-color: #f80;
 }
 
-/* line 525, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 825, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_type {
   background-color: #6c3;
   color: #fff;
@@ -13098,14 +13400,14 @@ mark {
   z-index: 5;
 }
 
-/* line 536, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 836, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_price_box .product_top_price {
   padding-top: 0;
   line-height: 30px;
   height: 30px;
 }
 
-/* line 542, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 842, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_price_box {
   width: 574px;
   margin-left: -5px;
@@ -13116,32 +13418,32 @@ mark {
   position: relative;
 }
 
-/* line 552, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 852, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_price_box .product_top_price {
   padding-top: 0;
   line-height: 30px;
   height: 30px;
 }
 
-/* line 558, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 858, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .price_num {
   color: #f60;
   font-size: 20px;
 }
 
-/* line 563, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 863, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .price_num dfn {
   font-size: 36px;
   margin-right: 3px;
 }
 
-/* line 568, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 868, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 dfn {
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 573, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 873, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_price_box p {
   float: left;
   padding-top: 10px;
@@ -13153,7 +13455,7 @@ dfn {
   margin-left: 20px;
 }
 
-/* line 585, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 885, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_price_box .product_top_dp {
   float: right;
   margin-right: 0;
@@ -13161,17 +13463,17 @@ dfn {
   font-size: 12px;
 }
 
-/* line 592, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 892, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_dp span {
   font-size: 20px;
 }
 
-/* line 597, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 897, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_dp span, .product_top_dp small {
   color: #f90;
 }
 
-/* line 602, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 902, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info {
   position: relative;
   font-size: 14px;
@@ -13179,7 +13481,7 @@ dfn {
   overflow: hidden;
 }
 
-/* line 609, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 909, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info dt {
   margin-left: -90px;
   float: left;
@@ -13190,7 +13492,7 @@ dfn {
   position: relative;
 }
 
-/* line 619, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 919, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 dl {
   display: block;
   -webkit-margin-before: 1em;
@@ -13199,7 +13501,7 @@ dl {
   -webkit-margin-end: 0px;
 }
 
-/* line 628, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 928, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info dd {
   color: #666;
   zoom: 1;
@@ -13208,30 +13510,30 @@ dl {
   width: 100%;
 }
 
-/* line 636, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 936, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 dt, dd, dl, div, ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 642, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 942, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info dd .tags101 {
   position: relative;
   top: -2px;
 }
 
-/* line 647, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 947, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .tags101 {
   vertical-align: middle;
   font-family: "Arial","PingFang SC","SimSun",serif;
 }
 
-/* line 652, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 952, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .tags101 {
   background: #f80;
 }
 
-/* line 656, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 956, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .tags101 {
   display: inline-block;
   margin: 0 2px;
@@ -13248,7 +13550,7 @@ dt, dd, dl, div, ul {
   border-radius: 3px;
 }
 
-/* line 672, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 972, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info_hr {
   margin: 10px 0;
   border-top: #ccc dotted 1px;
@@ -13256,19 +13558,19 @@ dt, dd, dl, div, ul {
   overflow: hidden;
 }
 
-/* line 680, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 980, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_booking {
   border: #ffc859 solid 2px;
   margin-top: 20px;
   padding: 22px 0;
 }
 
-/* line 686, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 986, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_booking .product_info dd {
   line-height: 30px;
 }
 
-/* line 690, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 990, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info dd {
   color: #666;
   zoom: 1;
@@ -13277,7 +13579,7 @@ dt, dd, dl, div, ul {
   width: 100%;
 }
 
-/* line 698, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 998, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .start_city_box {
   width: 288px;
   height: 28px;
@@ -13288,37 +13590,37 @@ dt, dd, dl, div, ul {
   cursor: pointer;
 }
 
-/* line 709, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1009, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info_number {
   overflow: hidden;
   margin-bottom: 10px;
 }
 
-/* line 714, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1014, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_top_booking .product_info dt {
   margin-left: -92px;
   line-height: 30px;
 }
 
-/* line 720, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1020, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info_number .nova-number-box {
   float: left;
   margin-right: 5px;
 }
 
-/* line 725, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1025, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .nova-number-box {
   background-color: #fff;
 }
 
-/* line 729, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1029, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .nova-number-box {
   vertical-align: top;
   display: inline-block;
   font-size: 0;
 }
 
-/* line 735, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1035, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .nova-number-box-subtract, .nova-number-box-add {
   cursor: pointer;
   float: left;
@@ -13327,12 +13629,12 @@ dt, dd, dl, div, ul {
   height: 28px;
 }
 
-/* line 743, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1043, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .nova-number-box-add {
   margin-left: -1px;
 }
 
-/* line 747, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1047, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .nova-number-box input {
   font-size: 13px;
   text-align: center;
@@ -13344,18 +13646,18 @@ dt, dd, dl, div, ul {
   margin-left: -1px;
 }
 
-/* line 758, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1058, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info_number span {
   float: left;
 }
 
-/* line 762, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1062, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .c_999 {
   color: #999 !important;
   margin-right: 25px;
 }
 
-/* line 768, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1068, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product-page .quantity-input {
   color: #333;
   text-align: center;
@@ -13365,27 +13667,27 @@ dt, dd, dl, div, ul {
   border: 1px solid #FFF;
 }
 
-/* line 777, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1077, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .btn-orange {
   color: #FFF;
   background: #F80;
   border-color: #F80;
 }
 
-/* line 784, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1084, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .favorites {
   display: inline-block;
   margin: 6px 0 0 20px;
   cursor: pointer;
 }
 
-/* line 791, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1091, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_content {
   margin-top: 20px;
   background-color: #fff;
 }
 
-/* line 796, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1096, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_all {
   width: 100%;
   height: 46px;
@@ -13393,7 +13695,7 @@ dt, dd, dl, div, ul {
   z-index: 9;
 }
 
-/* line 803, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1103, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav {
   position: relative;
   top: 0;
@@ -13404,24 +13706,24 @@ dt, dd, dl, div, ul {
   background-color: #fff;
 }
 
-/* line 813, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1113, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list {
   overflow: hidden;
 }
 
-/* line 817, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1117, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 821, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1121, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list li.active {
   background-color: #e38;
   color: #fff;
   z-index: 2;
 }
 
-/* line 827, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1127, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list li {
   float: left;
   height: 46px;
@@ -13432,18 +13734,18 @@ ul {
   position: relative;
 }
 
-/* line 837, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1137, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list li.active a {
   color: #fff;
   font-weight: bold;
 }
 
-/* line 842, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1142, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list li.active span {
   color: #fff;
 }
 
-/* line 846, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1146, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_list li a {
   display: inline-block;
   line-height: 24px;
@@ -13454,18 +13756,18 @@ ul {
   color: #333;
 }
 
-/* line 856, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1156, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 ins, a {
   text-decoration: none;
 }
 
-/* line 860, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1160, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .float_nav_num {
   color: #e38;
   margin-left: 5px;
 }
 
-/* line 867, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1167, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_content_tit {
   border-top: #ddd solid 1px;
   position: relative;
@@ -13477,7 +13779,7 @@ ins, a {
   height: 22px;
 }
 
-/* line 878, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1178, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail_content_tit span {
   top: -22px;
   position: relative;
@@ -13488,12 +13790,12 @@ ins, a {
   background-color: #fff;
 }
 
-/* line 889, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1189, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product-detail-instance {
   margin: 0px 59px 0;
 }
 
-/* line 893, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1193, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product-summary table {
   font-size: 13px;
   color: #666;
@@ -13506,40 +13808,40 @@ ins, a {
   margin-left: 20px;
 }
 
-/* line 906, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1206, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .detail-instance-body {
   padding: 20px 0 0 0;
 }
 
-/* line 911, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1211, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product-detail-instance {
   margin: 0px 59px 0;
 }
 
-/* line 915, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1215, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .comwrap {
   padding: 0;
 }
 
-/* line 919, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1219, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .comwrap {
   padding: 0 20px;
   overflow: hidden;
 }
 
-/* line 924, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1224, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .comment-list {
   padding: 0 10px;
   display: none;
 }
 
-/* line 929, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1229, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .comment-li {
   margin-top: 15px;
   border-bottom: 1px solid #eee;
 }
 
-/* line 934, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1234, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .ufeed-content {
   position: relative;
   margin-top: 10px;
@@ -13551,7 +13853,7 @@ ins, a {
   font-family: "Microsoft Yahei";
 }
 
-/* line 945, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1245, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .com-userinfo {
   padding-bottom: 5px;
   height: 36px;
@@ -13559,31 +13861,68 @@ ins, a {
   color: #999;
 }
 
-/* line 952, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1252, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .com-userinfo a {
   color: #999;
 }
 
-/* line 956, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1256, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .product_info input {
   text-align: center;
   width: 40px;
   height: 33px;
 }
 
-/* line 962, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1262, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .buy-quantity {
   margin-bottom: 10px;
 }
 
-/* line 966, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1266, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .count-input input {
   text-align: center;
   width: 40px;
   height: 33px;
 }
 
-/* line 972, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+/* line 1272, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
 .showbackground {
   margin-bottom: 20px;
+}
+
+/* line 1278, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.w3-content {
+  margin-left: -20px;
+}
+
+/* line 1282, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.w3-display-container {
+  margin-left: -20px;
+}
+
+/* line 1286, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.f-block h2 {
+  border-left-style: solid;
+  border-width: 3px;
+  border-color: orange;
+}
+
+/* line 1292, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.sideR .side_in.fix {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* line 1299, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.sideR .side_in {
+  background-color: #fff;
+}
+
+/* line 1303, /Users/cl_lavender/jd2/jdstore/app/assets/stylesheets/application.scss */
+.wrap1 {
+  width: 1000px;
+  /* margin: 0 auto; */
+  margin-top: 60px;
 }
