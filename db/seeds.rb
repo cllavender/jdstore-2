@@ -261,47 +261,47 @@ u4.save
 
 #新建游记
 # 1
-n1 = Note.create(foreword: "梦里水乡，诗里江南",
-                 introduction: "江南好，风景旧曾谙；
-                                日出江花红胜火，春来江水绿如蓝。
-                                能不忆江南？",
-                 destination1: "杭州",
-                 destination2: "西湖",
-                 destination3: "千岛湖",
-                 description:  "对于江南的印象，似婉约的女子，不紧不慢，一句“欲把西湖比西子，浓妆淡抹总相宜”，道不尽西湖的柔情，也说不完江南的委婉。梦里水乡，诗里江南，而杭州作为江南最典型的代表城市，既有大城市的繁华，也有水乡的柔情。十余年前的匆匆一次跟团行，因天气原因，没有好好的欣赏这座城市，这个端午，梦回江南，探寻水下千年古城，走一遭西子湖畔。",
-                 title1:       "初遇西子，柔情似水",
-                 description1: "湖面如镜，朝阳躲在云层里，透露出微微的霞光，正应了那句“风景如画”，眼前的美景，梦江南，已深醉，原处的苏堤诺隐若现，初遇西子，已被陶醉。",
-                 title2:       "行走在千岛湖畔，看这良辰美景",
-                 description2: "千岛湖那一汪碧水，令人陶醉，据说能见度可达10米，也难怪乎能产出这么好吃的千岛湖有机鱼。白天的千岛湖是蓝色的，而在太阳下山的那一刻，微微泛红的霞光将湖面染成紫色，更加醉人了。",
-                 title3:       "宿江南，青芝坞里的温馨民宿",
-                 description3: "杭州的住宿，选在了青芝坞，白居易笔下的“湛湛玉泉色，悠悠浮云身”，吟诵的就是青芝坞。而如今青芝坞里的幢农居，全部进行了改建，白墙黑瓦，花草藤蔓，一个个开放式小庭院好看又别致。",
-               end:          "杭州之行，一湾看尽千岛湖，行走于西子湖畔，婉约柔情醉人心，正是那句最忆是江南！",
-                 user_id: 2
-                    )
-n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%201.jpg"))
-n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%202.jpg"))
-n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%203.jpeg"))
-n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%A2%A6%E6%B1%9F%E5%8D%974.jpg"))
-# 2
-n2 = Note.create(foreword: "爱上荔波的“野”",
-                 introduction: "灵秀之地，充满野性，更有有“地球绿宝石，东方凯旋门”之称的大小七孔",
-                 destination1: "贵州",
-                 destination2: "荔波",
-                 destination3: "",
-                 description:  "在2017春节来临之计，位于黔南的荔波梅原还迎来了万亩梅花的盛开，来到梅原和当地土著民族一起开心过新年，当然是一件非常惬意的事！请随我的镜头一起去回味那些原味的经典。",
-                 title1:       "地球绿宝石，惊叹大七孔",
-                 description1: "见识荔波大七孔，世界遗产地，地球绿宝石，透明度极高的湖水，如丝如画的瀑布，鬼斧神工的天生桥，九曲回旋的栈道，无边的思忆似梦中.....",
-                 title2:       "落叶入湖，卧龙出水，细观小七孔",
-                 description2: "如果说大七孔是绿宝石，那荔波小七孔就是缠绕在宝石上的一根翡翠腰带！她静则静谧如镜，倒影如画；动则落叶入湖，卧龙出水。",
-                 title3:       "跌宕起伏，罕见68级跌水瀑布",
-                 description3: "千姿百态的瀑布跌水竞领风骚，争奇斗妍，构成风情万种的动态水景，目不暇接。",
-               end:          "作为荔波天然的韵律所在的大小七孔，去了还想去、看过看不够、拍照停不下。",
-                 user_id: 3
-                    )
-n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A21.jpg"))
-n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo2.png"))
-n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo3.png"))
-n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo4.jpeg"))
+# n1 = Note.create(foreword: "梦里水乡，诗里江南",
+#                  introduction: "江南好，风景旧曾谙；
+#                                 日出江花红胜火，春来江水绿如蓝。
+#                                 能不忆江南？",
+#                  destination1: "杭州",
+#                  destination2: "西湖",
+#                  destination3: "千岛湖",
+#                  description:  "对于江南的印象，似婉约的女子，不紧不慢，一句“欲把西湖比西子，浓妆淡抹总相宜”，道不尽西湖的柔情，也说不完江南的委婉。梦里水乡，诗里江南，而杭州作为江南最典型的代表城市，既有大城市的繁华，也有水乡的柔情。十余年前的匆匆一次跟团行，因天气原因，没有好好的欣赏这座城市，这个端午，梦回江南，探寻水下千年古城，走一遭西子湖畔。",
+#                  title1:       "初遇西子，柔情似水",
+#                  description1: "湖面如镜，朝阳躲在云层里，透露出微微的霞光，正应了那句“风景如画”，眼前的美景，梦江南，已深醉，原处的苏堤诺隐若现，初遇西子，已被陶醉。",
+#                  title2:       "行走在千岛湖畔，看这良辰美景",
+#                  description2: "千岛湖那一汪碧水，令人陶醉，据说能见度可达10米，也难怪乎能产出这么好吃的千岛湖有机鱼。白天的千岛湖是蓝色的，而在太阳下山的那一刻，微微泛红的霞光将湖面染成紫色，更加醉人了。",
+#                  title3:       "宿江南，青芝坞里的温馨民宿",
+#                  description3: "杭州的住宿，选在了青芝坞，白居易笔下的“湛湛玉泉色，悠悠浮云身”，吟诵的就是青芝坞。而如今青芝坞里的幢农居，全部进行了改建，白墙黑瓦，花草藤蔓，一个个开放式小庭院好看又别致。",
+#                end:          "杭州之行，一湾看尽千岛湖，行走于西子湖畔，婉约柔情醉人心，正是那句最忆是江南！",
+#                  user_id: 2
+#                     )
+# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%201.jpg"))
+# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%202.jpg"))
+# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%203.jpeg"))
+# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%A2%A6%E6%B1%9F%E5%8D%974.jpg"))
+# # 2
+# n2 = Note.create(foreword: "爱上荔波的“野”",
+#                  introduction: "灵秀之地，充满野性，更有有“地球绿宝石，东方凯旋门”之称的大小七孔",
+#                  destination1: "贵州",
+#                  destination2: "荔波",
+#                  destination3: "",
+#                  description:  "在2017春节来临之计，位于黔南的荔波梅原还迎来了万亩梅花的盛开，来到梅原和当地土著民族一起开心过新年，当然是一件非常惬意的事！请随我的镜头一起去回味那些原味的经典。",
+#                  title1:       "地球绿宝石，惊叹大七孔",
+#                  description1: "见识荔波大七孔，世界遗产地，地球绿宝石，透明度极高的湖水，如丝如画的瀑布，鬼斧神工的天生桥，九曲回旋的栈道，无边的思忆似梦中.....",
+#                  title2:       "落叶入湖，卧龙出水，细观小七孔",
+#                  description2: "如果说大七孔是绿宝石，那荔波小七孔就是缠绕在宝石上的一根翡翠腰带！她静则静谧如镜，倒影如画；动则落叶入湖，卧龙出水。",
+#                  title3:       "跌宕起伏，罕见68级跌水瀑布",
+#                  description3: "千姿百态的瀑布跌水竞领风骚，争奇斗妍，构成风情万种的动态水景，目不暇接。",
+#                end:          "作为荔波天然的韵律所在的大小七孔，去了还想去、看过看不够、拍照停不下。",
+#                  user_id: 3
+#                     )
+# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A21.jpg"))
+# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo2.png"))
+# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo3.png"))
+# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo4.jpeg"))
 # 3
 n3 = Note.create(foreword: "毛里求斯：天堂原乡，慢热钟情",
                  introduction: "“毛里求斯是天堂的原乡，因为天堂是仿照毛里求斯这个小岛而打造出来的”",
