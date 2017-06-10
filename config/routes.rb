@@ -55,5 +55,7 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :notes
+
   root 'welcome#index'
 end

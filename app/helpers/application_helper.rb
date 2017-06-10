@@ -38,13 +38,13 @@ module ApplicationHelper
           end
 
           when 2..44           then "#{distance_in_minutes} 分钟"
-          when 45..89          then '大约 1 小时'
-          when 90..1439        then "大约 #{(distance_in_minutes.to_f / 60.0).round} 小时"
+          when 45..89          then '约 1 小时'
+          when 90..1439        then "约 #{(distance_in_minutes.to_f / 60.0).round} 小时"
           when 1440..2879      then '1 天'
           when 2880..43199     then "#{(distance_in_minutes / 1440).round} 天"
-          when 43200..86399    then '大约 1 个月'
+          when 43200..86399    then '约 1 个月'
           when 86400..525599   then "#{(distance_in_minutes / 43200).round} 个月"
-          when 525600..1051199 then '大约 1 年'
+          when 525600..1051199 then '约 1 年'
          else                      "#{(distance_in_minutes / 525600).round} 年"
      end
   end

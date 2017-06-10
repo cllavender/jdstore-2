@@ -1,122 +1,219 @@
-
- <div class="row box">
- <div class="box-inner col-md-6 col-md-offset-3">
-
-
- <h1 class="title"><p class="font_0">A World of Endless Travel Possibilities</p></h1>
- <h4 class="slogan"><p class="font_4">This Trip<br>寻踏水的痕迹</p>
-
- </h4>
- <p class="lead">
- <%= link_to '', products_path, class: 'btn btn-' %>
- </p>
- </div>
- </div>
-
-
-
-<section id="company">
-  <div class = "container-fluid">
+<div class="welcome-box">
+<section class="intro-box">
     <div class="row">
-          <div class="cl-md-12">
-        <div class="xingshi">
-          <div align="center"><img  src="https://static.wixstatic.com/media/bcaa0fd80af44e97a954b67710669caf.jpg" alt="heart" class = "img-thumbnail"></div>
-          <div class="caption">
-            <p class="font_7" style="text-align:left; line-height:1.46em;">
-              <span class="color_15">Travel Agents Do It Better</span></p>
-              <h2 class="font_2" style="text-align:left; line-height:1.25em;">
-                <span class="color_15">
-                  <span style="text-transform:uppercase;">WHO WE ARE AND WHAT WE DO</span>
-              </span>
-            </h2>
-            <h3>Everyone has different approaches and priorities when it comes to travel planning. The team members at here have various areas of expertise in order to cover all of our clients’ travel needs. Whether you’re planning an upcoming trip for work or leisure, we make the booking process easy and enjoyable. Call us today and start traveling!</h3>
+      <div class="col-md-12">
+        <div id="intro" class="carousel slide" data-ride="carousel">
+          <!--===== 轮播按钮 =====-->
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#intro" data-slide-to="0" class="active"></li>
+            <li data-target="#intro" data-slide-to="1"></li>
+            <li data-target="#intro" data-slide-to="2"></li>
+          </ol> -->
+
+          <!--===== 轮播内容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <%= link_to 'products', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+                <%= image_tag("https://ws3.sinaimg.cn/large/006tNbRwgy1fgd1xukrznj315o0rs1kx.jpg") %> <!-- 图片位置 -->
+                <div class="carousel-caption">
+                  <h3>启程</h3> <!-- 标题 -->
+                  <p></p> <!-- 内文 -->
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to '#', target: "_blank" do %>
+                <%= image_tag("https://ws3.sinaimg.cn/large/006tNbRwgy1fgbw6h7mgsj31hc0hswq0.jpg") %>
+                <div class="carousel-caption">
+                  <h3>在路上</h3>
+                  <p>旅人永远青春18</p>
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to '#', target: "_blank" do %>
+                <%= image_tag("https://ws4.sinaimg.cn/large/006tNbRwgy1fgbrsx7zvdj31hc0hsdi7.jpg") %>
+                <div class="carousel-caption">
+                  <h3>最美不过去旅行</h3>
+                  <p>生命应该浪费在美好的事物上</p>
+                </div>
+              <% end %>
+            </div>
           </div>
+
+          <!--===== 换页按钮 =====-->
+          <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
+  </section>
+</div>
+<!-- 双线 -->
+<div class="wrap1200  bodycontent borderbox UniviaProFont ">
+
+<div class="titlebox clearfix">
+		<div>
+			<div class="line"></div>
+		</div>
+		<div class="text borderbox">
+		     听海		</div>
+		<div>
+			<div class="line"></div>
+		</div>
+	</div>
+
+<!-- 图片 -->
+
+<div class="img-area borderbox">
+		<div class="top clearfix">
+			<div class="left">
+			     				<a target="_blank" class="projustlink" href="products/5">
+					<img class="all_image_css" src="http://7xtfq0.com1.z0.glb.clouddn.com/website_1OKpLmFUT73Kot2gB2vinhpJOJl34EXu.jpg?imageView2/1/w/545/h/430/q/85">
+				</a>
+							</div>
+			<div class="right">
+			 				<div>
+					<a target="_blank" class="projustlink icons3 " href="products/3">
+						<img class="all_image_css" src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgd29659c6j31kw0er7or.jpg">
+					</a>
+				</div>
+				<div>
+					<a target="_blank" class="projustlink icons3 " href="products/9">
+						<img class="all_image_css" src="https://pic.qyer.com/public/lastminute/topic/2017/01/13/14842904405001/980x345">
+					</a>
+				</div>
+							</div>
+		</div>
+		<div class="bottom clearfix">
+					<div class="">
+				<a target="_blank" class="projustlink" href="products/2">
+					<img class="all_image_css" src="https://static.wixstatic.com/media/bcaa0fd80af44e97a954b67710669caf.jpg">
+				</a>
+			</div>
+						<div class="centen">
+				<a target="_blank" class="projustlink" href="products/3">
+					<img class="all_image_css" src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd2y8iuvwj30bo07sjrx.jpg">
+				</a>
+			</div>
+						<div class="last">
+				<a target="_blank" class="projustlink" href="products/4">
+					<img class="all_image_css" src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd1xukrznj315o0rs1kx.jpg">
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+  <div class="titlebox clearfix titlebox-sigin">
+  		<div class="left borderbox">
+  			<div class="line"></div>
+  		</div>
+  		<div class="text borderbox">
+  			踏浪
+  		</div>
+  		<div class="right borderbox">
+  			<div class="line">
+  				<div class="more"> <a href="#">More + </a></div>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+<div class="clearfix projust-list">
+			   <a target="_blank" href="#" class="projustlink">
+			<img class="all_image_css" src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd0txuuvij30bo07sjry.jpg">
+			<h5>海上飞滑翔伞</h5>
+		</a>
+        	   <a target="_blank" href="#" class="projustlink">
+			<img class="all_image_css" src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd253dm1rj30h80b9wh2.jpg">
+			<h5>皮划艇探险</h5>
+		</a>
+        	   <a target="_blank" href="#" class="projustlink">
+			<img class="all_image_css" src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd1jmebbuj30bo07smxb.jpg">
+			<h5>水上浮潜</h5>
+		</a>
+        	</div>
+
+
+<!--
+          <div class="clearfix projust-list">
+
+          		   <a target="_blank" href="#" class="projustlink">
+          			<img class="all_image_css" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd1a547rvj30bo07sq3b.jpg">
+          			<h5>帆船体验</h5>
+          		</a>
+                  	   <a target="_blank" href="#" class="projustlink">
+          			<img class="all_image_css" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd1x622s5j30bo07sahq.jpg">
+          			<h5>碧水温泉</h5>
+          		</a>
+                  	   <a target="_blank" href="#" class="projustlink">
+          			<img class="all_image_css" src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgd1y3uuyfj30bo07st91.jpg">
+          			<h5>冲浪体验</h5>
+          		</a>
+                  	</div> -->
+
+
+
+<div class="titlebox clearfix titlebox-sigin">
+    <div class="left borderbox">
+      <div class="line"></div>
+    </div>
+    <div class="text borderbox">
+      旅星人说
+    </div>
+    <div class="right borderbox">
+      <div class="line">
+        <div class="more"> <a href="#">More + </a></div>
+      </div>
+    </div>
   </div>
-</section>
 
 
 
 
-<div class="jumbotron">
-   <h4 class="title"><span class="color_11"></span>&emsp;</h4>
-    <!-- <p class="slogan"><span style="text-transform:uppercase;"></span> -->
+  <div class="clearfix projust-list">
 
-    <br>
-     <!-- WITH 寻踏水的痕迹 -->
-    <br>
-    <br>
-    <br>
-    </p>
+  		   <a target="_blank" href="notes/1" class="projustlink">
+  			<img class="all_image_css" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd1a547rvj30bo07sq3b.jpg">
+  			<h5>游玩</h5>
+  		</a>
+          	   <a target="_blank" href="notes/2" class="projustlink">
+  			<img class="all_image_css" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd1x622s5j30bo07sahq.jpg">
+  			<h5>观景</h5>
+  		</a>
+          	   <a target="_blank" href="notes/3" class="projustlink">
+  			<img class="all_image_css" src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgd1y3uuyfj30bo07st91.jpg">
+  			<h5>体验</h5>
+  		</a>
+          	</div>
 
-         <!-- <p class="lead">
-           <%= link_to '马上应征', products_path, class: 'btn btn-danger' %>
-         </p> -->
- </div>
+</div>
 
-
-
+</div>
 
 <br>
 <br>
-<br>
-<br>
 
-
-
-
-
-                  <div class="content-section-a">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-5 col-sm-6">
-                            <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h2 class="section-heading"><a href="products/5"target=_new>茶卡盐湖</a></h2>
-                            <p class="lead">5日•自由行</p>
-
-
-                          </div>
-                          <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                            <%= image_tag 'http://oqjdhoq9e.bkt.clouddn.com/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%962.jpg', class: 'img-responsive' %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="content-section-b">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                            <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h2 class="section-heading"><a href="products/3"target=_new>普吉岛</a></h2>
-                            <p class="lead">8日•奢华游</p>
-                          </div>
-                          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                            <%= image_tag 'http://oqjdhoq9e.bkt.clouddn.com/%E6%99%AE%E5%90%89%E5%B2%9B1.jpg', class: 'img-responsive' %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="content-section-a">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-5 col-sm-6">
-                            <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h2 class="section-heading"><a href="products/11"target=_new>阿马尔菲</a></h2>
-                            <p class="lead">3日•休闲游</p>
-                          </div>
-                          <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                            <%= image_tag 'http://oqjdhoq9e.bkt.clouddn.com/%E9%98%BF%E9%A9%AC%E5%B0%94%E8%8F%B24.1.png', class: 'img-responsive' %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-<br>
-<br>
-<br>
+<!-- <script>
+     $(document).ready(function(){
+        $(".navbar-fixed-top").css("background-color", "transparent");
+        $(".navbar-fixed-top").css("border-color", "transparent");
+     $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $(".navbar-fixed-top").css("background-color", "rgba(0,0,0,0.3)");
+        } else {
+          $(".navbar-fixed-top").css("background-color", "transparent");
+        }
+      });
+     });
+   </script> -->
