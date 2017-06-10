@@ -972,3 +972,29 @@ ins, a {
 
     margin-bottom: 20px;
 }
+
+// note-show
+.w3-content {
+    margin-left: -20px;
+}
+
+.w3-display-container  {
+    margin-left: -20px;
+}
+
+.f-block h2 {
+    border-left-style: solid;
+    border-width: 3px;
+    border-color: orange;
+}
+
+.sideR .side_in.fix {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.sideR .side_in {
+    background-color: #fff;
+}
