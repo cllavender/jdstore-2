@@ -29,6 +29,7 @@ class NotesController < ApplicationController
     end
   end
 
+
   private
 
   def note_params
