@@ -1,4 +1,6 @@
 class NotesController < ApplicationController
+  before_action :authenticate_user!, only: [:new]
+
   def index
     @notes = Note.all
   end
