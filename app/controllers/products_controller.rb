@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
       @products = Product.paginate(:page => params[:page], :per_page => 9)
     else
       @category_id = Category.find_by(name: params[:category]).id
-      @products = Product.where(:category_id => @category_id)
+      @products = Product.where(:category_id => @category_id).paginate(:page => params[:page], :per_page => 9)
     end
   end
 
@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
   # --search 商品搜索--
   def search
     if @query_string.present?
-      @products = search_params
+      @products = search_params.paginate(:page => params[:page], :per_page => 9)
   end
 
   end
