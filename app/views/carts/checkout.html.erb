@@ -36,6 +36,14 @@
       </span>
     </div>
 
+    <span class="favorites ">
+      <% if current_user && current_user.already_favorite?(@product) %>
+        <%= link_to(content_tag(:i, '使用积分优惠', class: 'fa fa-check-square-o'), favorite_product_path(@product, type:"unfavorite"), method: :put) %>
+      <% else %>
+        <%= link_to(content_tag(:i, '使用积分优惠', class: 'fa fa-square-o'), favorite_product_path(@product, type:"favorite"), method: :put) %>
+      <% end %>
+    </span>
+
     <hr>
 
     <h2> 订单资讯 </h2>

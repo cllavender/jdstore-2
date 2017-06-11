@@ -22,6 +22,12 @@ class Cart < ApplicationRecord
     sum
   end
 
+  def total_price_with_discount
+    discount = current_user.total_point / 10
+    sum = total_price - discount
+    sum
+  end
+
   def clean!
     cart_items.destroy_all
   end
