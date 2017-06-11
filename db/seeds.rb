@@ -258,56 +258,56 @@
 # p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF3.jpg"))
 # p12.photos.create!(avatar: open("http://oqjdhoq9e.bkt.clouddn.com/%E9%BC%93%E6%B5%AA%E5%B1%BF4.jpg"))
 #
-#13
-p13 = Product.create(title: "【刺激“海上飞”】滑翔伞体验",
-                   description: "习惯了平视这个世界，这一次，我们带您俯瞰这一切，一起乘坐滑翔伞体验飞行的快感。",
-                   price: 817,
-                   quantity: 12,
-                   child_price: 600,
-                   child_quantity: 5,
-                   destination: "冲绳",
-                   day: 1,
-                   night: 0,
-                   category_id: 4
-                    )
-p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/785754614625196418708678/w1080"))
-p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570763186911851/w1080"))
-p13.photos.create!(avatar: open("http://pic3.qyer.com/lastminute/supplier/785754614625197763598608/w1080"))
-p13.photos.create!(avatar: open("http://pic1.qyer.com/lastminute/supplier/785754614625197984677919/w1080"))
-
-#14
-p14 = Product.create(title: "【水上玩乐项目】香蕉船",
-                   description: "多人共同体验，亲子间尽情享受",
-                   price: 800,
-                   quantity: 12,
-                   child_price: 600,
-                   child_quantity: 5,
-                   destination: "亚龙湾海底世界",
-                   day: 1,
-                   night: 0,
-                   category_id: 4
-                    )
-p14.photos.create!(avatar: open("http://visitokinawa.cn/assets/legacy/todo/18/marine_activities-banana_boat.jpg"))
-p14.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/3/31/BananaBoat.JPG"))
-p14.photos.create!(avatar: open("http://www.thaiwaterball.com/wp-content/uploads/2017/04/%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3-%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B9%8A%E0%B8%97-1.jpg"))
-p14.photos.create!(avatar: open("http://n4-q.mafengwo.net/s9/M00/3D/29/wKgBs1hQwaSAQBPOAAGotF9x88472.jpeg?imageView2%2F2%2Fw%2F580%2Fh%2F9999%2Fq%2F100"))
-
-#15
-p15 = Product.create(title: "海底漫步、水下摩托",
-                   description: "与海洋的肌肤之亲。",
-                   price: 2000,
-                   quantity: 12,
-                   child_price: 1600,
-                   child_quantity: 5,
-                   destination: "毛里求斯大湾",
-                   day: 1,
-                   night: 0,
-                   category_id: 4
-                    )
-p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570768680697634/w1080"))
-p15.photos.create!(avatar: open("http://pic4.qyer.com/lastminute/supplier/741700814570768847858122/w1080"))
-p15.photos.create!(avatar: open("http://pic.qyer.com/lastminute/supplier/741700814570770161391867/w1080"))
-p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570794465681959/w1080"))
+# #13
+# p13 = Product.create(title: "【刺激“海上飞”】滑翔伞体验",
+#                    description: "习惯了平视这个世界，这一次，我们带您俯瞰这一切，一起乘坐滑翔伞体验飞行的快感。",
+#                    price: 817,
+#                    quantity: 12,
+#                    child_price: 600,
+#                    child_quantity: 5,
+#                    destination: "冲绳",
+#                    day: 1,
+#                    night: 0,
+#                    category_id: 4
+#                     )
+# p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/785754614625196418708678/w1080"))
+# p13.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570763186911851/w1080"))
+# p13.photos.create!(avatar: open("http://pic3.qyer.com/lastminute/supplier/785754614625197763598608/w1080"))
+# p13.photos.create!(avatar: open("http://pic1.qyer.com/lastminute/supplier/785754614625197984677919/w1080"))
+#
+# #14
+# p14 = Product.create(title: "【水上玩乐项目】香蕉船",
+#                    description: "多人共同体验，亲子间尽情享受",
+#                    price: 800,
+#                    quantity: 12,
+#                    child_price: 600,
+#                    child_quantity: 5,
+#                    destination: "亚龙湾海底世界",
+#                    day: 1,
+#                    night: 0,
+#                    category_id: 4
+#                     )
+# p14.photos.create!(avatar: open("http://visitokinawa.cn/assets/legacy/todo/18/marine_activities-banana_boat.jpg"))
+# p14.photos.create!(avatar: open("https://upload.wikimedia.org/wikipedia/commons/3/31/BananaBoat.JPG"))
+# p14.photos.create!(avatar: open("http://www.thaiwaterball.com/wp-content/uploads/2017/04/%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3-%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B9%8A%E0%B8%97-1.jpg"))
+# p14.photos.create!(avatar: open("http://n4-q.mafengwo.net/s9/M00/3D/29/wKgBs1hQwaSAQBPOAAGotF9x88472.jpeg?imageView2%2F2%2Fw%2F580%2Fh%2F9999%2Fq%2F100"))
+#
+# #15
+# p15 = Product.create(title: "海底漫步、水下摩托",
+#                    description: "与海洋的肌肤之亲。",
+#                    price: 2000,
+#                    quantity: 12,
+#                    child_price: 1600,
+#                    child_quantity: 5,
+#                    destination: "毛里求斯大湾",
+#                    day: 1,
+#                    night: 0,
+#                    category_id: 4
+#                     )
+# p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570768680697634/w1080"))
+# p15.photos.create!(avatar: open("http://pic4.qyer.com/lastminute/supplier/741700814570768847858122/w1080"))
+# p15.photos.create!(avatar: open("http://pic.qyer.com/lastminute/supplier/741700814570770161391867/w1080"))
+# p15.photos.create!(avatar: open("http://pic2.qyer.com/lastminute/supplier/741700814570794465681959/w1080"))
 
 
 #新建游记
