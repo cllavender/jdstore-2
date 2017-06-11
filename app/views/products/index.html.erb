@@ -40,7 +40,7 @@
                  <div class="col-sm-4">
                      <div class="persona-kira">
                          <a class="persona-link" href='<%= product_path(product) %>'>
-                             <div class="info-peek", style="margin-left:-60px;">
+                             <div class="info-peek", style="margin-left:-50px;">
                                  <div class="info-default active">
                                      <br>
                                      <br>
@@ -56,7 +56,7 @@
                              </div>
                              <div class="bk-img">
                                <% if product.photos.present? %>
-                                 <%= image_tag(product.photos[0].avatar.url, class: "img-rounded hover-opacity", alt: "Lights", style:"width:80%;height:240px;", align:"middle") %>
+                                 <%= image_tag(product.photos[0].avatar.url, class: "img-rounded hover-opacity", alt: "Lights", style:"width:83%;height:250px;", align:"middle") %>
                                <% else %>
                                  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "img-rounded", alt: "Lights", style:"width:100%") %>
                                <% end %>
@@ -67,6 +67,9 @@
                      <br>
                  </div>
              <% end %>
+             <div class="page-box", style="margin-left:470px;">
+               <%= will_paginate @products, renderer: BootstrapPagination::Rails, :previous_label => '<i class="fa fa-angle-double-left" aria-hidden="true"></i>', :next_label => '<i class="fa fa-angle-double-right" aria-hidden="true"></i>'%>
+             </div>
              </div>
            </div>
          </body>

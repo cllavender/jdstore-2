@@ -14,13 +14,14 @@
  *= require_self
  */
 
-@import "bootstrap";
-
 @import "bootstrap-sprockets";
+
+@import "bootstrap";
 
 @import "font-awesome";
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+
 
 // 导航栏
 
@@ -1330,6 +1331,8 @@ ins, a {
 persona-grid {
      margin-top: 20px;
      margin-bottom: 20px;
+     margin-left: auto;
+     margin-right: auto;
   }
   //调整图片位置使用!
 
@@ -1374,4 +1377,18 @@ rgba(0, 191, 255, 0.35),
 rgba(255, 255, 255, 0.5)
 );
 
+}
+
+/*===== 換頁按鈕設定 ======*/
+.page-box {
+margin-top: 0px;
+
+a {
+  background-color: #ddd;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: #666 !important;
+}
 }
