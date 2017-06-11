@@ -31,6 +31,8 @@ Rails.application.routes.draw do
     collection do
       delete :clean
       post   :checkout
+      put   :discount
+      put   :no_discount
     end
   end
 

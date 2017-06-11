@@ -1,5 +1,10 @@
 <div class="row">
-   <div class="col-md-12">
+  <div class="foot_img">
+  </div>
+</div>
+
+  <div class="wrap" style="margin-top: 10px;">
+    <br><br>
 
     <h2> 购物明细 </h2>
 
@@ -32,17 +37,10 @@
 
     <div class="total clearfix">
       <span class="pull-right">
-        总计 <%= render_cart_total_price(current_cart) %> CNY
+        总计 <%= render_cart_total_price(current_cart, current_user.total_point) %> CNY
       </span>
     </div>
 
-    <span class="favorites ">
-      <% if current_user && current_user.already_favorite?(@product) %>
-        <%= link_to(content_tag(:i, '使用积分优惠', class: 'fa fa-check-square-o'), favorite_product_path(@product, type:"unfavorite"), method: :put) %>
-      <% else %>
-        <%= link_to(content_tag(:i, '使用积分优惠', class: 'fa fa-square-o'), favorite_product_path(@product, type:"favorite"), method: :put) %>
-      <% end %>
-    </span>
 
     <hr>
 
@@ -78,4 +76,3 @@
 
     </div>
   </div>
-</div>

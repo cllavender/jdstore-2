@@ -9,4 +9,14 @@ class CartsController < ApplicationController
     @order = Order.new
   end
 
+  def discount
+    current_cart.use_discount
+    redirect_to :back
+  end
+
+  def no_discount
+    current_cart.do_not_use_discount
+    redirect_to :back
+  end
+
 end
