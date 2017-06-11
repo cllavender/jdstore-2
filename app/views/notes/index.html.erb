@@ -74,6 +74,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <div class="group">
         <%= link_to("分享旅途点滴", new_note_path, class: "btn btn-orange pull-right") %>
       </div>
+      <% if current_user %>
+        <div class="group">
+          游记积分： <%= current_user.total_point %>
+        </div>
+      <% end %>
       <div class="w3-section w3-bottombar w3-padding-16">
       </div>
     </div>
@@ -88,12 +93,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <% if note.notephotos.present? %>
           <%= image_tag(note.notephotos[0].img.url, class: "w3-hover-opacity", alt: "Norway", style:"width:100%;height:250px;") %>
         <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "w3-hover-opacity", alt: "Norway", style:"width:100%;height:250px;") %>
         <% end %>
       <% end %>
       <div class="w3-container w3-white">
         <br/>
-        <p><b><%= note.foreword %></b></p>
+        <p>
+          <b><%= note.foreword %></b>
+          <% if note.user == current_user %>
+          <i><%= link_to note_path(note), class: "pull-right",method: :delete, data: { confirm: "Are you sure?"} do %><i class="fa fa-trash-o" aria-hidden="true"><% end %></i>  
+          <% end %>
+        </p>
         <p class="w3-text-grey">
           来自<%= note.user.email %></a> &nbsp;&nbsp;    <em><%= time_ago_in_words(note.created_at) %>前</em>
         </p>

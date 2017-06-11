@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :favorite_products, :through => :favorites, :source => :product
   has_many :comments
   has_many :notes
+  has_many :experiences
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
@@ -18,6 +19,10 @@ class User < ApplicationRecord
 
   def already_favorite?(product)
     favorite_products.include?(product)
+  end
+
+  def total_point
+    experiences.sum(:point)
   end
 
 end
