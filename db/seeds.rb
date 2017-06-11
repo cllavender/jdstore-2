@@ -329,50 +329,50 @@
 #                end:          "杭州之行，一湾看尽千岛湖，行走于西子湖畔，婉约柔情醉人心，正是那句最忆是江南！",
 #                  user_id: 2
 #                     )
-# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%201.jpg"))
-# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%202.jpg"))
-# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%203.jpeg"))
-# n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%A2%A6%E6%B1%9F%E5%8D%974.jpg"))
-# # 2
-# n2 = Note.create(foreword: "爱上荔波的“野”",
-#                  introduction: "灵秀之地，充满野性，更有有“地球绿宝石，东方凯旋门”之称的大小七孔",
-#                  destination1: "贵州",
-#                  destination2: "荔波",
-#                  destination3: "",
-#                  description:  "在2017春节来临之计，位于黔南的荔波梅原还迎来了万亩梅花的盛开，来到梅原和当地土著民族一起开心过新年，当然是一件非常惬意的事！请随我的镜头一起去回味那些原味的经典。",
-#                  title1:       "地球绿宝石，惊叹大七孔",
-#                  description1: "见识荔波大七孔，世界遗产地，地球绿宝石，透明度极高的湖水，如丝如画的瀑布，鬼斧神工的天生桥，九曲回旋的栈道，无边的思忆似梦中.....",
-#                  title2:       "落叶入湖，卧龙出水，细观小七孔",
-#                  description2: "如果说大七孔是绿宝石，那荔波小七孔就是缠绕在宝石上的一根翡翠腰带！她静则静谧如镜，倒影如画；动则落叶入湖，卧龙出水。",
-#                  title3:       "跌宕起伏，罕见68级跌水瀑布",
-#                  description3: "千姿百态的瀑布跌水竞领风骚，争奇斗妍，构成风情万种的动态水景，目不暇接。",
-#                end:          "作为荔波天然的韵律所在的大小七孔，去了还想去、看过看不够、拍照停不下。",
-#                  user_id: 3
-#                     )
-# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A21.jpg"))
-# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo2.png"))
-# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo3.png"))
-# n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo4.jpeg"))
-# # 3
-# n3 = Note.create(foreword: "毛里求斯：天堂原乡，慢热钟情",
-#                  introduction: "毛里求斯是天堂的原乡，因为天堂是仿照毛里求斯这个小岛而打造出来的",
-#                  destination1: "毛里求斯",
-#                  destination2: "",
-#                  destination3: "",
-#                  description:  "毛里求斯，位于非洲东部，印度洋西南方，距离马达加斯加约800公里，四周珊瑚环绕，色彩斑斓的热带海洋生物也是这里的成员，在陆地上，沿海是狭窄的平原，中部是高原山地，景色壮观。岛上可以见到上百种鸟类，有30种非常稀有，16种在全球范围内重在面临灭绝的危险。",
-#                  title1:       "感受平静海面，领会北方三岛",
-#                  description1: "经典的北三岛分别是米尔考恩岛（法语称为Coin du Mire，英语则称为Gunner's Quoin）、普拉特岛（法语称为Île Plate，英语称Flat Island平岛）和加布里埃尔小岛（Îlot 在北部大多地方能够看到的形似炮台或鲸鱼的岛便是被称为炮手角的米尔考恩岛。",
-#                  title2:       "悠闲自在，鹿岛潜伏",
-#                  description2: "鹿岛海水会呈现出不同层次的蓝绿色，令人目不暇接的水上项目还是很吸引人的。鹿岛上可以潜水，海钓，冲浪，玩滑翔伞，帆船，划块头。",
-#                  title3:       "鬼斧神工，红顶教堂",
-#                  description3: "这座由法国人建成的红色屋顶的教堂，其木工非常精致，与一望无际的碧海蓝天相映成辉，是沿海旅行的好去处。",
-#                end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
-#                  user_id: 4
-#                     )
-# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%201.jpg"))
-# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%202.jpg"))
-# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%203.jpeg"))
-# n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%204.jpeg"))
+n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%201.jpg"))
+n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%202.jpg"))
+n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%203.jpeg"))
+n1.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%A2%A6%E6%B1%9F%E5%8D%974.jpg"))
+# 2
+n2 = Note.create(foreword: "爱上荔波的“野”",
+                 introduction: "灵秀之地，充满野性，更有有“地球绿宝石，东方凯旋门”之称的大小七孔",
+                 destination1: "贵州",
+                 destination2: "荔波",
+                 destination3: "",
+                 description:  "在2017春节来临之计，位于黔南的荔波梅原还迎来了万亩梅花的盛开，来到梅原和当地土著民族一起开心过新年，当然是一件非常惬意的事！请随我的镜头一起去回味那些原味的经典。",
+                 title1:       "地球绿宝石，惊叹大七孔",
+                 description1: "见识荔波大七孔，世界遗产地，地球绿宝石，透明度极高的湖水，如丝如画的瀑布，鬼斧神工的天生桥，九曲回旋的栈道，无边的思忆似梦中.....",
+                 title2:       "落叶入湖，卧龙出水，细观小七孔",
+                 description2: "如果说大七孔是绿宝石，那荔波小七孔就是缠绕在宝石上的一根翡翠腰带！她静则静谧如镜，倒影如画；动则落叶入湖，卧龙出水。",
+                 title3:       "跌宕起伏，罕见68级跌水瀑布",
+                 description3: "千姿百态的瀑布跌水竞领风骚，争奇斗妍，构成风情万种的动态水景，目不暇接。",
+               end:          "作为荔波天然的韵律所在的大小七孔，去了还想去、看过看不够、拍照停不下。",
+                 user_id: 3
+                    )
+n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A21.jpg"))
+n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo2.png"))
+n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo3.png"))
+n2.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E8%8D%94%E6%B3%A2logo4.jpeg"))
+# 3
+n3 = Note.create(foreword: "毛里求斯：天堂原乡，慢热钟情",
+                 introduction: "毛里求斯是天堂的原乡，因为天堂是仿照毛里求斯这个小岛而打造出来的",
+                 destination1: "毛里求斯",
+                 destination2: "",
+                 destination3: "",
+                 description:  "毛里求斯，位于非洲东部，印度洋西南方，距离马达加斯加约800公里，四周珊瑚环绕，色彩斑斓的热带海洋生物也是这里的成员，在陆地上，沿海是狭窄的平原，中部是高原山地，景色壮观。岛上可以见到上百种鸟类，有30种非常稀有，16种在全球范围内重在面临灭绝的危险。",
+                 title1:       "感受平静海面，领会北方三岛",
+                 description1: "经典的北三岛分别是米尔考恩岛（法语称为Coin du Mire，英语则称为Gunner's Quoin）、普拉特岛（法语称为Île Plate，英语称Flat Island平岛）和加布里埃尔小岛（Îlot 在北部大多地方能够看到的形似炮台或鲸鱼的岛便是被称为炮手角的米尔考恩岛。",
+                 title2:       "悠闲自在，鹿岛潜伏",
+                 description2: "鹿岛海水会呈现出不同层次的蓝绿色，令人目不暇接的水上项目还是很吸引人的。鹿岛上可以潜水，海钓，冲浪，玩滑翔伞，帆船，划块头。",
+                 title3:       "鬼斧神工，红顶教堂",
+                 description3: "这座由法国人建成的红色屋顶的教堂，其木工非常精致，与一望无际的碧海蓝天相映成辉，是沿海旅行的好去处。",
+               end:          "短暂的几天过去了，那海、那天、那景，留在我记忆深处的却是永恒。",
+                 user_id: 4
+                    )
+n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%201.jpg"))
+n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%202.jpg"))
+n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%203.jpeg"))
+n3.notephotos.create!(img: open("http://oqjdhoq9e.bkt.clouddn.com/%E6%AF%9B%E9%87%8C%E6%B1%82%E6%96%AF%204.jpeg"))
 # #4
 # n4 = Note.create(foreword: "【刺激“海上飞”】滑翔伞体验",
 #                  introduction: "习惯了平视这个世界，这一次，我们带您俯瞰这一切，一起乘坐滑翔伞体验飞行的快感。",
