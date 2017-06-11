@@ -3,10 +3,7 @@
   </div>
 </div>
 
-<br/>
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/>
 
 <head>
   <link rel="stylesheets" type="text/scss" href="welcome8s.scss">
@@ -20,16 +17,13 @@
                          <a class="persona-link" href='<%= product_path(product) %>'>
                              <div class="info-peek", style="margin-left:-50px;">
                                  <div class="info-default active">
-                                     <br>
-                                     <br>
-                                     <br>
-                                     <br>
+                                     <br><br><br><br>
                                      <h3><%= product.title %> </h3>
-                                         <p>
-                                           <h4>
-                                             <i class="fa fa-jpy" aria-hidden="true"></i>:<%= product.price %>
-                                           </h4>
-                                         </p>
+                                     <p>
+                                       <h4>
+                                         <i class="fa fa-jpy" aria-hidden="true"></i>:<%= product.price %>
+                                       </h4>
+                                     </p>
                                  </div>
                              </div>
                              <div class="bk-img">
@@ -41,13 +35,12 @@
                              </div>
                          </a>
                      </div>
-                     <br>
-                     <br>
+                     <br><br>
                  </div>
              <% end %>
              <div class="page-box", style="margin-left:470px;">
                <%= will_paginate @products, renderer: BootstrapPagination::Rails, :previous_label => '<i class="fa fa-angle-double-left" aria-hidden="true"></i>', :next_label => '<i class="fa fa-angle-double-right" aria-hidden="true"></i>'%>
              </div>
-             </div>
-           </div>
-         </body>
+         </div>
+     </div>
+ </body>
