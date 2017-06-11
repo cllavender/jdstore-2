@@ -75,7 +75,15 @@
       <% else %>
         <%= link_to(content_tag(:i, '使用积分优惠', class: 'fa fa-square-o'), discount_carts_path, method: :put) %>
       <% end %>
+    </span>
+    <br>
 
+    <span class="pull-right ">
+      已有积分：<%= current_user.total_point %><br>
+    </span>
+
+    <span class="pull-left ">
+      积分使用规则：10积分可抵扣1元，抵扣大于下单价钱无效
     </span>
 
     <hr/>
