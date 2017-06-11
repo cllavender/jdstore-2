@@ -7,7 +7,7 @@
 <br/>
 
 
-<div class="container all-product-box">
+<!-- <div class="container all-product-box">
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-xs-6 col-md-3 product-list-style">
@@ -24,4 +24,47 @@
       </div>
     <% end %>
   </div>
-</div>
+</div> -->
+
+
+
+<head>
+  <link rel="stylesheets" type="text/scss" href="welcome8s.scss">
+</head>
+<body class="bk-color">
+  <div class="persona-grid">
+         <div class="container row-container">
+            <% @products.each do |product| %>
+                 <div class="col-sm-4">
+                     <div class="persona-kira">
+                         <a class="persona-link" href='<%= product_path(product) %>'>
+                             <div class="info-peek", style="margin-left:-60px;">
+                                 <div class="info-default active">
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <h3><%= product.title %> </h3>
+                                         <p>
+                                           <h4>
+                                             <i class="fa fa-jpy" aria-hidden="true"></i>:<%= product.price %>
+                                           </h4>
+                                         </p>
+                                 </div>
+                             </div>
+                             <div class="bk-img">
+                               <% if product.photos.present? %>
+                                 <%= image_tag(product.photos[0].avatar.url, class: "img-rounded hover-opacity", alt: "Lights", style:"width:80%;height:240px;", align:"middle") %>
+                               <% else %>
+                                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "img-rounded", alt: "Lights", style:"width:100%") %>
+                               <% end %>
+                             </div>
+                         </a>
+                     </div>
+                     <br>
+                     <br>
+                 </div>
+             <% end %>
+             </div>
+           </div>
+         </body>
